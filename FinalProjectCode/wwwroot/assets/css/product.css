@@ -1,0 +1,930 @@
+.one {
+  margin: 20px 0;
+}
+.one .switch {
+  display: flex;
+}
+.one .switch .first {
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.one .switch .first:hover {
+  color: #bd9855;
+}
+.one .switch .second {
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 14px;
+}
+.one .switch .second:hover {
+  color: #bd9855;
+}
+.one .switch i {
+  color: #666;
+  font-size: 10px;
+  padding-top: 6px;
+  margin-left: 14px;
+}
+.one .switch .select {
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 14px;
+}
+
+.two {
+  margin-top: 0 !important;
+}
+.two .picture {
+  display: flex;
+  position: relative;
+}
+.two .picture .otherpic .photo1 {
+  width: 120px;
+  height: 140px;
+  margin-bottom: 82.6px;
+  opacity: 0.3;
+}
+.two .picture .otherpic .photo1:hover {
+  opacity: 1;
+}
+.two .picture .otherpic .photo2 {
+  width: 120px;
+  height: 140px;
+  margin-bottom: 82.6px;
+}
+.two .picture .otherpic .photo2:hover {
+  opacity: 1;
+}
+.two .picture .otherpic .photo3 {
+  width: 120px;
+  height: 140px;
+  margin-bottom: 82.6px;
+  opacity: 0.3;
+}
+.two .picture .otherpic .photo3:hover {
+  opacity: 1;
+}
+.two .picture .otherpic .photo4 {
+  width: 120px;
+  height: 140px;
+  opacity: 0.3;
+}
+.two .picture .otherpic .photo4:hover {
+  opacity: 1;
+}
+.two .picture .here .slc {
+  height: 808px;
+  width: 673px;
+  cursor: crosshair;
+  transition: all 0.5s;
+}
+.two .picture .here .percent {
+  background: #fff;
+  font-size: 13px;
+  color: #000;
+  position: absolute;
+  font-weight: 500;
+  width: 65px;
+  height: 25px;
+  z-index: 1;
+  padding-left: 15px;
+  padding-top: 2px;
+  right: 30px;
+  bottom: 750px;
+}
+.two .about {
+  margin-left: 60px;
+}
+.two .about .general {
+  display: flex;
+  justify-content: space-between;
+}
+.two .about .general .titles .family {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  height: 0;
+  text-transform: uppercase;
+}
+.two .about .general .titles .family:hover {
+  color: #bd9855;
+}
+.two .about .general .titles .select {
+  padding-top: 10px;
+  font-family: Libre Baskerville, serif;
+  color: #000;
+  font-size: 26px;
+  height: 0;
+}
+.two .about .general .heart {
+  color: #000;
+  padding-left: 13px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  line-height: 43px;
+  border: 1px solid #e6e6e6;
+}
+.two .about .general .heart:hover {
+  color: white;
+  background-color: #bd9855;
+}
+.two .about .firfloor {
+  display: flex;
+  margin-top: 20px;
+}
+.two .about .firfloor .st {
+  color: #c6c6c6;
+  display: inline;
+  cursor: pointer;
+  font-size: 8px;
+}
+.two .about .firfloor .reviews {
+  color: #666;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+.two .about .price {
+  display: flex;
+}
+.two .about .price .discount {
+  line-height: 100%;
+  font-weight: 600;
+  color: #666;
+  font-family: Inter, sans-serif;
+  text-decoration: line-through;
+  padding-top: 8px;
+}
+.two .about .price .count {
+  line-height: 100%;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: #ff0000;
+  font-size: 25px;
+  padding-left: 10px;
+}
+.two .about .text {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.two .about .line {
+  height: 1px;
+  background: #e7e7e7;
+}
+.two .about .check {
+  display: flex;
+  margin-top: 10px;
+}
+.two .about .check i {
+  font-size: 14px;
+  color: rgb(31, 150, 31);
+  margin-top: 5px;
+}
+.two .about .check p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(31, 150, 31);
+  padding-left: 10px;
+}
+.two .about .see {
+  display: flex;
+}
+.two .about .see i {
+  font-size: 16px;
+  color: #000;
+  margin-top: 5px;
+}
+.two .about .see p {
+  color: #000;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+.two .about .fire {
+  display: flex;
+}
+.two .about .fire i {
+  font-size: 20px;
+  color: #f11e1e;
+  margin-top: 5px;
+}
+.two .about .fire p {
+  color: #f11e1e;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 10px;
+  padding-top: 6px;
+}
+.two .about .stock {
+  color: #000;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 20px;
+  margin: 0;
+}
+.two .about .stock span {
+  color: #f11e1e;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.two .adbtn .count {
+  display: flex;
+  border: 1px solid rgb(200, 199, 199);
+  width: 193px;
+  height: 48px;
+  margin-top: 10px;
+}
+.two .adbtn .count h2 {
+  color: #000;
+  margin: 10px 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.two .adbtn .count button:nth-child(1) {
+  width: 55px;
+  height: 46px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-right: 1px solid rgb(200, 199, 199);
+  color: rgb(0, 0, 0);
+}
+.two .adbtn .count button:nth-child(1):hover {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  filter: brightness(1.1);
+  transition: all 0.5s;
+}
+.two .adbtn .count button:nth-child(3) {
+  width: 55px;
+  height: 46px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-left: 1px solid rgb(200, 199, 199);
+  color: #000;
+  border-radius: 7px;
+  filter: brightness(1.1);
+  transition: all 0.5s;
+}
+.two .adbtn .count button:nth-child(3):hover {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+.two .adbtn #add {
+  width: 400px;
+  height: 48px;
+  background-color: #000;
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.two .adbtn #add:hover {
+  background-color: #7f4227;
+}
+.two .buy {
+  margin-top: 10px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 48px;
+  height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  color: rgba(108, 117, 125, 0.7882352941);
+}
+.two .deliver {
+  display: flex;
+  margin-top: 80px;
+}
+.two .deliver i {
+  font-size: 18px;
+  color: #000;
+  padding-top: 3px;
+}
+.two .deliver .delivery {
+  font-size: 14px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+.two .deliver .intext {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+.two .deliver .intext span {
+  font-weight: 600;
+  text-decoration: underline;
+  color: #000;
+}
+.two .bank {
+  width: 505px;
+  height: 136px;
+  position: relative;
+  background-color: rgba(236, 234, 234, 0.7568627451);
+}
+.two .bank img {
+  width: 432px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.two .bank .secure {
+  position: absolute;
+  color: #000;
+  letter-spacing: 1px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 80px;
+  padding-left: 125px;
+}
+
+.three .select ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.three .select ul .firstapart {
+  display: inline;
+  cursor: pointer;
+  color: black;
+  padding-bottom: 10px;
+  font-size: 23px;
+  font-family: Libre Baskerville, serif;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.three .select ul .firstapart:hover {
+  color: #000;
+}
+.three .select ul .apart {
+  display: inline;
+  cursor: pointer;
+  color: grey;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  font-size: 23px;
+  color: #666;
+  font-family: Libre Baskerville, serif;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.three .select ul .apart:hover {
+  color: #000;
+}
+.three .select .line {
+  height: 1px;
+  background: #e7e7e7;
+}
+.three .select .line .underline {
+  width: 155px;
+  height: 1px;
+  background-color: #000;
+  transition: all 0.5s;
+  margin-left: 480px;
+}
+.three .subsection {
+  padding-top: 50px;
+}
+.three .subsection .secone p {
+  padding-left: 160px;
+  width: 1310px;
+  color: #666;
+  font-size: 15px;
+}
+.three .subsection .sectwo {
+  margin-left: 160px;
+}
+.three .subsection .sectwo .now {
+  display: flex;
+  justify-content: space-between;
+}
+.three .subsection .sectwo .now .sentence .customer {
+  font-size: 34px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  color: #000;
+}
+.three .subsection .sectwo .now .sentence .yet {
+  line-height: 2em;
+  color: #666;
+  background-color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.three .subsection .sectwo .now button {
+  width: 200px;
+  height: 45px;
+  color: #000;
+  font-size: 12px;
+  border: 1px solid black;
+  background-color: white;
+  line-height: 43px;
+  padding: 0 50px;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  margin-top: 45px;
+  margin-right: 160px;
+  cursor: pointer;
+}
+.three .subsection .sectwo .now button:hover {
+  background-color: #bd9855;
+  color: white;
+  border: none;
+}
+.three .subsection .sectwo .getin {
+  margin-top: 50px;
+}
+.three .subsection .sectwo .getin #fir,
+.three .subsection .sectwo .getin #last {
+  padding: 14px 20px;
+  border: 1px solid #d6d6d6;
+  height: 60px;
+  font-weight: 400;
+  font-size: inherit;
+  width: 570px;
+  height: 60px;
+}
+.three .subsection .sectwo .getin #last {
+  margin-left: 25px;
+}
+.three .subsection .sectwo .getin .fr {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  padding: 0 !important;
+}
+.three .subsection .sectwo .getin .ls {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  padding-left: 560px;
+}
+.three .subsection .sectwo .getin .firfloor {
+  display: flex;
+  padding-top: 10px;
+}
+.three .subsection .sectwo .getin .firfloor .stars1 {
+  display: inline;
+  padding-left: 10px;
+}
+.three .subsection .sectwo .getin .firfloor .stars1 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .subsection .sectwo .getin .firfloor .stars2 {
+  display: inline;
+}
+.three .subsection .sectwo .getin .firfloor .stars2 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .subsection .sectwo .getin .firfloor .stars3 {
+  display: inline;
+}
+.three .subsection .sectwo .getin .firfloor .stars3 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .subsection .sectwo .getin .firfloor .stars4 {
+  display: inline;
+}
+.three .subsection .sectwo .getin .firfloor .stars4 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .subsection .sectwo .getin .firfloor .stars5 {
+  display: inline;
+}
+.three .subsection .sectwo .getin .firfloor .stars5 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .subsection .sectwo .getin .firfloor .stars6 {
+  display: inline;
+}
+.three .subsection .sectwo .getin .firfloor .stars6 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .subsection .sectwo .getin .firfloor .reviews {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  padding-top: 2px;
+}
+.three .subsection .sectwo .getin #dis {
+  padding: 14px 20px;
+  border: 1px solid #d6d6d6;
+  height: 60px;
+  font-weight: 400;
+  width: 1170px;
+}
+.three .subsection .sectwo .getin .ds {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  padding: 0 !important;
+}
+.three .subsection .sectwo .getin #mes {
+  padding-left: 20px;
+  width: 1170px;
+  height: 240px;
+  border: 1px solid #d6d6d6;
+  font-weight: 400;
+  padding-top: 10px;
+}
+.three .subsection .sectwo .getin .mess {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  padding: 20px 0 0 0 !important;
+}
+.three .subsection .sectwo .getin .snd {
+  margin-left: 480px;
+  margin-top: 40px;
+  padding: 20px 50px;
+  height: 60px;
+  border: 2px solid black;
+  color: #000;
+  background-color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+.three .subsection .sectwo .getin .snd:hover {
+  background-color: #bd9855;
+  border: none;
+  color: white;
+}
+.three .subsection .sectwo .getin .subjc {
+  flex-direction: column;
+}
+.three .subsection .sectwo .getin .mss {
+  flex-direction: column;
+}
+.three .subsection .secthr {
+  margin-left: 160px;
+}
+.three .subsection .secthr p {
+  font-size: 15px;
+}
+.three .subsection .secfou {
+  margin-left: 160px;
+}
+.three .subsection .secfou p {
+  color: #666;
+  font-size: 15px;
+}
+.three .subsection .secfou ul li {
+  color: #666;
+  font-size: 15px;
+}
+
+.four .line {
+  height: 1px;
+  background: #e7e7e7;
+}
+.four .like p {
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+  color: #000;
+  font-weight: 530;
+  font-family: Libre Baskerville, serif;
+  line-height: 1.2;
+  padding-top: 60px;
+}
+.four .cards {
+  display: flex;
+  margin-left: 190px;
+  margin-top: 30px;
+}
+.four .cards .card {
+  border: none;
+}
+.four .cards .card .photo {
+  position: relative;
+  height: 400px;
+  width: 350px;
+  overflow: hidden;
+}
+.four .cards .card .photo img {
+  position: absolute;
+  background: transparent;
+  height: 400px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0;
+}
+.four .cards .card .photo .add p {
+  opacity: 0;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  position: absolute;
+  width: 95.5%;
+  height: 60px;
+  bottom: -60px;
+  left: 8px;
+  margin: 0;
+  padding-left: 130px;
+  padding-top: 19px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.four .cards .card .photo .add:hover p {
+  background-color: #bd9855;
+}
+.four .cards .card .percent {
+  background: #fff;
+  font-size: 13px;
+  color: #000;
+  position: absolute;
+  font-weight: 500;
+  width: 65px;
+  height: 25px;
+  z-index: 1;
+  margin-left: 20px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+.four .cards .card .heart {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.four .cards .card .heart:hover {
+  color: white;
+  background-color: #bd9855;
+}
+.four .cards .card .arrow {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 65px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.four .cards .card .arrow:hover {
+  color: white;
+  background-color: #bd9855;
+}
+.four .cards .card .glass {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 115px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.four .cards .card .glass:hover {
+  color: white;
+  background-color: #bd9855;
+}
+.four .cards .card .timer {
+  position: absolute;
+  display: flex;
+  margin-top: 80px;
+  margin-left: 63px;
+}
+.four .cards .card .timer .times {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  margin-top: 260px;
+}
+.four .cards .card .timer .times span {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 13px;
+}
+.four .cards .card .timer .times p {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6d7784;
+  padding-left: 9px;
+}
+.four .cards .card .timer .timesec {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  margin-top: 260px;
+  margin-left: 5px;
+}
+.four .cards .card .timer .timesec span {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 19px;
+}
+.four .cards .card .timer .timesec p {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6d7784;
+  padding-left: 9px;
+}
+.four .cards .card:hover .heart {
+  display: inline !important;
+}
+.four .cards .card:hover .arrow {
+  display: inline !important;
+}
+.four .cards .card:hover .glass {
+  display: inline !important;
+}
+.four .cards .card:hover .timer {
+  display: none !important;
+}
+.four .cards .card:hover .add p {
+  opacity: 1;
+  bottom: 0;
+}
+.four .cards .card .firfloor {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.four .cards .card .firfloor .st {
+  color: #c6c6c6;
+  display: inline;
+  cursor: pointer;
+  font-size: 8px;
+}
+.four .cards .card .firfloor .reviews {
+  color: #666;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+.four .cards .card .title {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 80px;
+  height: 0;
+  text-decoration: none;
+  color: #000;
+}
+.four .cards .card .title:hover {
+  color: #bd9855;
+}
+.four .cards .card .title4 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 100px;
+  height: 0;
+  text-decoration: none;
+  color: #000;
+}
+.four .cards .card .title4:hover {
+  color: #bd9855;
+}
+.four .cards .card .title5 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 62px;
+  height: 0;
+  text-decoration: none;
+  color: #000;
+}
+.four .cards .card .title5:hover {
+  color: #bd9855;
+}
+.four .cards .card .price {
+  color: #bd9855;
+  padding-left: 130px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.four .cards .card .diswithpri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 55px;
+}
+.four .cards .card .diswithpri .discount {
+  height: 0;
+  font-size: 15px;
+  color: #796b6b;
+  text-decoration: line-through;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+.four .cards .card .diswithpri .pricewith {
+  color: #bd9855;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+.four .cards .ctwo {
+  margin-left: 70px;
+}
+.four .cards .cthr {
+  margin-left: 70px;
+}
+.four .recent p {
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+  color: #000;
+  font-weight: 530;
+  font-family: Libre Baskerville, serif;
+  line-height: 1.2;
+  padding-top: 60px;
+}
+
+footer {
+  margin-top: 30px !important;
+}/*# sourceMappingURL=product.css.map */

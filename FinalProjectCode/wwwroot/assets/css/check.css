@@ -1,0 +1,313 @@
+.container {
+  max-width: 1180px !important;
+}
+
+.one {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.one .our-information .contact-log {
+  display: flex;
+  justify-content: space-between;
+}
+.one .our-information .contact-log .contact {
+  font-weight: 500;
+  font-size: 20px;
+}
+.one .our-information .contact-log .log {
+  margin-top: 5px;
+}
+.one .our-information #email {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7019607843);
+  line-height: 50px;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #e5e5e5;
+  line-height: 50px;
+  margin-top: 10px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.one .our-information .form-check {
+  margin-top: 10px;
+}
+.one .our-information .form-check label {
+  font-size: 14px;
+}
+.one .our-information .shipping {
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 25px;
+}
+.one .our-information .country {
+  border-color: #e5e5e5;
+  background-color: white;
+  color: #000;
+  border-radius: 5px;
+  width: 100%;
+}
+.one .our-information .country .region {
+  color: #666;
+  font-size: 12px;
+  height: 0;
+  margin-left: 0 !important;
+}
+.one .our-information .select {
+  border-radius: 10px;
+  width: 100%;
+  height: 35px;
+  padding-left: 240px;
+}
+.one .our-information .select li {
+  font-size: 12px;
+}
+.one .our-information .select li a {
+  background-color: white;
+  height: 0;
+}
+.one .our-information .firstname {
+  display: flex;
+  justify-content: space-between;
+}
+.one .our-information .firstname input {
+  width: 270px;
+  background-color: rgba(255, 255, 255, 0.7019607843);
+  line-height: 50px;
+  height: 44px;
+  padding: 0 20px;
+  border: 1px solid #e5e5e5;
+  line-height: 50px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.one .our-information .search {
+  position: relative;
+  margin-top: 20px;
+}
+.one .our-information .search input {
+  width: 566px !important;
+  height: 44px;
+  outline: none;
+  border-radius: 5px;
+  background-color: white;
+  padding-left: 10px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #dddddd;
+  position: absolute;
+}
+.one .our-information .search input:focus {
+  border: 2px solid;
+}
+.one .our-information .search i {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 17px;
+  margin-top: 14px;
+  right: 5px;
+  background-color: #fff;
+  color: #b7b7b7;
+}
+.one .our-information #apartment {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7019607843);
+  line-height: 50px;
+  height: 44px;
+  padding: 0 20px;
+  border: 1px solid #e5e5e5;
+  line-height: 50px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  margin-top: 65px;
+  border-radius: 5px;
+}
+.one .our-information .all {
+  display: flex;
+  justify-content: space-between;
+}
+.one .our-information .all #city,
+.one .our-information .all #zip {
+  width: 179px;
+  background-color: rgba(255, 255, 255, 0.7019607843);
+  line-height: 50px;
+  height: 44px;
+  padding: 0 15px;
+  border: 1px solid #e5e5e5;
+  line-height: 50px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.one .our-information .all .states {
+  border-color: #e5e5e5;
+  background-color: white;
+  color: #000;
+  border-radius: 5px;
+  width: 181px;
+  margin-top: 20px;
+  height: 44px;
+}
+.one .our-information .all .states .state {
+  color: #666;
+  font-size: 12px;
+  height: 0;
+  padding-right: 20px;
+}
+.one .our-information .all .options {
+  border-radius: 10px;
+  width: 181px;
+}
+.one .our-information .all .options li {
+  font-size: 14px;
+}
+.one .our-information .all .options li a {
+  background-color: white;
+}
+.one .our-information .next {
+  display: flex;
+  justify-content: space-between;
+}
+.one .our-information .next .return {
+  display: flex;
+  text-decoration: none;
+  margin-top: 30px;
+}
+.one .our-information .next .return i {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.one .our-information .next .return p {
+  padding-left: 5px;
+  font-size: 16px;
+}
+.one .our-information .next .shipping {
+  border: none;
+  cursor: pointer;
+  width: 177px;
+  height: 64px;
+  background-color: rgb(55, 99, 164);
+  margin-top: 17px;
+  padding-left: 20px;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+.one .our-information .next .shipping .continue {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+.one .our-information .next .shipping:hover {
+  background-color: rgb(49, 89, 148);
+}
+.one .about-products .prd {
+  margin: 0 20px;
+  height: 180px;
+  overflow-y: auto;
+}
+.one .about-products .prd::-webkit-scrollbar {
+  width: 8px;
+}
+.one .about-products .prd::-webkit-scrollbar-thumb {
+  background-color: #7e7e7e;
+}
+.one .about-products .prd::-webkit-scrollbar-track {
+  background-color: #e3dcdc;
+}
+.one .about-products .prd .prdone {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.one .about-products .prd .prdone .photo {
+  position: relative;
+}
+.one .about-products .prd .prdone .photo img {
+  width: 70px;
+  height: 100px;
+  border-radius: 10px;
+  position: absolute;
+}
+.one .about-products .prd .prdone .photo .count {
+  position: absolute;
+  background-color: #a8a8a8;
+  width: 20px;
+  height: 20px;
+  color: white;
+  border-radius: 50%;
+  font-size: 13px;
+  margin-left: 60px;
+  bottom: 64px;
+  padding-left: 6px;
+}
+.one .about-products .prd .prdone .nm {
+  font-size: 14px;
+  height: 0;
+  font-weight: 500;
+  cursor: pointer;
+  padding-top: 40px;
+}
+.one .about-products .prd .prdone .nm:hover {
+  color: #bd9855;
+}
+.one .about-products .prd .prdone .per {
+  padding-right: 10px;
+  padding-top: 40px;
+  font-weight: 400;
+}
+.one .about-products .subtotal-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.one .about-products .subtotal-price .subtotal {
+  font-weight: 400;
+}
+.one .about-products .subtotal-price .price {
+  font-weight: 500;
+}
+.one .about-products .shipping-calcud {
+  display: flex;
+  justify-content: space-between;
+}
+.one .about-products .shipping-calcud .subtotal {
+  font-weight: 400;
+}
+.one .about-products .shipping-calcud .price {
+  font-weight: 400;
+  font-size: 14px;
+}
+.one .about-products .total-price {
+  display: flex;
+  justify-content: space-between;
+}
+.one .about-products .total-price .subtotal {
+  font-weight: 500;
+  font-size: 18px;
+}
+.one .about-products .total-price .country {
+  display: flex;
+}
+.one .about-products .total-price .country .usd {
+  font-size: 13px;
+  padding-top: 6px;
+  padding-right: 4px;
+}
+.one .about-products .total-price .country .price {
+  font-weight: 500;
+  font-size: 18px;
+}/*# sourceMappingURL=check.css.map */

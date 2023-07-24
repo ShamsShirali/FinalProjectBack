@@ -1,0 +1,319 @@
+.one {
+  margin: 20px 0;
+}
+.one .switch {
+  display: flex;
+}
+.one .switch .first {
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.one .switch .first:hover {
+  color: #bd9855;
+}
+.one .switch .second {
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 14px;
+}
+.one .switch .second:hover {
+  color: #bd9855;
+}
+.one .switch i {
+  color: #666;
+  font-size: 10px;
+  padding-top: 6px;
+  margin-left: 14px;
+}
+.one .switch .select {
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 14px;
+}
+
+.two {
+  margin-top: 0 !important;
+}
+.two img {
+  width: 1410px;
+  height: 895px;
+  margin-left: 23px;
+}
+
+.three {
+  margin-top: 0 !important;
+}
+.three .filt {
+  margin-top: 40px;
+}
+.three .filt form {
+  position: relative;
+}
+.three .filt form .search {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.three .filt form .search input {
+  width: 346px;
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background-color: white;
+  padding-left: 10px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #dddddd;
+}
+.three .filt form .search input:focus {
+  border: 2px solid;
+}
+.three .filt form i {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 310px;
+  background-color: #fff;
+}
+.three .filt .namefilt {
+  font-size: 26px;
+  font-weight: 500;
+  font-family: Libre Baskerville, serif;
+  line-height: 1.2;
+  color: #000;
+  padding-top: 110px;
+}
+.three .filt .postfilt {
+  font-size: 26px;
+  font-weight: 500;
+  font-family: Libre Baskerville, serif;
+  line-height: 1.2;
+  color: #000;
+  padding-top: 40px;
+}
+.three .filt .inblg .inbl {
+  display: flex;
+  padding: 20px 0;
+}
+.three .filt .inblg .inbl img {
+  width: 64px;
+  height: 64px;
+}
+.three .filt .inblg .inbl .in {
+  margin-left: 10px;
+}
+.three .filt .inblg .inbl .in .new {
+  color: #666;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  display: block;
+}
+.three .filt .inblg .inbl .in .new:hover {
+  color: #bd9855;
+}
+.three .filt .inblg .inbl .in .title {
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.three .filt .inblg .inbl .in .title:hover {
+  color: #bd9855;
+}
+.three .filt .inblg .oth {
+  border-top: 1px solid #dddddd;
+}
+.three .about {
+  margin-top: 37px;
+}
+.three .about .head {
+  border-bottom: 1px solid #dddddd;
+}
+.three .about .head .new {
+  color: #999;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.three .about .head .new:hover {
+  color: #bd9855;
+}
+.three .about .head .title {
+  color: #000;
+  font-family: Libre Baskerville, serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.three .about .head .comment {
+  display: flex;
+  margin-bottom: 40px;
+}
+.three .about .head .comment .who {
+  display: flex;
+  border-right: 1px solid #dddddd;
+  height: 19px;
+  padding-right: 10px;
+}
+.three .about .head .comment .who .by {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.three .about .head .comment .who .name {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 6px;
+}
+.three .about .head .comment .commen {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1.5;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.three .about .head .comment .commen:hover {
+  color: #bd9855;
+}
+.three .about .in {
+  margin-top: 40px;
+  line-height: 2em;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.three .about .intwo {
+  margin-top: 20px;
+  line-height: 2em;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.three .about .letter {
+  border-left: 2px solid #bd9855;
+  padding-left: 70px;
+}
+.three .about .letter .let {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 18px;
+  line-height: 2em;
+  width: 900px;
+}
+.three .about .letter .writ {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  font-family: Libre Baskerville, serif;
+}
+.three .about .end {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin-top: 50px;
+  padding: 40px 0;
+  display: flex;
+}
+.three .about .end .ending {
+  border-right: 1px solid #dddddd;
+  height: 70px;
+  padding-right: 30px;
+}
+.three .about .end .ending .prev {
+  font-size: 12px;
+  color: #9b9b9b;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  cursor: pointer;
+  height: 0;
+}
+.three .about .end .ending .prev:hover {
+  color: #bd9855;
+}
+.three .about .end .ending .slog {
+  font-size: 24px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  cursor: pointer;
+  padding-top: 4px;
+}
+.three .about .end .ending .slog:hover {
+  color: #bd9855;
+}
+.three .about .icons {
+  margin-left: 200px;
+}
+.three .about .icons li {
+  display: inline;
+  cursor: pointer;
+}
+.three .about .icons li a {
+  text-decoration: none;
+}
+.three .about .icons li a i {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 34px;
+  border: 1px solid #e5e5e5;
+  color: #000;
+  border-radius: 50%;
+  font-size: 14px;
+}
+.three .about .icons li:hover i {
+  color: white;
+  background-color: #bd9855;
+}
+
+footer {
+  margin-top: 30px !important;
+}/*# sourceMappingURL=blog-detail.css.map */

@@ -1,0 +1,67 @@
+.one {
+    margin-top: 20px;
+
+    .main {
+        font-size: 40px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        font-family: Libre Baskerville, serif;
+        color: #000;
+        line-height: 1.2;
+    }
+
+    .switch {
+        display: flex;
+        justify-content: center;
+
+        .first {
+            color: #666;
+            font-size: 14px;
+            cursor: pointer;
+            line-height: 22px;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+
+            &:hover {
+                color: #bd9855;
+            }
+        }
+
+        i {
+            color: #666;
+            font-size: 10px;
+            padding-top: 6px;
+            margin-left: 14px;
+        }
+
+        .select {
+            color: #000;
+            font-size: 14px;
+            cursor: pointer;
+            line-height: 22px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            line-height: 1.5;
+            padding-left: 14px;
+        }
+    }
+}
+
+.two{
+
+    p{
+        display: flex;
+    justify-content: center;
+        font-size: 20px;
+        color: #666;
+        font-family: Inter,sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+
+footer {
+    margin-top: 60px !important;
+}

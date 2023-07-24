@@ -1,0 +1,637 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="one">
+    <div class="container">
+        <p class="main">PRODUCTS</p>
+
+        <div class="switch">
+            <p class="first">Home</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="select">Products</p>
+        </div>
+    </div>
+</section>
+
+<section class="two">
+    <div class="container">
+        <div class="row acdgen">
+            <div class="col-3 filt">
+                <p class="title">COLLECTIONS</p>
+                <ul class="aparts">
+                    <li class="but firstapart" data-id="1">Family wine (6)</li>
+                    <li class="but apart" data-id="2">Luxury wine (6)</li>
+                    <li class="but apart" data-id="3">Party wine (6)</li>
+                    <li class="but apart" data-id="4">Red wine (6)</li>
+                    <li class="but apart" data-id="5">Rose wine (6)</li>
+                </ul>
+
+                <p class="title">AVAILABILITY</p>
+
+                <ul class="check">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                                   checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                In stock (2)
+                            </label>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+                            <label class="form-check-label disab" for="flexRadioDisabled">
+                                Out of stock (0)
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="title">Brand</p>
+                <ul class="brands">
+                    <li class="brand firstbrand" data-id="1">Girl Store</li>
+                    <li class="brand" data-id="2">Mens Store</li>
+                    <li class="brand" data-id="3">Sakura Store</li>
+                    <li class="brand" data-id="4">Wine Store</li>
+                    <li class="brand firstbrand" data-id="5">Wpbingo</li>
+                </ul>
+
+                <p class="title">PRICE</p>
+
+                <div class="wrapper">
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
+                    </div>
+                    <div class="price-input">
+                        <p class="price">Price :</p>
+                        <div class="field">
+                            <input type="number" class="input-min" value="0">
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="field">
+                            <input type="number" class="input-max" value="10000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9 prodsel">
+                <div class="english dropdown">
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Alphabetically, A-Z
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Featured</a></li>
+                        <li><a class="dropdown-item" href="#">Best selling</a></li>
+                        <li><a class="dropdown-item" href="#">Alphabetically, A-Z</a></li>
+                        <li><a class="dropdown-item" href="#">Alphabetically, Z-A</a></li>
+                        <li><a class="dropdown-item" href="#">Price, low to high</a></li>
+                        <li><a class="dropdown-item" href="#">Price, high to low</a></li>
+                        <li><a class="dropdown-item" href="#">Date, old to new</a></li>
+                        <li><a class="dropdown-item" href="#">Date, new to old</a></li>
+                    </ul>
+                </div>
+
+                <div class="all active" data-id="1">
+
+                    <div class="prodone">
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-21_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <p class="percent">- 20%</p>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="timer">
+                                    <div class="times">
+                                        <span class="days"></span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="hours"> </span>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="minutes"></span>
+                                        <p>Mins</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="seconds"></span>
+                                        <p>Secs</p>
+                                    </div>
+                                </div>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title1">WHITE WINE</a>
+
+                                <div class="diswithpri">
+                                    <P class="discount">$150.00</P>
+                                    <p class="pricewith">$120.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-11_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="timer">
+                                    <div class="times">
+                                        <span class="days"></span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="hours"> </span>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="minutes"></span>
+                                        <p>Mins</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="seconds"></span>
+                                        <p>Secs</p>
+                                    </div>
+                                </div>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title3">PROSECCO SPUMANTE</a>
+                                <p class="price">$200.00</p>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-6_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <p class="percent">- 40%</p>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title4">CHARDONNAY</a>
+
+                                <div class="diswithpri">
+                                    <P class="discount">$250.00</P>
+                                    <p class="pricewith">$150.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-7_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="timer">
+                                    <div class="times">
+                                        <span class="days"></span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="hours"> </span>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="minutes"></span>
+                                        <p>Mins</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="seconds"></span>
+                                        <p>Secs</p>
+                                    </div>
+                                </div>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title">SUSPENDISSE URNA</a>
+                                <p class="price">$230.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prodtwo">
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-22_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <p class="percent">- 40%</p>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title4">CHARDONNAY</a>
+
+                                <div class="diswithpri">
+                                    <P class="discount">$250.00</P>
+                                    <p class="pricewith">$150.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-1_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <p class="percent">- 16%</p>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="timer">
+                                    <div class="times">
+                                        <span class="days"></span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="hours"> </span>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="minutes"></span>
+                                        <p>Mins</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="seconds"></span>
+                                        <p>Secs</p>
+                                    </div>
+                                </div>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title5">CABERNET SAUVIGNON</a>
+
+                                <div class="diswithpri">
+                                    <P class="discount">$300.00</P>
+                                    <p class="pricewith">$250.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all d-none" data-id="2">
+                    <div class="prodtwo">
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-22_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <p class="percent">- 40%</p>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title4">CHARDONNAY</a>
+
+                                <div class="diswithpri">
+                                    <P class="discount">$250.00</P>
+                                    <p class="pricewith">$150.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-1_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <p class="percent">- 16%</p>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="timer">
+                                    <div class="times">
+                                        <span class="days"></span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="hours"> </span>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="minutes"></span>
+                                        <p>Mins</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="seconds"></span>
+                                        <p>Secs</p>
+                                    </div>
+                                </div>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title5">CABERNET SAUVIGNON</a>
+
+                                <div class="diswithpri">
+                                    <P class="discount">$300.00</P>
+                                    <p class="pricewith">$250.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all d-none" data-id="3">
+                    <div class="prodtwo">
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-1_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <p class="percent">- 16%</p>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="timer">
+                                    <div class="times">
+                                        <span class="days"></span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="hours"> </span>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="minutes"></span>
+                                        <p>Mins</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="seconds"></span>
+                                        <p>Secs</p>
+                                    </div>
+                                </div>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title5">CABERNET SAUVIGNON</a>
+
+                                <div class="diswithpri">
+                                    <P class="discount">$300.00</P>
+                                    <p class="pricewith">$250.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all d-none" data-id="4">
+                    <div class="prodone">
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-6_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <p class="percent">- 40%</p>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title4">CHARDONNAY</a>
+
+                                <div class="diswithpri">
+                                    <P class="discount">$250.00</P>
+                                    <p class="pricewith">$150.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all d-none" data-id="5">
+                    <div class="prodone">
+                        <div class="card" style="width: 18rem;">
+                            <div class="photo">
+                                <a href="product.html"><img src="assets/img/Image-7_360x.webp" class="card-img-top" alt="..."></a>
+
+                                <i class="fa-regular fa-heart heart d-none"></i>
+                                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                                <div class="timer">
+                                    <div class="times">
+                                        <span class="days"></span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="hours"> </span>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="minutes"></span>
+                                        <p>Mins</p>
+                                    </div>
+                                    <div class="timesec">
+                                        <span class="seconds"></span>
+                                        <p>Secs</p>
+                                    </div>
+                                </div>
+
+                                <div class="add">
+                                    <p>ADD TO CART</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="firfloor">
+                                    <div class="stars6">
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                        <i class="fa-regular fa-star st"></i>
+                                    </div>
+
+                                    <p class="reviews">No reviews</p>
+                                </div>
+
+                                <a href="product.html" class="title">SUSPENDISSE URNA</a>
+                                <p class="price">$230.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

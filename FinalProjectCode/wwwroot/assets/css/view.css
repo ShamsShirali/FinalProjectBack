@@ -1,0 +1,179 @@
+.container {
+  max-width: 1080px !important;
+}
+
+.one {
+  margin-top: 20px;
+}
+.one .main {
+  font-size: 40px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  font-family: Libre Baskerville, serif;
+  color: #000;
+  line-height: 1.2;
+}
+
+.two .title {
+  border-bottom: 1px solid #dcdcdc;
+}
+.two .title p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Libre Baskerville, serif;
+  font-style: normal;
+  line-height: 1.5;
+}
+.two .prod {
+  margin-top: 20px;
+}
+.two .prod .pict {
+  display: flex;
+}
+.two .prod .pict img {
+  width: 130px;
+  height: 160px;
+}
+.two .prod .pict .name {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.two .prod .pict .name .nm {
+  font-size: 14px;
+  height: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.two .prod .pict .name .nm:hover {
+  color: #bd9855;
+}
+.two .prod .pict .name .per {
+  padding-left: 7px;
+  padding-top: 7px;
+  font-weight: 400;
+}
+.two .prod .counts {
+  margin-top: 40px;
+}
+.two .prod .counts .count {
+  display: flex;
+  border: 1px solid rgb(200, 199, 199);
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+}
+.two .prod .counts .count h2 {
+  color: #000;
+  margin: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.two .prod .counts .count button:nth-child(1) {
+  width: 28px;
+  height: 38px;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  border-right: 1px solid rgb(200, 199, 199);
+  color: rgb(0, 0, 0);
+}
+.two .prod .counts .count button:nth-child(1):hover {
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  filter: brightness(1.1);
+  transition: all 0.5s;
+}
+.two .prod .counts .count button:nth-child(3) {
+  width: 28px;
+  height: 38px;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  border-left: 1px solid rgb(200, 199, 199);
+  color: #000;
+  border-radius: 2px;
+  filter: brightness(1.1);
+  transition: all 0.5s;
+}
+.two .prod .counts .count button:nth-child(3):hover {
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+}
+.two .prod .counts a {
+  color: #666;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.two .prod .counts a:hover {
+  color: red;
+  text-decoration: none;
+}
+.two .prod .total {
+  padding-left: 10px;
+  padding-top: 60px;
+  font-weight: 500;
+}
+
+.three .stotal {
+  border-bottom: 1px solid #c4c3c3;
+}
+.three .stotal .subt {
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  padding-top: 5px;
+}
+.three .stotal .totalpr {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  padding-top: 5px;
+}
+.three .radio {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.three .radio .agree {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+}
+.three .radio .term {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 3px;
+}
+.three .radio .term:hover {
+  color: #bd9855;
+}
+.three .checkbt {
+  border: none;
+  cursor: pointer;
+  width: 220px;
+  height: 45px;
+  background-color: #000;
+  margin-top: 17px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: 420px;
+}
+.three .checkbt .chc {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+}
+.three .checkbt:hover {
+  background-color: #bd9855;
+}
+
+footer {
+  margin-top: 30px !important;
+}/*# sourceMappingURL=view.css.map */

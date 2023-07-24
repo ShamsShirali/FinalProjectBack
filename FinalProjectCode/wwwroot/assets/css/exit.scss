@@ -1,0 +1,23 @@
+.exit {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+
+    .error {
+        display: flex;
+        margin-left: 450px;
+
+        i {
+            color: rgb(225, 166, 57);
+            font-size: 35px;
+            margin-top: 358px;
+        }
+
+        p {
+            font-size: 35px;
+            color: white;
+            padding-left: 20px;
+            margin-top: 350px;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.container {
+  max-width: 1000px !important;
+}
+
+.one {
+  margin-top: 20px;
+}
+.one p {
+  font-size: 50px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+}
+
+.two .about {
+  width: 400px;
+  position: relative;
+}
+.two .about .reset {
+  font-size: 32px;
+  color: #000;
+  font-family: Libre Baskerville, serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.two .about .sendtext {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.two .about input {
+  width: 445px;
+  background-color: rgba(255, 255, 255, 0.7019607843);
+  line-height: 50px;
+  height: 44px;
+  padding: 0 20px;
+  border: 1px solid #e5e5e5;
+  line-height: 50px;
+  margin-top: 10px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+.two .about .both {
+  display: flex;
+}
+.two .about .both .submit {
+  width: 222px;
+  height: 45px;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  margin-top: 26px;
+  padding-left: 80px;
+  padding-top: 8px;
+}
+.two .about .both .submit a {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+}
+.two .about .both .submit:hover {
+  background-color: #bd9855;
+}
+.two .about .both .cancel {
+  padding-top: 33px;
+  padding-left: 90px;
+  color: #000;
+}
+.two .about .both .cancel:hover {
+  color: #bd9855;
+}
+.two .new {
+  margin-left: 75px;
+}
+.two .new .custom {
+  font-size: 35px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+}
+.two .new .inthis {
+  font-size: 18px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.two .new .regis {
+  width: 127px;
+  height: 45px;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  padding-left: 28px;
+  padding-top: 8px;
+}
+.two .new .regis a {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+.two .new .regis:hover {
+  opacity: 0.8;
+  background-color: #bd9855;
+}
+
+footer {
+  margin-top: 30px !important;
+}/*# sourceMappingURL=forgot.css.map */

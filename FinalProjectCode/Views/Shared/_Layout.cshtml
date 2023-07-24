@@ -1,0 +1,396 @@
+﻿﻿@inject ILayoutService layoutService
+@model HomeVM
+
+@{
+    IEnumerable<Setting> settings =await layoutService.GetSetting();
+    //IEnumerable<Category> categories = await layoutService.GetCategories();
+    //IEnumerable<BasketVM> basketVMs = await layoutService.GetBasket();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="~/assets/css/aos.css">
+
+    <!-- icon link fa -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap link -->
+
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" />
+
+    <!-- bootstrap icon link -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
+          integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- slick link -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="~/assets/slick/slick-theme.css">  -->
+    <link rel="stylesheet" href="~/assets/slick/slick.css">
+    <link rel="stylesheet" href="~/assets/slick/slick-theme.less">
+
+    <!-- our css link-->
+    <link rel="stylesheet" href="~/assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <div class="header sticky-top">
+        <nav>
+            <div class="firsth">
+                <div class="all">
+                    <ul class="icons m-0">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+
+                        <li class="icon">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+
+                        <li class="icon">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+
+                        <li class="icon">
+                            <a href="#">
+                                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="free m-0">@Html.Raw(settings.FirstOrDefault(s=>s.Key=="Slogan").Value)</p>
+
+                    <div class="selectvalue d-flex">
+                        <div class="azn dropdown">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                AZN
+                                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li class="firstazn"><a class="dropdown-item" href="#">AZN</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="flag">
+                                    <img src="~/assets/img/614JLqsvMoL._AC_UF894,1000_QL80_.jpg" alt="">
+                                    <a class="dropdown-item" href="#">EUR</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="flag">
+                                    <img src="~/assets/img/American-Flag-Logo-PNG-Picture.png" alt="">
+                                    <a class="dropdown-item" href="#">USD</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="flag">
+                                    <img src="~/assets/img/20190917170935!Flag_of_the_United_Kingdom.svg" alt="">
+                                    <a class="dropdown-item" href="#">GBP</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="english dropdown">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                ENGLISH
+                                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">العربية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondh">
+                <div class="searchic">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <button type="button" class="find" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        FIND
+                        US
+                    </button>
+                </div>
+
+                <ul class="firstsel selec">
+                    <li><a asp-controller="Home" asp-action="Index" class="home" data-id="1">HOME</a></li>
+                    <li class="other"><a asp-controller="Shop" asp-action="Index" data-id="2">SHOP</a></li>
+                </ul>
+
+                <a href="index.html"><img src="~/assets/img/logo-black.png" alt=""></a>
+
+                <ul class="secondsel selec">
+                    <li><a asp-controller="Blog" asp-action="Index" data-id="3">BLOG</a></li>
+                    <li class="other"><a  asp-controller="About" asp-action="Index" data-id="4">ABOUT US</a></li>
+                </ul>
+
+                <ul class="main">
+                    <li>
+                        <a href="sign.html" class="user"><i class="fa-regular fa-user"></i></a>
+                    </li>
+
+                    <li class="heart">
+                        <a href="wishlist.html">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <sup>0</sup>
+                    </li>
+
+                    <li class="basket">
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a>
+                        <sup>0</sup>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+  @RenderBody()
+
+    <footer>
+        <p class="line"></p>
+
+        <div class="container">
+            <div class="firstpart">
+                <p class="title">LET’S STAY IN TOUCH</p>
+                <p class="subtitle">We’ll shout you $10 off your first order.</p>
+
+                <div class="but">
+                    <input type="email" name="" id="" placeholder="YOUR EMAIL">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="secondpart">
+            <div class="onep">
+                <p class="location">VIA SAN MICHELETTO, 337022 FUMANE VERONA, ITALY</p>
+
+                <p class="phone">PHONE</p>
+                <p class="number">+19 045 3234498 +419 323 48868</p>
+
+                <p class="email">EMAIL</p>
+                <p class="our">RUM.MEN@EXAMPLE.COM</p>
+            </div>
+
+            <img src="~/assets/img/istockphoto-913972948-612x612.jpg" alt="">
+
+            <div class="two">
+                <p class="welcome">WE WELCOME EVERYONE 24/7</p>
+
+                <p class="open">OPEN HOURS</p>
+                <p class="week">MONDAY – SATURDAY: 8:00 AM – 4:00PM</p>
+                <p class="close">SUNDAY: CLOSE</p>
+
+                <ul class="icon m-0">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li class="ico">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li class="ico">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li class="ico">
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="thirdpart">
+            <div class="we">
+                <p class="year">© RUM.MEN 2023</p>
+                <p class="privacy">PRIVACY & COOKIE POLICY</p>
+            </div>
+
+            <img src="https://mafoil-wine.myshopify.com/cdn/shop/files/payment.png?v=1684309968" alt="">
+        </div>
+    </footer>
+
+    <!-- start modal -->
+    <div id="general-start" class="d-none">
+        <div class="start" id="start">
+            <p class="slogan">You can't buy happiness,but you can buy wine</p>
+            <div class="line"></div>
+            <p class="question">Are you over 18 years of age?</p>
+            <p class="notification">
+                The content of this website cannot be shown unless you verify your age.Please verify
+                that you are over 18 to see this page
+            </p>
+
+            <div class="button">
+                <div class="over">
+                    <a href="#">I'M OVER 18</a>
+                </div>
+
+                <div class="exit">
+                    <a href="exit.html">EXIT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modl">
+            <div class="modal-content mdl">
+                <div class="inmodal">
+                    <input type="text" id="search" required="required" placeholder="Search..." />
+
+                    <button type="button" class="btn-close iks" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- basket mosal -->
+    <div class="bskm">
+        <div class="prd">
+            <div class="prdone">
+                <img src="~/assets/img/Image-21_360x.webp" alt="">
+
+                <div class="name">
+                    <p class="nm">WHITE WINE</p>
+
+                    <div class="counts">
+                        <div class="count">
+                            <button onclick="increment()">-</button>
+                            <h2 id="countings"></h2>
+                            <button onclick="decrement()">+</button>
+                        </div>
+
+                        <p class="per">$120.00</p>
+                    </div>
+
+                    <a href="#">REMOVE</a>
+                </div>
+            </div>
+
+            <div class="prdone">
+                <img src="~/assets/img/Image-6_360x.webp" alt="">
+
+                <div class="name">
+                    <p class="nm">CHARDONNAY</p>
+
+                    <div class="counts">
+                        <div class="count">
+                            <button onclick="increment()">-</button>
+                            <h2 id="countingtwo"></h2>
+                            <button onclick="decrement()">+</button>
+                        </div>
+
+                        <p class="per">$150.00</p>
+                    </div>
+
+                    <a href="#">REMOVE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="check">
+            <div class="adgif">
+                <div class="gift">&#x1F381</div>
+                <p class="wrap">Add gift wrap <span>Only</span></p>
+            </div>
+
+            <div class="total">
+                <p class="subt">SUBTOTAL :</p>
+                <p class="totalpr">$270.00</p>
+            </div>
+
+            <div class="radio">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                </div>
+
+                <p class="agree">I agree with the</p>
+                <a class="term" href="#">terms and conditions</a>
+            </div>
+
+            <div class="checkbt">
+                <a href="check.html" class="chc">CHECK OUT</a>
+            </div>
+
+            <div class="view">
+                <a href="view.html">VIEW CART</a>
+            </div>
+        </div>
+    </div>
+
+    <button id="myBtn"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <!-- aos animation js -->
+    <script src="~/assets/js/aos.js"></script>
+
+    <!-- bootstrap js link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
+
+    <!-- jquery link -->
+
+    <script src="~/assets/js/jquery-3.6.4.min.js"></script>
+
+    <!-- slick link -->
+
+    <script src="~/assets/slick/slick.min.js"></script>
+
+    <!-- aos animation js -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- our js link -->
+    <script src="~/assets/js/script.js"></script>
+</body>
+
+</html>
