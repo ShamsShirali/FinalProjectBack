@@ -1,6 +1,7 @@
 ﻿using FinalProjectCode.DataAccessLayer;
 using FinalProjectCode.Interfaces;
 using FinalProjectCode.Models;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
 namespace FinalProjectCode.Services
@@ -44,16 +45,16 @@ namespace FinalProjectCode.Services
         //    return basketVMs;
         //}
 
-        //public async Task<IEnumerable<Category>> GetCategories()
-        //{
-        //    return await _context.Categories.Include(c => c.Children.Where(c => c.IsDeleted == false)).Where(c => c.IsDeleted == false && c.IsMain).ToListAsync();
-        //}
+        public async Task<IEnumerable<Category>> GetCategories()
+        {
+            return await _context.Categories.Include(c => c.Children.Where(c => c.IsDeleted == false)).Where(c => c.IsDeleted == false && c.IsMain).ToListAsync();
+        }
 
-        //public async Task<List<Setting>> GetSetting()
-        //{
-        //    List<Setting> settings = await _context.Settings.ToListAsync();
+        public async Task<List<Setting>> GetSetting()
+        {
+            List<Setting> settings = await _context.Settings.ToListAsync();
 
-        //    return settings;
-        //}
+            return settings;
+        }
     }
 }

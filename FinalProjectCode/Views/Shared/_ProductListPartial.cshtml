@@ -1,0 +1,66 @@
+﻿@model  
+
+@foreach (Product product in Model)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="photo">
+            <a href="product.html">
+                <img src="~/assets/img/@product.MainImage"
+                     class="card-img-top" alt="...">
+            </a>
+
+            <i class="fa-regular fa-heart heart d-none"></i>
+            <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+            <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+            <div class="timer">
+                <div class="times">
+                    <span class="days"></span>
+                    <p>Days</p>
+                </div>
+                <div class="timesec">
+                    <span class="hours"> </span>
+                    <p>Hours</p>
+                </div>
+                <div class="timesec">
+                    <span class="minutes"></span>
+                    <p>Mins</p>
+                </div>
+                <div class="timesec">
+                    <span class="seconds"></span>
+                    <p>Secs</p>
+                </div>
+            </div>
+
+            <div class="add" asp-action="addbasket" asp-controller="basket" asp-route-id="@product.Id">
+                <p>ADD TO CART</p>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="firfloor">
+                <div class="stars6">
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                </div>
+
+                <p class="reviews">No reviews</p>
+            </div>
+            @if (product.DiscountedPrice > 0)
+            {
+                <div class="diswithpri">
+                    <P class="discount">$@product.DiscountedPrice</P>
+                    <p class="pricewith">$@product.Price</p>
+                </div>
+            }
+            else
+            {
+                <p class="price">$@product.Price</p>
+            }
+
+            <a href="product.html" class="title">@product.Title</a>
+        </div>
+    </div>
+}

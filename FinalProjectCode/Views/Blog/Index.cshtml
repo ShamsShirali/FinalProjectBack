@@ -1,0 +1,398 @@
+﻿﻿
+@{
+    ViewData["Title"] = "Index";
+    int count = 0;
+}
+
+<section class="one">
+    <div class="container">
+        <p class="main">BLOGS</p>
+
+        <div class="switch">
+            <p class="first">Home</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="select">Blogs</p>
+        </div>
+    </div>
+</section>
+
+<section class="two">
+    <div class="container">
+        <div class="row">
+            <div class="filt col-3">
+                <form action="#">
+                    <label for="search" class="search">
+                        <input id="search" class="me-2" type="search" placeholder="Search blog..."
+                               aria-label="Search">
+                    </label>
+
+                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                </form>
+
+                <p class="namefilt">CATEGORIES</p>
+
+                <ul class="aparts">
+                       @foreach (Category category in Model)
+                {
+                        <li class="but @((count==0) ? "firstapart" : "apart")" data-id="@(count++)">@category.Name</li>
+
+                }
+                </ul>
+
+                <p class="postfilt">RELATED POSTS</p>
+
+                <div class="inblg active" data-id="1">
+                    <div class="inbl">
+                        <img src="~/assets/img/Blog3_1296x.webp" alt="">
+
+                        <div class="in">
+                            <a class="new" href="blog.html">NEWS</a>
+                            <a class="title" href="blog-detail">Fresh Startup Ideas For Your Winery Business Ideas</a>
+                        </div>
+                    </div>
+
+                    <div class="inbl oth">
+                        <img src="~/assets/img/Blog1_1296x.webp" alt="">
+
+                        <div class="in">
+                            <a class="new" href="blog.html">NEWS</a>
+                            <a class="title" href="blog-detail">Wine With Mexican Food: Starting With The Basics</a>
+                        </div>
+                    </div>
+
+                    <div class="inbl oth">
+                        <img src="~/assets/img/Blog2.webp" alt="">
+
+                        <div class="in">
+                            <a class="new" href="blog.html">NEWS</a>
+                            <a class="title" href="blog-detail">Silverado Trail: The Serene Side Of Napa Valley</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inblg d-none" data-id="2">
+                    <div class="inbl">
+                        <img src="~/assets/img/Blog6_1296x.webp" alt="">
+
+                        <div class="in">
+                            <a class="new" href="blog.html">WINE REGIONS</a>
+                            <a class="title" href="blog-detail">Duis vehicula aliquam vestibulum</a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="postfilt">TAGS</p>
+
+                <ul class="tags">
+                    <li class="tg" data-id="1">Hot</li>
+                    <li class="tg" data-id="2">New</li>
+                </ul>
+            </div>
+
+            <div class="blg col-9 active" data-id="1">
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog3_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">FRESH STARTUP IDEAS FOR YOUR WINERY BUSINESS IDEAS</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog1_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">WINE WITH MEXICAN FOOD: STARTING WITH THE BASICS</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog2.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">SILVERADO TRAIL: THE SERENE SIDE OF NAPA VALLEY</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blg col-9 d-none" data-id="2">
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog6_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">WINE REGIONS</a>
+
+                    <a class="title" href="blog-detail.html">DUIS VEHICULA ALIQUAM VESTIBULUM</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blg col-9 d-none" data-id="3">
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog3_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">FRESH STARTUP IDEAS FOR YOUR WINERY BUSINESS IDEAS</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero
+                        pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog1_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">WINE WITH MEXICAN FOOD: STARTING WITH THE BASICS</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero
+                        pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog2.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">SILVERADO TRAIL: THE SERENE SIDE OF NAPA VALLEY</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero
+                        pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blg col-9 d-none" data-id="4">
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog6_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">WINE REGIONS</a>
+
+                    <a class="title" href="blog-detail.html">DUIS VEHICULA ALIQUAM VESTIBULUM</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero
+                        pharetra. Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit
+                        amet ante egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blg col-9 d-none" data-id="5">
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog3_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">FRESH STARTUP IDEAS FOR YOUR WINERY BUSINESS IDEAS</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero
+                        pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog1_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">WINE WITH MEXICAN FOOD: STARTING WITH THE BASICS</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero
+                        pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog2.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">NEWS</a>
+
+                    <a class="title" href="blog-detail.html">SILVERADO TRAIL: THE SERENE SIDE OF NAPA VALLEY</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero
+                        pharetra.
+                        Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit amet ante
+                        egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blg col-9 d-none" data-id="6">
+                <div class="new">
+                    <div class="photo">
+                        <a href="blog-detail.html"><img src="~/assets/img/Blog6_1296x.webp" alt=""></a>
+
+                        <div class="date">
+                            <p class="num">12</p>
+                            <p class="month">MAY</p>
+                        </div>
+                    </div>
+
+                    <a class="about" href="blog.html">WINE REGIONS</a>
+
+                    <a class="title" href="blog-detail.html">DUIS VEHICULA ALIQUAM VESTIBULUM</a>
+                    <p class="description">
+                        Quisque elementum nibh at dolor pellentesque, a eleifend libero
+                        pharetra. Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel enim. Nam sit
+                        amet ante egestas, gravida tellus vitae, semper eros....
+                    </p>
+
+                    <div class="blog">
+                        <a href="blog-detail.html">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

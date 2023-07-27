@@ -1,5 +1,8 @@
 ﻿using FinalProjectCode.DataAccessLayer;
+using FinalProjectCode.Models;
+using FinalProjectCode.ViewModels.HomeVMs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinalProjectCode.Controllers
 {
@@ -12,17 +15,17 @@ namespace FinalProjectCode.Controllers
             _context = context;
         }
 
-        //public async Task<IActionResult> Index()
-        //{
-        //    HomeVM homeVM = new HomeVM
-        //    {
-        //        Categories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain).ToListAsync(),
-        //        NewArrivals = await _context.Products.Where(p => !p.IsDeleted && p.IsNewArrivals).Include(m => m.Author).ToListAsync(),
-        //        MostViewProducts = await _context.Products.Where(p => !p.IsDeleted && p.IsMostViewProducts).Include(m => m.Author).ToListAsync(),
-        //        FeaturedProducts = await _context.Products.Where(p => !p.IsDeleted && p.IsFeaturedProducts).Include(m => m.Author).ToListAsync()
-        //    };
+        public async Task<IActionResult> Index()
+        {
+            IEnumerable<Slider> sliders = await _context.Sliders.ToListAsync();
+            IEnumerable<Product> products= await _context.Products.Include(m=>m.ProductImages).Include(m=>m.Category).Include(m=>m.Brand).ToListAsync();
 
-        //    return View(homeVM);
-        //}
+            HomeVM model = new()
+            {
+                Sliders = sliders,
+                Products = products
+            };
+            return View(model);
+        }
     }
 }

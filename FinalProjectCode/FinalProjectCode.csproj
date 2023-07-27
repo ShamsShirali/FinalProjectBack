@@ -2,9 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\_ProductListPartial.cshtml" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.20" />
@@ -14,6 +18,43 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\_ProductListPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\_ProductListPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\css\about.css.map" />
+    <None Include="wwwroot\assets\css\about.scss" />
+    <None Include="wwwroot\assets\css\blog-detail.css.map" />
+    <None Include="wwwroot\assets\css\blog-detail.scss" />
+    <None Include="wwwroot\assets\css\blog.css.map" />
+    <None Include="wwwroot\assets\css\blog.scss" />
+    <None Include="wwwroot\assets\css\check.css.map" />
+    <None Include="wwwroot\assets\css\check.scss" />
+    <None Include="wwwroot\assets\css\exit.css.map" />
+    <None Include="wwwroot\assets\css\exit.scss" />
+    <None Include="wwwroot\assets\css\forgot.css.map" />
+    <None Include="wwwroot\assets\css\forgot.scss" />
+    <None Include="wwwroot\assets\css\main.css.map" />
+    <None Include="wwwroot\assets\css\main.scss" />
+    <None Include="wwwroot\assets\css\product.css.map" />
+    <None Include="wwwroot\assets\css\product.scss" />
+    <None Include="wwwroot\assets\css\register.css.map" />
+    <None Include="wwwroot\assets\css\register.scss" />
+    <None Include="wwwroot\assets\css\shop.css.map" />
+    <None Include="wwwroot\assets\css\shop.scss" />
+    <None Include="wwwroot\assets\css\sign.css.map" />
+    <None Include="wwwroot\assets\css\sign.scss" />
+    <None Include="wwwroot\assets\css\view.css.map" />
+    <None Include="wwwroot\assets\css\view.scss" />
+    <None Include="wwwroot\assets\css\wishlist.css.map" />
+    <None Include="wwwroot\assets\css\wishlist.scss" />
   </ItemGroup>
 
 </Project>

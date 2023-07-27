@@ -26,8 +26,6 @@ namespace FinalProjectCode.Models
         [StringLength(255)]
         public string? MainImage { get; set; }
 
-        public int? AuthorId { get; set; }
-        public Author? Author { get; set; }
         public int? BrandId { get; set; }
         public Brand? Brand { get; set; }
         public int? CategoryId { get; set; }

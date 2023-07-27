@@ -1,9 +1,8 @@
-﻿﻿@inject ILayoutService layoutService
-@model HomeVM
+﻿@inject ILayoutService layoutService
+@*@model HomeVM*@
 
 @{
     IEnumerable<Setting> settings =await layoutService.GetSetting();
-    //IEnumerable<Category> categories = await layoutService.GetCategories();
     //IEnumerable<BasketVM> basketVMs = await layoutService.GetBasket();
 }
 
@@ -136,22 +135,22 @@
                 <div class="searchic">
                     <i class="fa-solid fa-magnifying-glass"></i>
 
-                    <button type="button" class="find" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="find searchBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         FIND
                         US
                     </button>
                 </div>
 
                 <ul class="firstsel selec">
-                    <li><a asp-controller="Home" asp-action="Index" class="home" data-id="1">HOME</a></li>
-                    <li class="other"><a asp-controller="Shop" asp-action="Index" data-id="2">SHOP</a></li>
+                    <li class="Home"><a asp-controller="Home" asp-action="Index" class="home" data-id="1">HOME</a></li>
+                    <li class="Shop other"><a asp-controller="Shop" asp-action="Index" data-id="2">SHOP</a></li>
                 </ul>
 
                 <a href="index.html"><img src="~/assets/img/logo-black.png" alt=""></a>
 
                 <ul class="secondsel selec">
-                    <li><a asp-controller="Blog" asp-action="Index" data-id="3">BLOG</a></li>
-                    <li class="other"><a  asp-controller="About" asp-action="Index" data-id="4">ABOUT US</a></li>
+                    <li class="Blog"><a asp-controller="Blog" asp-action="Index" data-id="3">BLOG</a></li>
+                    <li class="About other"><a  asp-controller="About" asp-action="Index" data-id="4">ABOUT US</a></li>
                 </ul>
 
                 <ul class="main">
@@ -280,10 +279,12 @@
         <div class="modal-dialog modl">
             <div class="modal-content mdl">
                 <div class="inmodal">
-                    <input type="text" id="search" required="required" placeholder="Search..." />
+                    <input type="text" class="searchInput" id="search" required="required" placeholder="Search..." />
 
                     <button type="button" class="btn-close iks" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <ul class="searchList" style="position:absolute; z-index:999; background:white; padding:30px; max-height:400px; overflow:scroll;">
+                </ul>
             </div>
         </div>
     </div>
@@ -369,12 +370,7 @@
 
     <!-- bootstrap js link -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <!-- jquery link -->
 
@@ -391,6 +387,7 @@
 
     <!-- our js link -->
     <script src="~/assets/js/script.js"></script>
+    <script src="~/assets/js/custom.js"></script>
 </body>
 
 </html>

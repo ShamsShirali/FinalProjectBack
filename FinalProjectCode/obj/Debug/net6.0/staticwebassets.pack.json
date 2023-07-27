@@ -1,0 +1,409 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\about.css",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\about.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\about.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\about.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\aos.css",
+      "PackagePath": "staticwebassets\\assets\\css\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\blog-detail.css",
+      "PackagePath": "staticwebassets\\assets\\css\\blog-detail.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\blog-detail.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\blog-detail.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\blog-detail.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\blog-detail.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\blog.css",
+      "PackagePath": "staticwebassets\\assets\\css\\blog.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\blog.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\blog.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\blog.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\check.css",
+      "PackagePath": "staticwebassets\\assets\\css\\check.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\check.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\check.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\check.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\check.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\exit.css",
+      "PackagePath": "staticwebassets\\assets\\css\\exit.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\exit.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\exit.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\exit.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\exit.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\forgot.css",
+      "PackagePath": "staticwebassets\\assets\\css\\forgot.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\forgot.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\forgot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\forgot.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\forgot.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\main.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\product.css",
+      "PackagePath": "staticwebassets\\assets\\css\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\product.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\product.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\product.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\product.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\register.css",
+      "PackagePath": "staticwebassets\\assets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\register.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\register.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\register.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\register.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\shop.css",
+      "PackagePath": "staticwebassets\\assets\\css\\shop.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\shop.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\shop.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\shop.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\shop.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\sign.css",
+      "PackagePath": "staticwebassets\\assets\\css\\sign.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\sign.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\sign.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\sign.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\sign.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\view.css",
+      "PackagePath": "staticwebassets\\assets\\css\\view.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\view.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\view.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\view.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\view.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\wishlist.css",
+      "PackagePath": "staticwebassets\\assets\\css\\wishlist.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\wishlist.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\wishlist.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\css\\wishlist.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\wishlist.scss"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\177171346-bottle-with-wine-and-snacks.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\177171346-bottle-with-wine-and-snacks.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\20190917170935!Flag_of_the_United_Kingdom.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\20190917170935!Flag_of_the_United_Kingdom.svg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\3057c28b1250e9c.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\3057c28b1250e9c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\3184784-200.png",
+      "PackagePath": "staticwebassets\\assets\\img\\3184784-200.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\3302342.png",
+      "PackagePath": "staticwebassets\\assets\\img\\3302342.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\5_malt_stouted_mash_woodford_reserve.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\5_malt_stouted_mash_woodford_reserve.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\614JLqsvMoL._AC_UF894,1000_QL80_.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\614JLqsvMoL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\American-Flag-Logo-PNG-Picture.png",
+      "PackagePath": "staticwebassets\\assets\\img\\American-Flag-Logo-PNG-Picture.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Blog1_1296x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Blog1_1296x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Blog2.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Blog2.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Blog3_1296x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Blog3_1296x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Blog6_1296x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Blog6_1296x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\DEC22-6107.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\DEC22-6107.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-11_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-11_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-12_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-12_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-16_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-16_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-17_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-17_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-1_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-1_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-21_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-21_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-22_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-22_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-23_2d90352f-3a17-4eb2-a477-d8380bbdb1d7_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-23_2d90352f-3a17-4eb2-a477-d8380bbdb1d7_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-24_30735f3b-058c-4e73-b648-8982fc9da790_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-24_30735f3b-058c-4e73-b648-8982fc9da790_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-2_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-2_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-6_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-6_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Image-7_360x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\Image-7_360x.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Screenshot (1).png",
+      "PackagePath": "staticwebassets\\assets\\img\\Screenshot (1).png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\Variable-Color.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Variable-Color.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\banner-2.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\banner-2.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\champagne-glasses-tinted-grey-glass-260nw-2131421827.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\champagne-glasses-tinted-grey-glass-260nw-2131421827.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\hand-holding-glaas-of-wine-illustration-png.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\hand-holding-glaas-of-wine-illustration-png.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\homepage-about-us.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\homepage-about-us.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\istockphoto-913972948-612x612.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\istockphoto-913972948-612x612.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\leaf-3-icon-16-256.png",
+      "PackagePath": "staticwebassets\\assets\\img\\leaf-3-icon-16-256.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\logo-black.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo-black.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\slider-1.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\slider-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\slider-2.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\slider-2.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\slider-3.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\slider-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\img\\woodfordreserve-baccart.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\woodfordreserve-baccart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\aos.js",
+      "PackagePath": "staticwebassets\\assets\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\blog-detail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\blog-detail.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\blog.js",
+      "PackagePath": "staticwebassets\\assets\\js\\blog.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\jquery-3.6.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.6.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\product.js",
+      "PackagePath": "staticwebassets\\assets\\js\\product.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\register.js",
+      "PackagePath": "staticwebassets\\assets\\js\\register.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\shop.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shop.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\sign.js",
+      "PackagePath": "staticwebassets\\assets\\js\\sign.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\wishlist.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wishlist.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\assets\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\slick\\slick-theme.less",
+      "PackagePath": "staticwebassets\\assets\\slick\\slick-theme.less"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\slick\\slick.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FinalProjectCode.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.FinalProjectCode.props",
+      "PackagePath": "build\\FinalProjectCode.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.FinalProjectCode.props",
+      "PackagePath": "buildMultiTargeting\\FinalProjectCode.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.FinalProjectCode.props",
+      "PackagePath": "buildTransitive\\FinalProjectCode.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

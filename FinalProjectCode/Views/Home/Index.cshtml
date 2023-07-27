@@ -1,18 +1,22 @@
-﻿@{
+﻿@model HomeVM
+
+@{
     ViewData["Title"] = "Index";
 }
 
 <section class="one">
     <div class="container">
         <div class="slider">
+             @foreach (Slider slider in Model.Sliders)
+    {
             <div class="col-12">
                 <div class="team">
-                    <img class="mainph" src="~/assets/img/slider-1.webp" alt="">
+                        <img class="mainph" src="~/assets/img/@slider.Image" alt="">
 
                     <div class="titleph1">
-                        <p class="subtitle">AS A MEMBER OF THE EXPERIENCE</p>
-                        <p class="firpart">ENHANCE YOUR EXPERIENCE</p>
-                        <p class="secpart">WITH EASE</p>
+                            <p class="subtitle">@slider.SubTitle</p>
+                        <p class="firpart">@slider.Title</p>
+                        <p class="secpart">@slider.TitleTwo</p>
 
                         <div class="shbtn">
                             <img class="handwine" src="~/assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
@@ -23,44 +27,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-12">
-                <div class="team">
-                    <img class="mainph" src="~/assets/img/slider-2.webp" alt="">
-
-                    <div class="titleph2">
-                        <p class="subtitle">UNIQUE WINE FLAVORS</p>
-                        <p class="firpart">CHOOSE THE PERFECT</p>
-                        <p class="secpart">GLASS FOR YOU</p>
-
-                        <div class="shbtn">
-                            <img class="handwine" src="~/assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
-                                 alt="">
-
-                            <a href="shop.html">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="team">
-                    <img class="mainph" src="~/assets/img/slider-3.webp" alt="">
-
-                    <div class="titleph3">
-                        <p class="subtitle">OFFER WHITE WINE</p>
-                        <p class="firpart">PERFECT FAMILY</p>
-                        <p class="secpart">PARTY</p>
-
-                        <div class="shbtn">
-                            <img class="handwine" src="~/assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
-                                 alt="">
-
-                            <a href="shop.html">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </section>
@@ -96,303 +63,7 @@
         <p class="rose">ROSE WINE</p>
 
         <div class="generalcart">
-            <div class="card" style="width: 18rem;">
-                <div class="photo">
-                    <a href="product.html">
-                        <img src="~/assets/img/Image-23_2d90352f-3a17-4eb2-a477-d8380bbdb1d7_360x.webp"
-                             class="card-img-top" alt="...">
-                    </a>
-
-                    <i class="fa-regular fa-heart heart d-none"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
-                    <i class="fa-solid fa-magnifying-glass glass d-none"></i>
-
-                    <div class="timer">
-                        <div class="times">
-                            <span class="days"></span>
-                            <p>Days</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="hours"> </span>
-                            <p>Hours</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="minutes"></span>
-                            <p>Mins</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="seconds"></span>
-                            <p>Secs</p>
-                        </div>
-                    </div>
-
-                    <div class="add">
-                        <p>ADD TO CART</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="firfloor">
-                        <div class="stars6">
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                        </div>
-
-                        <p class="reviews">No reviews</p>
-                    </div>
-
-                    <a href="product.html" class="title">SUSPENDISSE URNA</a>
-                    <p class="price">$230.00</p>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <div class="photo">
-                    <a href="product.html">
-                        <img src="~/assets/img/Image-21_360x.webp" class="card-img-top"
-                             alt="...">
-                    </a>
-
-                    <p class="percent">- 20%</p>
-
-                    <i class="fa-regular fa-heart heart d-none"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
-                    <i class="fa-solid fa-magnifying-glass glass d-none"></i>
-
-                    <div class="timer">
-                        <div class="times">
-                            <span class="days"></span>
-                            <p>Days</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="hours"> </span>
-                            <p>Hours</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="minutes"></span>
-                            <p>Mins</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="seconds"></span>
-                            <p>Secs</p>
-                        </div>
-                    </div>
-
-                    <div class="add">
-                        <p>ADD TO CART</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="firfloor">
-                        <div class="stars6">
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                        </div>
-
-                        <p class="reviews">No reviews</p>
-                    </div>
-
-                    <a href="product.html" class="title1">WHITE WINE</a>
-
-                    <div class="diswithpri">
-                        <P class="discount">$150.00</P>
-                        <p class="pricewith">$120.00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <div class="photo">
-                    <a href="product.html">
-                        <img src="~/assets/img/Image-16_360x.webp" class="card-img-top"
-                             alt="...">
-                    </a>
-
-                    <p class="percent">- 10%</p>
-
-                    <i class="fa-regular fa-heart heart d-none"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
-                    <i class="fa-solid fa-magnifying-glass glass d-none"></i>
-
-                    <div class="add">
-                        <p>ADD TO CART</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="firfloor">
-                        <div class="stars6">
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                        </div>
-
-                        <p class="reviews">No reviews</p>
-                    </div>
-
-                    <a href="product.html" class="title2">FAMILY SELECTION</a>
-
-                    <div class="diswithpri">
-                        <P class="discount">$280.00</P>
-                        <p class="pricewith">$250.00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <div class="photo">
-                    <a href="product.html">
-                        <img src="~/assets/img/Image-11_360x.webp" class="card-img-top"
-                             alt="...">
-                    </a>
-
-                    <i class="fa-regular fa-heart heart d-none"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
-                    <i class="fa-solid fa-magnifying-glass glass d-none"></i>
-
-                    <div class="timer">
-                        <div class="times">
-                            <span class="days"></span>
-                            <p>Days</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="hours"> </span>
-                            <p>Hours</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="minutes"></span>
-                            <p>Mins</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="seconds"></span>
-                            <p>Secs</p>
-                        </div>
-                    </div>
-
-                    <div class="add">
-                        <p>ADD TO CART</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="firfloor">
-                        <div class="stars6">
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                        </div>
-
-                        <p class="reviews">No reviews</p>
-                    </div>
-
-                    <a href="product.html" class="title3">PROSECCO SPUMANTE</a>
-                    <p class="price">$200.00</p>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <div class="photo">
-                    <a href="product.html">
-                        <img src="~/assets/img/Image-6_360x.webp" class="card-img-top"
-                             alt="...">
-                    </a>
-
-                    <p class="percent">- 40%</p>
-
-                    <i class="fa-regular fa-heart heart d-none"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
-                    <i class="fa-solid fa-magnifying-glass glass d-none"></i>
-
-                    <div class="add">
-                        <p>ADD TO CART</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="firfloor">
-                        <div class="stars6">
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                        </div>
-
-                        <p class="reviews">No reviews</p>
-                    </div>
-
-                    <a href="product.html" class="title4">CHARDONNAY</a>
-
-                    <div class="diswithpri">
-                        <P class="discount">$250.00</P>
-                        <p class="pricewith">$150.00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <div class="photo">
-                    <a href="product.html">
-                        <img src="~/assets/img/Image-1_360x.webp" class="card-img-top"
-                             alt="...">
-                    </a>
-
-                    <p class="percent">- 16%</p>
-
-                    <i class="fa-regular fa-heart heart d-none"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
-                    <i class="fa-solid fa-magnifying-glass glass d-none"></i>
-
-                    <div class="timer">
-                        <div class="times">
-                            <span class="days"></span>
-                            <p>Days</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="hours"> </span>
-                            <p>Hours</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="minutes"></span>
-                            <p>Mins</p>
-                        </div>
-                        <div class="timesec">
-                            <span class="seconds"></span>
-                            <p>Secs</p>
-                        </div>
-                    </div>
-
-                    <div class="add">
-                        <p>ADD TO CART</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="firfloor">
-                        <div class="stars6">
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                            <i class="fa-regular fa-star st"></i>
-                        </div>
-
-                        <p class="reviews">No reviews</p>
-                    </div>
-
-                    <a href="product.html" class="title5">CABERNET SAUVIGNON</a>
-
-                    <div class="diswithpri">
-                        <P class="discount">$300.00</P>
-                        <p class="pricewith">$250.00</p>
-                    </div>
-                </div>
-            </div>
+            @await Html.PartialAsync("_ProductListsPartial",Model.Products)
         </div>
     </div>
 </section>
