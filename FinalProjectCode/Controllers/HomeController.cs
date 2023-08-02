@@ -17,12 +17,10 @@ namespace FinalProjectCode.Controllers
 
         public async Task<IActionResult> Index()
         {
-            IEnumerable<Slider> sliders = await _context.Sliders.ToListAsync();
             IEnumerable<Product> products= await _context.Products.Include(m=>m.ProductImages).Include(m=>m.Category).Include(m=>m.Brand).ToListAsync();
 
             HomeVM model = new()
             {
-                Sliders = sliders,
                 Products = products
             };
             return View(model);

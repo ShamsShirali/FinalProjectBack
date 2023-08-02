@@ -4,33 +4,8 @@
     ViewData["Title"] = "Index";
 }
 
-<section class="one">
-    <div class="container">
-        <div class="slider">
-             @foreach (Slider slider in Model.Sliders)
-    {
-            <div class="col-12">
-                <div class="team">
-                        <img class="mainph" src="~/assets/img/@slider.Image" alt="">
-
-                    <div class="titleph1">
-                            <p class="subtitle">@slider.SubTitle</p>
-                        <p class="firpart">@slider.Title</p>
-                        <p class="secpart">@slider.TitleTwo</p>
-
-                        <div class="shbtn">
-                            <img class="handwine" src="~/assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
-                                 alt="">
-
-                            <a href="shop.html">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            }
-        </div>
-    </div>
-</section>
+<!--Slider-->
+@await Component.InvokeAsync("Slider")
 
 <section class="two">
     <div class="container">

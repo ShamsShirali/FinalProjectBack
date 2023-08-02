@@ -3,7 +3,7 @@
 
 @{
     IEnumerable<Setting> settings =await layoutService.GetSetting();
-    //IEnumerable<BasketVM> basketVMs = await layoutService.GetBasket();
+    IEnumerable<BasketVM> basketVMs = await layoutService.GetBasket();
 }
 
 <!DOCTYPE html>
@@ -37,7 +37,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="~/assets/slick/slick-theme.css">  -->
     <link rel="stylesheet" href="~/assets/slick/slick.css">
-    <link rel="stylesheet" href="~/assets/slick/slick-theme.less">
+    @*<link rel="stylesheet" href="~/assets/slick/slick-theme.less">*@
 
     <!-- our css link-->
     <link rel="stylesheet" href="~/assets/css/main.css">
@@ -165,12 +165,7 @@
                         <sup>0</sup>
                     </li>
 
-                    <li class="basket">
-                        <a href="#">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-                        <sup>0</sup>
-                    </li>
+                    @await Html.PartialAsync("_BasketPartial",basketVMs)
                 </ul>
             </div>
         </nav>
@@ -279,89 +274,18 @@
         <div class="modal-dialog modl">
             <div class="modal-content mdl">
                 <div class="inmodal">
-                    <input type="text" class="searchInput" id="search" required="required" placeholder="Search..." />
+                    <input type="text" id="search" class="searchInput" required="required" placeholder="Search..." />
 
                     <button type="button" class="btn-close iks" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <ul class="searchList" style="position:absolute; z-index:999; background:white; padding:30px; max-height:400px; overflow:scroll;">
-                </ul>
             </div>
+            <ul class="searchList" style="position:absolute; z-index:999; background:white; padding:20px; width:153px; max-height:400px; overflow:scroll;">
+            </ul>
         </div>
     </div>
 
-    <!-- basket mosal -->
-    <div class="bskm">
-        <div class="prd">
-            <div class="prdone">
-                <img src="~/assets/img/Image-21_360x.webp" alt="">
-
-                <div class="name">
-                    <p class="nm">WHITE WINE</p>
-
-                    <div class="counts">
-                        <div class="count">
-                            <button onclick="increment()">-</button>
-                            <h2 id="countings"></h2>
-                            <button onclick="decrement()">+</button>
-                        </div>
-
-                        <p class="per">$120.00</p>
-                    </div>
-
-                    <a href="#">REMOVE</a>
-                </div>
-            </div>
-
-            <div class="prdone">
-                <img src="~/assets/img/Image-6_360x.webp" alt="">
-
-                <div class="name">
-                    <p class="nm">CHARDONNAY</p>
-
-                    <div class="counts">
-                        <div class="count">
-                            <button onclick="increment()">-</button>
-                            <h2 id="countingtwo"></h2>
-                            <button onclick="decrement()">+</button>
-                        </div>
-
-                        <p class="per">$150.00</p>
-                    </div>
-
-                    <a href="#">REMOVE</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="check">
-            <div class="adgif">
-                <div class="gift">&#x1F381</div>
-                <p class="wrap">Add gift wrap <span>Only</span></p>
-            </div>
-
-            <div class="total">
-                <p class="subt">SUBTOTAL :</p>
-                <p class="totalpr">$270.00</p>
-            </div>
-
-            <div class="radio">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                </div>
-
-                <p class="agree">I agree with the</p>
-                <a class="term" href="#">terms and conditions</a>
-            </div>
-
-            <div class="checkbt">
-                <a href="check.html" class="chc">CHECK OUT</a>
-            </div>
-
-            <div class="view">
-                <a href="view.html">VIEW CART</a>
-            </div>
-        </div>
-    </div>
+    <!-- basket modal -->
+   
 
     <button id="myBtn"><i class="fa-solid fa-chevron-up"></i></button>
 

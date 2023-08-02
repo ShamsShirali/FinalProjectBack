@@ -389,6 +389,902 @@
       "PackagePath": "staticwebassets\\assets\\slick\\slick.min.js"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\accordions.css",
+      "PackagePath": "staticwebassets\\manage\\css\\accordions.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\alerts.css",
+      "PackagePath": "staticwebassets\\manage\\css\\alerts.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\animate.css",
+      "PackagePath": "staticwebassets\\manage\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\buttons.css",
+      "PackagePath": "staticwebassets\\manage\\css\\buttons.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\c3\\c3.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\c3\\c3.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\calendar\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\calendar\\fullcalendar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\calendar\\fullcalendar.print.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\calendar\\fullcalendar.print.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\chosen\\bootstrap-chosen.css",
+      "PackagePath": "staticwebassets\\manage\\css\\chosen\\bootstrap-chosen.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\chosen\\chosen-sprite.png",
+      "PackagePath": "staticwebassets\\manage\\css\\chosen\\chosen-sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\code-editor\\ambiance.css",
+      "PackagePath": "staticwebassets\\manage\\css\\code-editor\\ambiance.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\code-editor\\codemirror.css",
+      "PackagePath": "staticwebassets\\manage\\css\\code-editor\\codemirror.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\colorpicker\\colorpicker.css",
+      "PackagePath": "staticwebassets\\manage\\css\\colorpicker\\colorpicker.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\cropper\\cropper.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\cropper\\cropper.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\data-table\\bootstrap-editable.css",
+      "PackagePath": "staticwebassets\\manage\\css\\data-table\\bootstrap-editable.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\data-table\\bootstrap-table.css",
+      "PackagePath": "staticwebassets\\manage\\css\\data-table\\bootstrap-table.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\datapicker\\colorpicker.css",
+      "PackagePath": "staticwebassets\\manage\\css\\datapicker\\colorpicker.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\datapicker\\datepicker3.css",
+      "PackagePath": "staticwebassets\\manage\\css\\datapicker\\datepicker3.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\dropzone\\dropzone.css",
+      "PackagePath": "staticwebassets\\manage\\css\\dropzone\\dropzone.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\duallistbox\\bootstrap-duallistbox.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\duallistbox\\bootstrap-duallistbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\editor\\bootstrap-editable.css",
+      "PackagePath": "staticwebassets\\manage\\css\\editor\\bootstrap-editable.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\editor\\datetimepicker.css",
+      "PackagePath": "staticwebassets\\manage\\css\\editor\\datetimepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\editor\\select2.css",
+      "PackagePath": "staticwebassets\\manage\\css\\editor\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\editor\\x-editor-style.css",
+      "PackagePath": "staticwebassets\\manage\\css\\editor\\x-editor-style.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\form\\all-type-forms.css",
+      "PackagePath": "staticwebassets\\manage\\css\\form\\all-type-forms.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\form\\themesaller-forms.css",
+      "PackagePath": "staticwebassets\\manage\\css\\form\\themesaller-forms.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\ionRangeSlider\\ion.rangeSlider.css",
+      "PackagePath": "staticwebassets\\manage\\css\\ionRangeSlider\\ion.rangeSlider.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\ionRangeSlider\\ion.rangeSlider.skinFlat.css",
+      "PackagePath": "staticwebassets\\manage\\css\\ionRangeSlider\\ion.rangeSlider.skinFlat.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\ionRangeSlider\\sprite-skin-flat.png",
+      "PackagePath": "staticwebassets\\manage\\css\\ionRangeSlider\\sprite-skin-flat.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\main.css",
+      "PackagePath": "staticwebassets\\manage\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\meanmenu.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\meanmenu.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\metisMenu\\metisMenu-vertical.css",
+      "PackagePath": "staticwebassets\\manage\\css\\metisMenu\\metisMenu-vertical.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\metisMenu\\metisMenu.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\metisMenu\\metisMenu.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\modals.css",
+      "PackagePath": "staticwebassets\\manage\\css\\modals.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\morrisjs\\morris.css",
+      "PackagePath": "staticwebassets\\manage\\css\\morrisjs\\morris.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\nalika-icon.css",
+      "PackagePath": "staticwebassets\\manage\\css\\nalika-icon.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\manage\\css\\normalize.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\notifications\\Lobibox.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\notifications\\Lobibox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\notifications\\notifications.css",
+      "PackagePath": "staticwebassets\\manage\\css\\notifications\\notifications.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\manage\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\owl.theme.css",
+      "PackagePath": "staticwebassets\\manage\\css\\owl.theme.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\owl.transitions.css",
+      "PackagePath": "staticwebassets\\manage\\css\\owl.transitions.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\preloader\\preloader-style.css",
+      "PackagePath": "staticwebassets\\manage\\css\\preloader\\preloader-style.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\manage\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\scrollbar\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\scrollbar\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\select2\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\summernote\\fonts\\summernote.eot",
+      "PackagePath": "staticwebassets\\manage\\css\\summernote\\fonts\\summernote.eot"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\summernote\\fonts\\summernote.ttf",
+      "PackagePath": "staticwebassets\\manage\\css\\summernote\\fonts\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\summernote\\fonts\\summernote.woff",
+      "PackagePath": "staticwebassets\\manage\\css\\summernote\\fonts\\summernote.woff"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\summernote\\summernote.css",
+      "PackagePath": "staticwebassets\\manage\\css\\summernote\\summernote.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\tabs.css",
+      "PackagePath": "staticwebassets\\manage\\css\\tabs.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\touchspin\\jquery.bootstrap-touchspin.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\touchspin\\jquery.bootstrap-touchspin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\tree-viewer\\32px.png",
+      "PackagePath": "staticwebassets\\manage\\css\\tree-viewer\\32px.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\tree-viewer\\throbber.gif",
+      "PackagePath": "staticwebassets\\manage\\css\\tree-viewer\\throbber.gif"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\css\\tree-viewer\\tree-viewer.css",
+      "PackagePath": "staticwebassets\\manage\\css\\tree-viewer\\tree-viewer.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\nalika.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\nalika.svg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\nalika.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\nalika.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\fonts\\nalika.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\nalika.woff"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\Thumbs.db",
+      "PackagePath": "staticwebassets\\manage\\img\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\blog-details\\1.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\blog-details\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\blog-details\\Thumbs.db",
+      "PackagePath": "staticwebassets\\manage\\img\\blog-details\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\contact\\1.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\contact\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\contact\\2.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\contact\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\contact\\3.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\contact\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\contact\\4.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\contact\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\contact\\Thumbs.db",
+      "PackagePath": "staticwebassets\\manage\\img\\contact\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\cropper\\1.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\cropper\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\cropper\\Thumbs.db",
+      "PackagePath": "staticwebassets\\manage\\img\\cropper\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\manage\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\green1.png",
+      "PackagePath": "staticwebassets\\manage\\img\\green1.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\logo\\Thumbs.db",
+      "PackagePath": "staticwebassets\\manage\\img\\logo\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\manage\\img\\logo\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\logo\\logosn.png",
+      "PackagePath": "staticwebassets\\manage\\img\\logo\\logosn.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\16-home_default.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\16-home_default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\21-home_default.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\21-home_default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\5-small.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\5-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\5.png",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\6-small.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\6-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\6.png",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\7-small.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\7-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\7.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\90-home_default.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\90-home_default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\new-product\\Thumbs.db",
+      "PackagePath": "staticwebassets\\manage\\img\\new-product\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\notification\\1.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\notification\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\notification\\2.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\notification\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\notification\\3.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\notification\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\notification\\4.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\notification\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\notification\\5.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\notification\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\notification\\6.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\notification\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\notification\\Thumbs.db",
+      "PackagePath": "staticwebassets\\manage\\img\\notification\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\product\\1.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\product\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\product\\2.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\product\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\product\\3.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\product\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\product\\Thumbs.db",
+      "PackagePath": "staticwebassets\\manage\\img\\product\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\product\\bg-1.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\product\\bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\product\\bg-2.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\product\\bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\product\\bg-3.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\product\\bg-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\c3-charts\\c3-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\c3-charts\\c3-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\c3-charts\\c3.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\c3-charts\\c3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\c3-charts\\d3.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\c3-charts\\d3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\calendar\\fullcalendar-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\calendar\\fullcalendar-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\calendar\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\calendar\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\calendar\\moment.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\calendar\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\card.js",
+      "PackagePath": "staticwebassets\\manage\\js\\card.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\chart\\jquery.peity.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\chart\\jquery.peity.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\chart\\peity-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\chart\\peity-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\charts\\Chart.js",
+      "PackagePath": "staticwebassets\\manage\\js\\charts\\Chart.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\charts\\area-chart.js",
+      "PackagePath": "staticwebassets\\manage\\js\\charts\\area-chart.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\charts\\bar-chart.js",
+      "PackagePath": "staticwebassets\\manage\\js\\charts\\bar-chart.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\charts\\line-chart.js",
+      "PackagePath": "staticwebassets\\manage\\js\\charts\\line-chart.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\charts\\rounded-chart.js",
+      "PackagePath": "staticwebassets\\manage\\js\\charts\\rounded-chart.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\chosen\\chosen-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\chosen\\chosen-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\chosen\\chosen.jquery.js",
+      "PackagePath": "staticwebassets\\manage\\js\\chosen\\chosen.jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\code-editor\\code-editor-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\code-editor\\code-editor-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\code-editor\\code-editor.js",
+      "PackagePath": "staticwebassets\\manage\\js\\code-editor\\code-editor.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\code-editor\\codemirror.js",
+      "PackagePath": "staticwebassets\\manage\\js\\code-editor\\codemirror.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\colorpicker\\color-picker-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\colorpicker\\color-picker-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\colorpicker\\jquery.spectrum.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\colorpicker\\jquery.spectrum.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\counterup\\counterup-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\counterup\\counterup-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\counterup\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\counterup\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\counterup\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\counterup\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\cropper\\cropper-actice.js",
+      "PackagePath": "staticwebassets\\manage\\js\\cropper\\cropper-actice.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\cropper\\cropper.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\cropper\\cropper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\custom.js",
+      "PackagePath": "staticwebassets\\manage\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-map\\d3.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-map\\d3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-map\\data-maps-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-map\\data-maps-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-map\\datamaps.all.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-map\\datamaps.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-map\\topojson.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-map\\topojson.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-table\\bootstrap-editable.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-table\\bootstrap-editable.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-table\\bootstrap-table-editable.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-table\\bootstrap-table-editable.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-table\\bootstrap-table-export.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-table\\bootstrap-table-export.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-table\\bootstrap-table-resizable.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-table\\bootstrap-table-resizable.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-table\\bootstrap-table.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-table\\bootstrap-table.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-table\\colResizable-1.5.source.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-table\\colResizable-1.5.source.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-table\\data-table-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-table\\data-table-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\data-table\\tableExport.js",
+      "PackagePath": "staticwebassets\\manage\\js\\data-table\\tableExport.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\datapicker\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\manage\\js\\datapicker\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\datapicker\\datepicker-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\datapicker\\datepicker-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\dropzone\\dropzone.js",
+      "PackagePath": "staticwebassets\\manage\\js\\dropzone\\dropzone.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\duallistbox\\duallistbox.active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\duallistbox\\duallistbox.active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\duallistbox\\jquery.bootstrap-duallistbox.js",
+      "PackagePath": "staticwebassets\\manage\\js\\duallistbox\\jquery.bootstrap-duallistbox.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\e-payment.js",
+      "PackagePath": "staticwebassets\\manage\\js\\e-payment.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\editable\\bootstrap-datetimepicker.js",
+      "PackagePath": "staticwebassets\\manage\\js\\editable\\bootstrap-datetimepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\editable\\bootstrap-editable.js",
+      "PackagePath": "staticwebassets\\manage\\js\\editable\\bootstrap-editable.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\editable\\jquery.mockjax.js",
+      "PackagePath": "staticwebassets\\manage\\js\\editable\\jquery.mockjax.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\editable\\mock-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\editable\\mock-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\editable\\moment.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\editable\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\editable\\select2.js",
+      "PackagePath": "staticwebassets\\manage\\js\\editable\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\editable\\xediable-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\editable\\xediable-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\flot\\curvedLines.js",
+      "PackagePath": "staticwebassets\\manage\\js\\flot\\curvedLines.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\flot\\flot-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\flot\\flot-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\flot\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\manage\\js\\flot\\jquery.flot.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\flot\\jquery.flot.orderBars.js",
+      "PackagePath": "staticwebassets\\manage\\js\\flot\\jquery.flot.orderBars.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\flot\\jquery.flot.pie.js",
+      "PackagePath": "staticwebassets\\manage\\js\\flot\\jquery.flot.pie.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\flot\\jquery.flot.resize.js",
+      "PackagePath": "staticwebassets\\manage\\js\\flot\\jquery.flot.resize.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\flot\\jquery.flot.tooltip.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\flot\\jquery.flot.tooltip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\google.maps\\google.maps-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\google.maps\\google.maps-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\icheck\\icheck-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\icheck\\icheck-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\icheck\\icheck.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\icheck\\icheck.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\input-mask\\jasny-bootstrap.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\input-mask\\jasny-bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\ionRangeSlider\\ion.rangeSlider.active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\ionRangeSlider\\ion.rangeSlider.active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\ionRangeSlider\\ion.rangeSlider.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\ionRangeSlider\\ion.rangeSlider.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\jquery-price-slider.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery-price-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\jquery.meanmenu.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.meanmenu.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\jquery.payform.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.payform.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.sticky.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\knob\\jquery.knob.js",
+      "PackagePath": "staticwebassets\\manage\\js\\knob\\jquery.knob.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\knob\\knob-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\knob\\knob-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\main.js",
+      "PackagePath": "staticwebassets\\manage\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\metisMenu\\metisMenu-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\metisMenu\\metisMenu-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\metisMenu\\metisMenu.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\metisMenu\\metisMenu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\morrisjs\\morris-active-pro.js",
+      "PackagePath": "staticwebassets\\manage\\js\\morrisjs\\morris-active-pro.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\morrisjs\\morris-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\morrisjs\\morris-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\morrisjs\\morris.js",
+      "PackagePath": "staticwebassets\\manage\\js\\morrisjs\\morris.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\morrisjs\\raphael-min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\morrisjs\\raphael-min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\notifications\\Lobibox.js",
+      "PackagePath": "staticwebassets\\manage\\js\\notifications\\Lobibox.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\notifications\\notification-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\notifications\\notification-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\password-meter\\password-meter-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\password-meter\\password-meter-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\password-meter\\pwstrength-bootstrap.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\password-meter\\pwstrength-bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\password-meter\\zxcvbn.js",
+      "PackagePath": "staticwebassets\\manage\\js\\password-meter\\zxcvbn.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\pdf\\jquery.media.js",
+      "PackagePath": "staticwebassets\\manage\\js\\pdf\\jquery.media.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\pdf\\pdf-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\pdf\\pdf-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\peity\\jquery.peity.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\peity\\jquery.peity.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\peity\\peity-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\peity\\peity-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\manage\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\rangle-slider\\jquery-ui-1.10.4.custom.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\rangle-slider\\jquery-ui-1.10.4.custom.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\rangle-slider\\jquery-ui-touch-punch.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\rangle-slider\\jquery-ui-touch-punch.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\rangle-slider\\rangle-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\rangle-slider\\rangle-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\scrollbar\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\scrollbar\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\scrollbar\\mCustomScrollbar-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\scrollbar\\mCustomScrollbar-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\select2\\select2-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\select2\\select2-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\select2\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\select2\\select2.full.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\sparkline\\jquery.charts-sparkline.js",
+      "PackagePath": "staticwebassets\\manage\\js\\sparkline\\jquery.charts-sparkline.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\sparkline\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\sparkline\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\sparkline\\sparkline-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\sparkline\\sparkline-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\summernote\\summernote-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\summernote\\summernote-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\summernote\\summernote.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\summernote\\summernote.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\tab.js",
+      "PackagePath": "staticwebassets\\manage\\js\\tab.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\touchspin\\jquery.bootstrap-touchspin.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\touchspin\\jquery.bootstrap-touchspin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\touchspin\\touchspin-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\touchspin\\touchspin-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\tree-line\\jstree.active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\tree-line\\jstree.active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\tree-line\\jstree.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\tree-line\\jstree.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\vendor\\modernizr-2.8.3.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\vendor\\modernizr-2.8.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\wizard\\jquery.steps.js",
+      "PackagePath": "staticwebassets\\manage\\js\\wizard\\jquery.steps.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\wizard\\steps-active.js",
+      "PackagePath": "staticwebassets\\manage\\js\\wizard\\steps-active.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\pdf\\mamunur.pdf",
+      "PackagePath": "staticwebassets\\manage\\pdf\\mamunur.pdf"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\style.css",
+      "PackagePath": "staticwebassets\\manage\\style.css"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FinalProjectCode.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

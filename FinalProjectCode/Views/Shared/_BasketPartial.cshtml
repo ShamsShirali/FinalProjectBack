@@ -1,0 +1,67 @@
+﻿@model List<BasketVM>
+
+<li class="basket">
+    <a href="#">
+        <i class="fa-solid fa-basket-shopping"></i>
+    </a>
+    <sup>@Model.Count</sup>
+</li>
+
+<div class="bskm">
+    <div class="prd">
+        @foreach (BasketVM basketVM in Model)
+        {
+        <div class="prdone">
+                <img src="~/assets/img/@basketVM.Image" alt="">
+
+            <div class="name">
+                    <p class="nm">@basketVM.Title</p>
+
+                <div class="counts">
+                    <div class="count">
+                        <button onclick="increment()">-</button>
+                            <h2 id="countings">@(basketVM.Count)</h2>
+                        <button onclick="decrement()">+</button>
+                    </div>
+
+                        <p class="per">$@basketVM.Price</p>
+                </div>
+
+                <a href="#">REMOVE</a>
+            </div>
+        </div>
+        }
+    </div>
+
+    <div class="check">
+        <div class="adgif">
+            <div class="gift">&#x1F381</div>
+            <p class="wrap">Add gift wrap <span>Only</span></p>
+        </div>
+
+        <div class="total">
+            <p class="subt">SUBTOTAL :</p>
+                <p class="totalpr">$@Model.Sum(m=>m.Count*m.Price)</p>
+        </div>
+
+        <div class="radio">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            </div>
+
+            <p class="agree">I agree with the</p>
+            <a class="term" href="#">terms and conditions</a>
+        </div>
+
+           @if (Model.Count > 0)
+    {
+        <div class="checkbt">
+            <a href="check.html" class="chc">CHECK OUT</a>
+        </div>
+
+        <div class="view">
+            <a href="view.html">VIEW CART</a>
+        </div>
+    }
+    </div>
+</div>

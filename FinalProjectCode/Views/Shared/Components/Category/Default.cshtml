@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Category>
+
+@{
+    int count = 1;
+}
+
+      <ul class="aparts">
+    @foreach (Category category in Model)
+    {
+        <li class="but @(count==1? "firstapart":"apart")" data-id="@count">@category.Name</li>
+        count++;
+    }
+                </ul>

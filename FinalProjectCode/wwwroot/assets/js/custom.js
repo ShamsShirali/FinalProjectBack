@@ -10,38 +10,22 @@
         $('.' + page).addClass('active');
     }
 
-    $('.searchBtn').click(function (e) {
-        e.preventDefault();
+    $('#search').keydown(function () {
 
-        let search = $('.searchInput').val();
+        let search = $('#search').val();
 
-        if (search.length >= 3) {
-            fetch('product/search/?search' + search)
-                .then(res => {
-                    return res.text();
-                    //return res.json();
-                })
-                .then(data => {
-                    //let liıtem = "";
+        console.log(search)
+        let data = { search: search }
 
-                    //for (var i = 0; i < data.length; i++) {
-                    //    let li =`  <li>
-                    //<a href="#" class="d-flex justify-content-between align-items-center">
-                    //    <img style="width:100px;" src="~/images/product/@product.MainImage" />
-                    //    <p>@product.Title</p>
-                    //    <p class="price-old">£${data[i].price}</p>
-                    //</a>
-                    //                </li > `;
-                    //
-                    //    liıtem += li;
-                    // }
+        $.ajax({
+            url: "/Product/Search",
+            type: "Get",
+            data: data,
+            success: function (res) {
 
-                    $('.searchList').html(data);
-                    //$('.searchList').html(liItem);
-                })
-        }
-
-        console.log(search);
+                $(".searchList").html(res)
+            }
+        })
     })
 
     $('.searchInput').keyup(function () {
@@ -62,5 +46,47 @@
             .then(data => {
                 $('.main-navigation').html(data)
             })
+    })
+
+ 
+    $(document).on("change", "#sort-product", function (ev) {
+
+        ev.preventDefault();
+
+        let filter = $(this).val();
+        let data = { filter: filter }
+
+
+        $.ajax({
+            url: "/Shop/Sort",
+            type: "Get",
+            data: data,
+            success: function (res) {
+                $(".partial-sort-datas").html(res)
+            }
+        })
+
+
+    })
+
+
+    $(document).on("change", "#sort-product", function (ev) {
+
+        ev.preventDefault();
+
+        let brand = $(this).val();
+        let data = { brand: brand }
+
+
+        $.ajax({
+            url: "/Shop/SortByBrand",
+            type: "Get",
+            data: data,
+            success: function (res) {
+                $(".partial-sort-datas").html(res)
+            }
+        })
+
+
     })
 })

@@ -1,6 +1,7 @@
 ﻿using FinalProjectCode.DataAccessLayer;
 using FinalProjectCode.Interfaces;
 using FinalProjectCode.Models;
+using FinalProjectCode.ViewModels.BasketVMs;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
@@ -17,33 +18,32 @@ namespace FinalProjectCode.Services
             _contextAccessor = contextAccessor;
         }
 
-        //public async Task<List<BasketVM>> GetBasket()
-        //{
-        //    string? cookie = _contextAccessor.HttpContext.Request.Cookies["basket"];
+        public async Task<List<BasketVM>> GetBasket()
+        {
+            string? cookie = _contextAccessor.HttpContext.Request.Cookies["basket"];
 
-        //    List<BasketVM> basketVMs = null;
+            List<BasketVM> basketVMs = null;
 
-        //    if (!string.IsNullOrWhiteSpace(cookie))
-        //    {
-        //        basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(cookie);
+            if (!string.IsNullOrWhiteSpace(cookie))
+            {
+                basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(cookie);
 
-        //        foreach (BasketVM basketVM in basketVMs)
-        //        {
-        //            Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.Id);
+                foreach (BasketVM basketVM in basketVMs)
+                {
+                    Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.Id);
 
-        //            basketVM.Image = product.MainImage;
-        //            basketVM.ExTax = product.ExTax;
-        //            basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
-        //            basketVM.Title = product.Title;
-        //        }
-        //    }
-        //    else
-        //    {
-        //        basketVMs = new List<BasketVM>();
-        //    }
+                    basketVM.Image = product.MainImage;
+                    basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+                    basketVM.Title = product.Title;
+                }
+            }
+            else
+            {
+                basketVMs = new List<BasketVM>();
+            }
 
-        //    return basketVMs;
-        //}
+            return basketVMs;
+        }
 
         public async Task<IEnumerable<Category>> GetCategories()
         {

@@ -16,11 +16,8 @@ namespace FinalProjectCode.Controllers
 
         public async Task<IActionResult> Search(string search)
         {
-                List<Product> products = await _context.Products.Where(c => c.IsDeleted == false && (
-                c.Title.ToLower().Contains(search.ToLower()) ||
-                (c.Brand != null ? c.Brand.Name.ToLower().Contains(search.ToLower()) : true) ||
-                (c.Category != null ? c.Category.Name.ToLower().Contains(search.ToLower()) : true) ||
-                c.Description.ToLower().Contains(search.ToLower()))).ToListAsync();
+                List<Product> products = await _context.Products.Include(m=>m.ProductImages).Where(c => c.IsDeleted == false && 
+                c.Title.ToLower().StartsWith(search.ToLower())).ToListAsync();
 
                 //return Json(products);
                 return PartialView("_SearchPartial", products);

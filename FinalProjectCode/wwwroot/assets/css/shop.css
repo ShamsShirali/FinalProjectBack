@@ -278,20 +278,21 @@
 .two .acdgen .prodsel .english ul li:hover a {
   color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone {
+.two .acdgen .prodsel .all {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.two .acdgen .prodsel .all .prodone .card {
+.two .acdgen .prodsel .all .card {
   border: none;
+  width: 270px !important;
 }
-.two .acdgen .prodsel .all .prodone .card .photo {
+.two .acdgen .prodsel .all .card .photo {
   position: relative;
   height: 288px;
   width: 240px;
   overflow: hidden;
 }
-.two .acdgen .prodsel .all .prodone .card .photo img {
+.two .acdgen .prodsel .all .card .photo img {
   position: absolute;
   background: transparent;
   height: 288px;
@@ -299,7 +300,7 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-.two .acdgen .prodsel .all .prodone .card .photo .add p {
+.two .acdgen .prodsel .all .card .photo .add p {
   opacity: 0;
   background-color: rgb(29, 29, 29);
   color: white;
@@ -313,10 +314,10 @@
   font-size: 14px;
   transition: all 0.5s;
 }
-.two .acdgen .prodsel .all .prodone .card .photo .add:hover p {
+.two .acdgen .prodsel .all .card .photo .add:hover p {
   background-color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone .card .percent {
+.two .acdgen .prodsel .all .card .percent {
   background: #fff;
   font-size: 13px;
   color: #000;
@@ -330,7 +331,7 @@
   padding-left: 15px;
   padding-top: 2px;
 }
-.two .acdgen .prodsel .all .prodone .card .heart {
+.two .acdgen .prodsel .all .card .heart {
   color: #000;
   background-color: white;
   transition: all 0.5s;
@@ -344,11 +345,11 @@
   padding-left: 10px;
   padding-top: 10px;
 }
-.two .acdgen .prodsel .all .prodone .card .heart:hover {
+.two .acdgen .prodsel .all .card .heart:hover {
   color: white;
   background-color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone .card .arrow {
+.two .acdgen .prodsel .all .card .arrow {
   color: #000;
   background-color: white;
   transition: all 0.5s;
@@ -362,11 +363,11 @@
   padding-left: 10px;
   padding-top: 10px;
 }
-.two .acdgen .prodsel .all .prodone .card .arrow:hover {
+.two .acdgen .prodsel .all .card .arrow:hover {
   color: white;
   background-color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone .card .glass {
+.two .acdgen .prodsel .all .card .glass {
   color: #000;
   background-color: white;
   transition: all 0.5s;
@@ -380,28 +381,28 @@
   padding-left: 10px;
   padding-top: 10px;
 }
-.two .acdgen .prodsel .all .prodone .card .glass:hover {
+.two .acdgen .prodsel .all .card .glass:hover {
   color: white;
   background-color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone .card .timer {
+.two .acdgen .prodsel .all .card .timer {
   position: absolute;
   display: flex;
   margin-left: 33px;
 }
-.two .acdgen .prodsel .all .prodone .card .timer .times {
+.two .acdgen .prodsel .all .card .timer .times {
   width: 40px;
   height: 40px;
   background-color: white;
   margin-top: 240px;
 }
-.two .acdgen .prodsel .all .prodone .card .timer .times span {
+.two .acdgen .prodsel .all .card .timer .times span {
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 600;
   padding-left: 7px;
 }
-.two .acdgen .prodsel .all .prodone .card .timer .times p {
+.two .acdgen .prodsel .all .card .timer .times p {
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -409,21 +410,21 @@
   margin: 0 !important;
   padding-left: 5px;
 }
-.two .acdgen .prodsel .all .prodone .card .timer .timesec {
+.two .acdgen .prodsel .all .card .timer .timesec {
   width: 40px;
   height: 40px;
   background-color: white;
   margin-top: 240px;
   margin-left: 5px;
 }
-.two .acdgen .prodsel .all .prodone .card .timer .timesec span {
+.two .acdgen .prodsel .all .card .timer .timesec span {
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 600;
   padding-left: 12px;
   padding-bottom: 10px;
 }
-.two .acdgen .prodsel .all .prodone .card .timer .timesec p {
+.two .acdgen .prodsel .all .card .timer .timesec p {
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -431,40 +432,40 @@
   padding-left: 4px;
   padding-bottom: 30px;
 }
-.two .acdgen .prodsel .all .prodone .card:hover .heart {
+.two .acdgen .prodsel .all .card:hover .heart {
   display: inline !important;
 }
-.two .acdgen .prodsel .all .prodone .card:hover .arrow {
+.two .acdgen .prodsel .all .card:hover .arrow {
   display: inline !important;
 }
-.two .acdgen .prodsel .all .prodone .card:hover .glass {
+.two .acdgen .prodsel .all .card:hover .glass {
   display: inline !important;
 }
-.two .acdgen .prodsel .all .prodone .card:hover .timer {
+.two .acdgen .prodsel .all .card:hover .timer {
   display: none !important;
 }
-.two .acdgen .prodsel .all .prodone .card:hover .add p {
+.two .acdgen .prodsel .all .card:hover .add p {
   opacity: 1;
   bottom: 0;
 }
-.two .acdgen .prodsel .all .prodone .card .firfloor {
+.two .acdgen .prodsel .all .card .firfloor {
   display: flex;
   margin-top: 20px;
-  margin-left: 45px;
+  margin-left: 35px;
 }
-.two .acdgen .prodsel .all .prodone .card .firfloor .st {
+.two .acdgen .prodsel .all .card .firfloor .st {
   color: #c6c6c6;
   display: inline;
   cursor: pointer;
   font-size: 8px;
 }
-.two .acdgen .prodsel .all .prodone .card .firfloor .reviews {
+.two .acdgen .prodsel .all .card .firfloor .reviews {
   color: #666;
   padding-left: 5px;
   padding-top: 5px;
   font-size: 14px;
 }
-.two .acdgen .prodsel .all .prodone .card .title1 {
+.two .acdgen .prodsel .all .card .title1 {
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
@@ -473,10 +474,10 @@
   text-decoration: none;
   color: #000;
 }
-.two .acdgen .prodsel .all .prodone .card .title1:hover {
+.two .acdgen .prodsel .all .card .title1:hover {
   color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone .card .title3 {
+.two .acdgen .prodsel .all .card .title3 {
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
@@ -485,10 +486,10 @@
   text-decoration: none;
   color: #000;
 }
-.two .acdgen .prodsel .all .prodone .card .title3:hover {
+.two .acdgen .prodsel .all .card .title3:hover {
   color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone .card .title4 {
+.two .acdgen .prodsel .all .card .title4 {
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
@@ -497,10 +498,10 @@
   text-decoration: none;
   color: #000;
 }
-.two .acdgen .prodsel .all .prodone .card .title4:hover {
+.two .acdgen .prodsel .all .card .title4:hover {
   color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone .card .title {
+.two .acdgen .prodsel .all .card .title {
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
@@ -509,263 +510,41 @@
   text-decoration: none;
   color: #000;
 }
-.two .acdgen .prodsel .all .prodone .card .title:hover {
+.two .acdgen .prodsel .all .card .title:hover {
   color: #bd9855;
 }
-.two .acdgen .prodsel .all .prodone .card .price {
+.two .acdgen .prodsel .all .card .title5 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  height: 0;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.two .acdgen .prodsel .all .card .title5:hover {
+  color: #bd9855;
+}
+.two .acdgen .prodsel .all .card .price {
   color: #bd9855;
   padding-left: 80px;
   font-size: 18px;
   font-weight: 500;
 }
-.two .acdgen .prodsel .all .prodone .card .diswithpri {
+.two .acdgen .prodsel .all .card .diswithpri {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 22px;
 }
-.two .acdgen .prodsel .all .prodone .card .diswithpri .discount {
+.two .acdgen .prodsel .all .card .diswithpri .discount {
   height: 0;
   font-size: 15px;
   color: #796b6b;
   text-decoration: line-through;
   padding-bottom: 20px;
 }
-.two .acdgen .prodsel .all .prodone .card .diswithpri .pricewith {
-  color: #bd9855;
-  font-size: 18px;
-  font-weight: 500;
-  padding-left: 5px;
-}
-.two .acdgen .prodsel .all .prodtwo {
-  display: flex;
-}
-.two .acdgen .prodsel .all .prodtwo .card {
-  border: none;
-}
-.two .acdgen .prodsel .all .prodtwo .card .photo {
-  position: relative;
-  height: 288px;
-  width: 240px;
-  overflow: hidden;
-}
-.two .acdgen .prodsel .all .prodtwo .card .photo img {
-  position: absolute;
-  background: transparent;
-  height: 288px;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.two .acdgen .prodsel .all .prodtwo .card .photo .add p {
-  opacity: 0;
-  background-color: rgb(29, 29, 29);
-  color: white;
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  bottom: -60px;
-  margin: 0;
-  padding-left: 80px;
-  padding-top: 19px;
-  font-size: 14px;
-  transition: all 0.5s;
-}
-.two .acdgen .prodsel .all .prodtwo .card .photo .add:hover p {
-  background-color: #bd9855;
-}
-.two .acdgen .prodsel .all .prodtwo .card .percent {
-  background: #fff;
-  font-size: 13px;
-  color: #000;
-  position: absolute;
-  font-weight: 500;
-  width: 65px;
-  height: 25px;
-  z-index: 1;
-  margin-left: 20px;
-  margin-top: 15px;
-  padding-left: 15px;
-  padding-top: 2px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .heart {
-  color: #000;
-  background-color: white;
-  transition: all 0.5s;
-  cursor: pointer;
-  position: absolute;
-  font-size: 20px;
-  top: 15px;
-  right: 25px;
-  width: 40px;
-  height: 40px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .heart:hover {
-  color: white;
-  background-color: #bd9855;
-}
-.two .acdgen .prodsel .all .prodtwo .card .arrow {
-  color: #000;
-  background-color: white;
-  transition: all 0.5s;
-  cursor: pointer;
-  position: absolute;
-  font-size: 20px;
-  top: 65px;
-  right: 25px;
-  width: 40px;
-  height: 40px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .arrow:hover {
-  color: white;
-  background-color: #bd9855;
-}
-.two .acdgen .prodsel .all .prodtwo .card .glass {
-  color: #000;
-  background-color: white;
-  transition: all 0.5s;
-  cursor: pointer;
-  position: absolute;
-  font-size: 20px;
-  top: 115px;
-  right: 25px;
-  width: 40px;
-  height: 40px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .glass:hover {
-  color: white;
-  background-color: #bd9855;
-}
-.two .acdgen .prodsel .all .prodtwo .card .timer {
-  position: absolute;
-  display: flex;
-  margin-left: 33px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .timer .times {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  margin-top: 240px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .timer .times span {
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  padding-left: 7px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .timer .times p {
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #6d7784;
-  margin: 0 !important;
-  padding-left: 5px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .timer .timesec {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  margin-top: 240px;
-  margin-left: 5px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .timer .timesec span {
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  padding-left: 12px;
-  padding-bottom: 10px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .timer .timesec p {
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #6d7784;
-  padding-left: 4px;
-  padding-bottom: 30px;
-}
-.two .acdgen .prodsel .all .prodtwo .card:hover .heart {
-  display: inline !important;
-}
-.two .acdgen .prodsel .all .prodtwo .card:hover .arrow {
-  display: inline !important;
-}
-.two .acdgen .prodsel .all .prodtwo .card:hover .glass {
-  display: inline !important;
-}
-.two .acdgen .prodsel .all .prodtwo .card:hover .timer {
-  display: none !important;
-}
-.two .acdgen .prodsel .all .prodtwo .card:hover .add p {
-  opacity: 1;
-  bottom: 0;
-}
-.two .acdgen .prodsel .all .prodtwo .card .firfloor {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 45px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .firfloor .st {
-  color: #c6c6c6;
-  display: inline;
-  cursor: pointer;
-  font-size: 8px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .firfloor .reviews {
-  color: #666;
-  padding-left: 5px;
-  padding-top: 5px;
-  font-size: 14px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .title4 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 50px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.two .acdgen .prodsel .all .prodtwo .card .title4:hover {
-  color: #bd9855;
-}
-.two .acdgen .prodsel .all .prodtwo .card .title5 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 17px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.two .acdgen .prodsel .all .prodtwo .card .title5:hover {
-  color: #bd9855;
-}
-.two .acdgen .prodsel .all .prodtwo .card .price {
-  color: #bd9855;
-  padding-left: 80px;
-  font-size: 18px;
-  font-weight: 500;
-}
-.two .acdgen .prodsel .all .prodtwo .card .diswithpri {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 32px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .diswithpri .discount {
-  height: 0;
-  font-size: 15px;
-  color: #796b6b;
-  text-decoration: line-through;
-  padding-bottom: 20px;
-}
-.two .acdgen .prodsel .all .prodtwo .card .diswithpri .pricewith {
+.two .acdgen .prodsel .all .card .diswithpri .pricewith {
   color: #bd9855;
   font-size: 18px;
   font-weight: 500;

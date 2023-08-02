@@ -34,7 +34,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -82,7 +81,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -97,17 +95,14 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Job")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Text")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
@@ -135,7 +130,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -150,7 +144,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -178,7 +171,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -196,7 +188,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -225,9 +216,6 @@ namespace FinalProjectCode.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("AuthorId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("BrandId")
                         .HasColumnType("int");
 
@@ -241,7 +229,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -253,7 +240,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
@@ -265,7 +251,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Info")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
@@ -279,13 +264,14 @@ namespace FinalProjectCode.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("money");
 
+                    b.Property<int>("Raiting")
+                        .HasColumnType("int");
+
                     b.Property<string>("Sold")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -297,13 +283,10 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("View")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AuthorId");
 
                     b.HasIndex("BrandId");
 
@@ -324,7 +307,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -336,7 +318,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -368,12 +349,10 @@ namespace FinalProjectCode.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Key")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Value")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
@@ -394,7 +373,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -406,7 +384,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -414,22 +391,18 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Link")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("SubTitle")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("TitleTwo")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -457,7 +430,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -472,7 +444,6 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -491,7 +462,7 @@ namespace FinalProjectCode.Migrations
             modelBuilder.Entity("FinalProjectCode.Migrations.ProductTag", b =>
                 {
                     b.HasOne("FinalProjectCode.Models.Product", "Product")
-                        .WithMany()
+                        .WithMany("ProductTags")
                         .HasForeignKey("ProductId");
 
                     b.HasOne("FinalProjectCode.Models.Tag", "Tag")
@@ -514,10 +485,6 @@ namespace FinalProjectCode.Migrations
 
             modelBuilder.Entity("FinalProjectCode.Models.Product", b =>
                 {
-                    b.HasOne("FinalProjectCode.Models.Author", "Author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId");
-
                     b.HasOne("FinalProjectCode.Models.Brand", "Brand")
                         .WithMany("Products")
                         .HasForeignKey("BrandId");
@@ -525,8 +492,6 @@ namespace FinalProjectCode.Migrations
                     b.HasOne("FinalProjectCode.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId");
-
-                    b.Navigation("Author");
 
                     b.Navigation("Brand");
 
@@ -557,6 +522,8 @@ namespace FinalProjectCode.Migrations
             modelBuilder.Entity("FinalProjectCode.Models.Product", b =>
                 {
                     b.Navigation("ProductImages");
+
+                    b.Navigation("ProductTags");
                 });
 #pragma warning restore 612, 618
         }

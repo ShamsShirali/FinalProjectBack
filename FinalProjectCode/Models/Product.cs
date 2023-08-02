@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using FinalProjectCode.Migrations;
 
 namespace FinalProjectCode.Models
 {
@@ -31,5 +32,7 @@ namespace FinalProjectCode.Models
         public int? CategoryId { get; set; }
         public Category? Category { get; set; }
         public IEnumerable<ProductImage> ProductImages { get; set; }
+        public IEnumerable<ProductTag>? ProductTags { get; set; }
+        public int Raiting { get; set; }
     }
 }

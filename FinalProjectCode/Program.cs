@@ -2,8 +2,6 @@ using FinalProjectCode.DataAccessLayer;
 using FinalProjectCode.Interfaces;
 using FinalProjectCode.Services;
 using Microsoft.EntityFrameworkCore;
-using FinalProjectCode.Interfaces;
-using FinalProjectCode.Services;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
