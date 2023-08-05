@@ -179,6 +179,7 @@
   outline: none;
   background: transparent;
   border: none;
+  width: 90px;
 }
 .header .secondh .searchic:hover i {
   color: #bd9855;
@@ -188,7 +189,7 @@
 }
 .header .secondh .firstsel {
   display: flex;
-  margin-left: 350px;
+  margin-left: 310px;
 }
 .header .secondh .firstsel li {
   display: inline;
@@ -232,6 +233,7 @@
 }
 .header .secondh .secondsel .other {
   margin-left: 50px;
+  width: 80px;
 }
 .header .secondh .main {
   margin-top: 6px;
@@ -240,6 +242,7 @@
 }
 .header .secondh .main .user {
   margin-right: 10px;
+  width: 50px;
 }
 .header .secondh .main .user i {
   color: #0c1d32;
@@ -841,76 +844,18 @@
   padding-top: 5px;
   font-size: 14px;
 }
-.three .generalcart .card .title {
+.three .generalcart .card .titl {
+  text-align: center;
+}
+.three .generalcart .card .titl .title {
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  padding-left: 53px;
-  height: 0;
+  height: 30px;
   text-decoration: none;
   color: #000;
 }
-.three .generalcart .card .title:hover {
-  color: #bd9855;
-}
-.three .generalcart .card .title1 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 78px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.three .generalcart .card .title1:hover {
-  color: #bd9855;
-}
-.three .generalcart .card .title2 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 59px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.three .generalcart .card .title2:hover {
-  color: #bd9855;
-}
-.three .generalcart .card .title3 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 46px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.three .generalcart .card .title3:hover {
-  color: #bd9855;
-}
-.three .generalcart .card .title4 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 69px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.three .generalcart .card .title4:hover {
-  color: #bd9855;
-}
-.three .generalcart .card .title5 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 37px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.three .generalcart .card .title5:hover {
+.three .generalcart .card .titl .title:hover {
   color: #bd9855;
 }
 .three .generalcart .card .price {

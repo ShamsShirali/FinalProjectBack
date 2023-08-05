@@ -1,10 +1,14 @@
 ﻿@model IEnumerable<Product>
 
+@{
+    int count = 1;
+}
+
 @foreach (Product product in Model)
 {
     <div class="card" style="width: 18rem;">
         <div class="photo">
-            <a href="product.html">
+            <a asp-controller="Product" asp-action="Index" asp-route-id="@product.Id">
                 <img src="~/assets/img/@product.MainImage"
                  class="card-img-top" alt="...">
             </a>
@@ -39,28 +43,36 @@
         <div class="card-body">
             <div class="firfloor">
                 <div class="stars6">
-                    <i class="fa-regular fa-star st"></i>
-                    <i class="fa-regular fa-star st"></i>
-                    <i class="fa-regular fa-star st"></i>
-                    <i class="fa-regular fa-star st"></i>
-                    <i class="fa-regular fa-star st"></i>
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        @if (i <= product.Raiting)
+                        {
+                            <i class="fa-regular fa-star st" style="color:rgb(239, 239, 53)"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-regular fa-star st"></i>
+                        }
+                    }
                 </div>
 
                 <p class="reviews">No reviews</p>
             </div>
+
+            <div class="titl"><a asp-controller="Product" asp-action="Index" asp-route-id="@product.Id" class="title">@product.Title</a></div>
+
             @if (product.DiscountedPrice > 0)
             {
                 <div class="diswithpri">
-                    <P class="discount">$@product.DiscountedPrice</P>
-                    <p class="pricewith">$@product.Price</p>
+                    <P class="discount">$@($"{product.DiscountedPrice:0.00}")</P>
+                    <p class="pricewith">$@product.Price.ToString("0.00")</p>
                 </div>
             }
             else
             {
                 <p class="price">$@product.Price</p>
             }
-
-            <a href="product.html" class="title">@product.Title</a>
         </div>
     </div>
+    count++;
 }

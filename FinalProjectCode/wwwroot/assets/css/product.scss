@@ -62,7 +62,7 @@
 
         .otherpic {
 
-            .photo1 {
+            .photo {
                 width: 120px;
                 height: 140px;
                 margin-bottom: 82.6px;
@@ -73,35 +73,8 @@
                 }
             }
 
-            .photo2 {
-                width: 120px;
-                height: 140px;
-                margin-bottom: 82.6px;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-
-            .photo3 {
-                width: 120px;
-                height: 140px;
-                margin-bottom: 82.6px;
-                opacity: 0.3;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-
-            .photo4 {
-                width: 120px;
-                height: 140px;
-                opacity: 0.3;
-
-                &:hover {
-                    opacity: 1;
-                }
+            .main{
+               opacity: 1;
             }
         }
 
@@ -126,7 +99,7 @@
                 padding-left: 15px;
                 padding-top: 2px;
                 right: 30px;
-                bottom: 750px;
+                bottom: 820px;
             }
 
             // &:hover {
@@ -812,11 +785,12 @@
 
     .cards {
         display: flex;
-        margin-left: 190px;
+        margin-left: 120px;
         margin-top: 30px;
 
         .card {
             border: none;
+            margin-left: 70px;
 
             .photo {
                 position: relative;
@@ -1012,6 +986,9 @@
                 }
             }
 
+            .card-body{
+                width: 350px;
+
             .firfloor {
                 display: flex;
                 margin-top: 20px;
@@ -1032,45 +1009,20 @@
                 }
             }
 
-            .title {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 80px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
+            .titl {
+                text-align: center;
 
-                &:hover {
-                    color: #bd9855;
-                }
-            }
+                .title {
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 400;
+                    height: 30px;
+                    text-decoration: none;
+                    color: #000;
 
-            .title4 {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 100px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: #bd9855;
-                }
-            }
-
-            .title5 {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 62px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: #bd9855;
+                    &:hover {
+                        color: #bd9855;
+                    }
                 }
             }
 
@@ -1085,7 +1037,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-left: 55px;
+                margin-left: px;
 
                 .discount {
                     height: 0;
@@ -1104,13 +1056,6 @@
                 }
             }
         }
-
-        .ctwo {
-            margin-left: 70px;
-        }
-
-        .cthr {
-            margin-left: 70px;
         }
     }
 

@@ -69,17 +69,40 @@
 
     })
 
+    
 
-    $(document).on("change", "#sort-product", function (ev) {
+    $(document).on("click", ".brands .brand", function (ev) {
 
         ev.preventDefault();
 
-        let brand = $(this).val();
+        let brand = $(this).html();
         let data = { brand: brand }
 
 
         $.ajax({
             url: "/Shop/SortByBrand",
+            type: "Get",
+            data: data,
+            success: function (res) {
+                $(".partial-sort-datas").html(res)
+            }
+        })
+
+
+    })
+
+
+
+    $(document).on("click", ".categories .but", function (ev) {
+
+        ev.preventDefault();
+
+        let category = $(this).html();
+        let data = { category: category }
+
+
+        $.ajax({
+            url: "/Shop/SortByCategory",
             type: "Get",
             data: data,
             success: function (res) {

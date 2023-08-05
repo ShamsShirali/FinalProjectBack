@@ -33,7 +33,7 @@ namespace FinalProjectCode.Services
                     Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.Id);
 
                     basketVM.Image = product.MainImage;
-                    basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+                    basketVM.Price = (decimal)(product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price);
                     basketVM.Title = product.Title;
                 }
             }

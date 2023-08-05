@@ -20,10 +20,13 @@ namespace FinalProjectCode.Controllers
 
             IEnumerable<Category> categories = await _context.Categories.ToListAsync();
 
+           IEnumerable<Brand> brands = await _context.Brands.ToListAsync();
+
             ProductVM model = new()
             {
                 Products = products,
-                Categories = categories
+                Categories = categories,
+                Brands = brands
             };
 
 
@@ -87,52 +90,19 @@ namespace FinalProjectCode.Controllers
         [HttpGet]
         public async Task<IActionResult> SortByBrand(string brand)
         {
-
-            if (filter == "Best selling")
-            {
-                IEnumerable<Product> products = await _context.Products.OrderByDescending(m => m.Raiting).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
-            else if (filter == "Alphabetically, Z-A")
-            {
-                IEnumerable<Product> products = await _context.Products.OrderByDescending(m => m.Title).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
-            else if (filter == "Alphabetically, A-Z")
-            {
-                IEnumerable<Product> products = await _context.Products.OrderBy(m => m.Title).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
-            else if (filter == "Price, low to high")
-            {
-                IEnumerable<Product> products = await _context.Products.OrderBy(m => m.Price).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
-            else if (filter == "Price, high to low")
-            {
-                IEnumerable<Product> products = await _context.Products.OrderByDescending(m => m.Price).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
-            else if (filter == "Date, old to new")
-            {
-                IEnumerable<Product> products = await _context.Products.OrderBy(m => m.CreateAt).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
-            else if (filter == "Date, new to old")
-            {
-                IEnumerable<Product> products = await _context.Products.OrderByDescending(m => m.CreateAt).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
-            else if (filter == "All")
-            {
-                IEnumerable<Product> products = await _context.Products.Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
-            else
-            {
-                IEnumerable<Product> products = await _context.Products.Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
-                return PartialView("_ShopProductsPartial", products);
-            }
+           Brand dbBrand = await _context.Brands.FirstOrDefaultAsync(m=>m.Name == brand);
+           IEnumerable<Product> products = await _context.Products.Where(m => m.BrandId == dbBrand.Id).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
+           return PartialView("_ShopProductsPartial", products);
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> SortByCategory(string category)
+        {
+            Category dbCategory = await _context.Categories.FirstOrDefaultAsync(m => m.Name == category);
+            IEnumerable<Product> products = await _context.Products.Where(m => m.CategoryId == dbCategory.Id).Include(m => m.ProductImages).Include(m => m.Brand).Include(m => m.ProductTags).ToListAsync();
+            return PartialView("_ShopProductsPartial", products);
+        } 
+
     }
 }

@@ -53,38 +53,16 @@
   display: flex;
   position: relative;
 }
-.two .picture .otherpic .photo1 {
+.two .picture .otherpic .photo {
   width: 120px;
   height: 140px;
   margin-bottom: 82.6px;
   opacity: 0.3;
 }
-.two .picture .otherpic .photo1:hover {
+.two .picture .otherpic .photo:hover {
   opacity: 1;
 }
-.two .picture .otherpic .photo2 {
-  width: 120px;
-  height: 140px;
-  margin-bottom: 82.6px;
-}
-.two .picture .otherpic .photo2:hover {
-  opacity: 1;
-}
-.two .picture .otherpic .photo3 {
-  width: 120px;
-  height: 140px;
-  margin-bottom: 82.6px;
-  opacity: 0.3;
-}
-.two .picture .otherpic .photo3:hover {
-  opacity: 1;
-}
-.two .picture .otherpic .photo4 {
-  width: 120px;
-  height: 140px;
-  opacity: 0.3;
-}
-.two .picture .otherpic .photo4:hover {
+.two .picture .otherpic .main {
   opacity: 1;
 }
 .two .picture .here .slc {
@@ -105,7 +83,7 @@
   padding-left: 15px;
   padding-top: 2px;
   right: 30px;
-  bottom: 750px;
+  bottom: 820px;
 }
 .two .about {
   margin-left: 60px;
@@ -661,11 +639,12 @@
 }
 .four .cards {
   display: flex;
-  margin-left: 190px;
+  margin-left: 120px;
   margin-top: 30px;
 }
 .four .cards .card {
   border: none;
+  margin-left: 70px;
 }
 .four .cards .card .photo {
   position: relative;
@@ -829,72 +808,53 @@
   opacity: 1;
   bottom: 0;
 }
-.four .cards .card .firfloor {
+.four .cards .card .card-body {
+  width: 350px;
+}
+.four .cards .card .card-body .firfloor {
   display: flex;
   margin-top: 20px;
   margin-left: 90px;
 }
-.four .cards .card .firfloor .st {
+.four .cards .card .card-body .firfloor .st {
   color: #c6c6c6;
   display: inline;
   cursor: pointer;
   font-size: 8px;
 }
-.four .cards .card .firfloor .reviews {
+.four .cards .card .card-body .firfloor .reviews {
   color: #666;
   padding-left: 5px;
   padding-top: 5px;
   font-size: 14px;
 }
-.four .cards .card .title {
+.four .cards .card .card-body .titl {
+  text-align: center;
+}
+.four .cards .card .card-body .titl .title {
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  padding-left: 80px;
-  height: 0;
+  height: 30px;
   text-decoration: none;
   color: #000;
 }
-.four .cards .card .title:hover {
+.four .cards .card .card-body .titl .title:hover {
   color: #bd9855;
 }
-.four .cards .card .title4 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 100px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.four .cards .card .title4:hover {
-  color: #bd9855;
-}
-.four .cards .card .title5 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 62px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.four .cards .card .title5:hover {
-  color: #bd9855;
-}
-.four .cards .card .price {
+.four .cards .card .card-body .price {
   color: #bd9855;
   padding-left: 130px;
   font-size: 18px;
   font-weight: 500;
 }
-.four .cards .card .diswithpri {
+.four .cards .card .card-body .diswithpri {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 55px;
+  margin-left: px;
 }
-.four .cards .card .diswithpri .discount {
+.four .cards .card .card-body .diswithpri .discount {
   height: 0;
   font-size: 15px;
   color: #796b6b;
@@ -902,17 +862,11 @@
   padding-bottom: 20px;
   padding-left: 10px;
 }
-.four .cards .card .diswithpri .pricewith {
+.four .cards .card .card-body .diswithpri .pricewith {
   color: #bd9855;
   font-size: 18px;
   font-weight: 500;
   padding-left: 5px;
-}
-.four .cards .ctwo {
-  margin-left: 70px;
-}
-.four .cards .cthr {
-  margin-left: 70px;
 }
 .four .recent p {
   display: flex;

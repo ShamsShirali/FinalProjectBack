@@ -153,20 +153,40 @@
                     <li class="About other"><a  asp-controller="About" asp-action="Index" data-id="4">ABOUT US</a></li>
                 </ul>
 
-                <ul class="main">
-                    <li>
-                        <a href="sign.html" class="user"><i class="fa-regular fa-user"></i></a>
-                    </li>
+                @if(User.Identity.IsAuthenticated){
+                <ul class="main" style="margin-left: 260px">
+                        <li>
+                            <form asp-controller="Account" asp-action="Logout" method="post">
+                                <button style="border:none; background-color:white; color: #0c1d32;" type="submit" class="nav-link">Logout</button>
+                            </form>
+                            <span style="color:#0c1d32;">@User.Identity.Name</span>
+                        </li>
+                        <li class="heart">
+                            <a href="wishlist.html">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <sup>0</sup>
+                        </li>
 
-                    <li class="heart">
-                        <a href="wishlist.html">
-                            <i class="fa-regular fa-heart"></i>
-                        </a>
-                        <sup>0</sup>
-                    </li>
+                        @await Html.PartialAsync("_BasketPartial",basketVMs)
+                    </ul>
+                    }
+                    else
+                    {
+                          <ul class="main">
+                        <li>
+                            <a asp-controller="Account" asp-action="Login" class="user"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                        <li class="heart">
+                            <a href="wishlist.html">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <sup>0</sup>
+                        </li>
 
-                    @await Html.PartialAsync("_BasketPartial",basketVMs)
-                </ul>
+                        @await Html.PartialAsync("_BasketPartial",basketVMs)
+                    </ul>
+                    }
             </div>
         </nav>
     </div>
@@ -279,7 +299,7 @@
                     <button type="button" class="btn-close iks" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
             </div>
-            <ul class="searchList" style="position:absolute; z-index:999; background:white; padding:20px; width:153px; max-height:400px; overflow:scroll;">
+            <ul class="searchList" style="position:absolute; z-index:999; background:white; padding:20px; width:1537px; max-height:400px; overflow:scroll;">
             </ul>
         </div>
     </div>

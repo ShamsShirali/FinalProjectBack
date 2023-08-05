@@ -1,10 +1,14 @@
 ﻿@model IEnumerable<Product>
 
+@{
+    int count = 1;
+}
+
 @foreach (var item in Model)
 {
     <div class="card" style="width: 18rem;">
         <div class="photo">
-            <a href="product.html"><img src="~/assets/img/@item.MainImage" class="card-img-top" alt="..."></a>
+            <a asp-controller="Product" asp-action="Index" asp-route-id="@item.Id"><img src="~/assets/img/@item.MainImage" class="card-img-top" alt="..."></a>
 
             <p class="percent">- 20%</p>
 
@@ -31,29 +35,43 @@
                 </div>
             </div>
 
-            <div class="add">
+            <div class="add" asp-action="addbasket" asp-controller="basket" asp-route-id="@item.Id">
                 <p>ADD TO CART</p>
             </div>
         </div>
         <div class="card-body">
             <div class="firfloor">
                 <div class="stars6">
-                    <i class="fa-regular fa-star st"></i>
-                    <i class="fa-regular fa-star st"></i>
-                    <i class="fa-regular fa-star st"></i>
-                    <i class="fa-regular fa-star st"></i>
-                    <i class="fa-regular fa-star st"></i>
+                   @for (int i = 1; i <= 5; i++)
+                    {
+                        @if (i <= item.Raiting)
+                        {
+                            <i class="fa-regular fa-star st" style="color:rgb(239, 239, 53)"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-regular fa-star st"></i>
+                        }
+                    }
                 </div>
 
                 <p class="reviews">No reviews</p>
             </div>
 
-            <a href="product.html" class="title1">@item.Title</a>
+            <div class="titl"><a asp-controller="Product" asp-action="Index" asp-route-id="@item.Id" class="title">@item.Title</a></div>
 
-            <div class="diswithpri">
-                <P class="discount">$150.00</P>
-                <p class="pricewith">$@item.Price</p>
-            </div>
+            @if (item.DiscountedPrice > 0)
+            {
+                <div class="diswithpri">
+                    <P class="discount">$@($"{item.DiscountedPrice:0.00}")</P>
+                    <p class="pricewith">$@item.Price.ToString("0.00")</p>
+                </div>
+            }
+            else
+            {
+                <p class="price">$@item.Price.ToString("0.00")</p>
+            }
         </div>
     </div>
+    count++;
 }

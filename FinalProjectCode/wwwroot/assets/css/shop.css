@@ -284,7 +284,8 @@
 }
 .two .acdgen .prodsel .all .card {
   border: none;
-  width: 270px !important;
+  width: 240px !important;
+  margin-right: 30px;
 }
 .two .acdgen .prodsel .all .card .photo {
   position: relative;
@@ -465,64 +466,18 @@
   padding-top: 5px;
   font-size: 14px;
 }
-.two .acdgen .prodsel .all .card .title1 {
+.two .acdgen .prodsel .all .card .titl {
+  text-align: center;
+}
+.two .acdgen .prodsel .all .card .titl .title {
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  padding-left: 55px;
-  height: 0;
+  height: 30px;
   text-decoration: none;
   color: #000;
 }
-.two .acdgen .prodsel .all .card .title1:hover {
-  color: #bd9855;
-}
-.two .acdgen .prodsel .all .card .title3 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 20px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.two .acdgen .prodsel .all .card .title3:hover {
-  color: #bd9855;
-}
-.two .acdgen .prodsel .all .card .title4 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 49px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.two .acdgen .prodsel .all .card .title4:hover {
-  color: #bd9855;
-}
-.two .acdgen .prodsel .all .card .title {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 37px;
-  height: 0;
-  text-decoration: none;
-  color: #000;
-}
-.two .acdgen .prodsel .all .card .title:hover {
-  color: #bd9855;
-}
-.two .acdgen .prodsel .all .card .title5 {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  height: 0;
-  padding-left: 10px;
-  text-decoration: none;
-  color: #000;
-}
-.two .acdgen .prodsel .all .card .title5:hover {
+.two .acdgen .prodsel .all .card .titl .title:hover {
   color: #bd9855;
 }
 .two .acdgen .prodsel .all .card .price {
@@ -535,7 +490,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 22px;
 }
 .two .acdgen .prodsel .all .card .diswithpri .discount {
   height: 0;

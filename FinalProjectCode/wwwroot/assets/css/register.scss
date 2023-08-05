@@ -18,7 +18,7 @@
         font-weight: 500;
         color: #9b1010;
         line-height: 1.2;
-        top: 210px;
+        top: 380px;
         left: 230px;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
@@ -53,7 +53,7 @@
             position: absolute;
             height: 30px;
             width: 2px;
-            top: 201px;
+            top: 261px;
             left: 488px;
             border-radius: 2px;
             background-color: #b3b3b3;
@@ -62,14 +62,38 @@
         .close {
             position: absolute;
             cursor: pointer;
-            top: 206px;
+            top: 269px;
             left: 495px;
         }
 
         .open {
             position: absolute;
             cursor: pointer;
-            top: 206px;
+            top: 269px;
+            left: 495px;
+        }
+
+        .lined {
+            position: absolute;
+            height: 30px;
+            width: 2px;
+            top: 327px;
+            left: 488px;
+            border-radius: 2px;
+            background-color: #b3b3b3;
+        }
+
+        .closed {
+            position: absolute;
+            cursor: pointer;
+            top: 335px;
+            left: 495px;
+        }
+
+        .opend {
+            position: absolute;
+            cursor: pointer;
+            top: 335px;
             left: 495px;
         }
 
@@ -157,14 +181,10 @@
             cursor: pointer;
             margin-top: 18px;
             margin-left: 30px;
-            padding-left: 210px;
-            padding-top: 8px;
-
-            a {
+            padding-top: 3px;
                 color: #ffffff;
                 font-family: Inter, sans-serif;
                 text-decoration: none;
-            }
 
             &:hover {
                 background-color: #bd9855;

@@ -13,14 +13,12 @@ namespace FinalProjectCode.Models
         public string Description { get; set; }
         [StringLength(1000)]
         public string Info { get; set; }
-        [StringLength(255)]
-        public string View { get; set; }
-        [StringLength(255)]
-        public string Sold { get; set; }
+        public int View { get; set; }
+        public int Sold { get; set; }
         [Column(TypeName = "money")]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
         [Column(TypeName = "money")]
-        public double DiscountedPrice { get; set; }
+        public decimal? DiscountedPrice { get; set; }
         public int Count { get; set; }
         [StringLength(255)]
         public string? HoverImage { get; set; }
@@ -34,5 +32,6 @@ namespace FinalProjectCode.Models
         public IEnumerable<ProductImage> ProductImages { get; set; }
         public IEnumerable<ProductTag>? ProductTags { get; set; }
         public int Raiting { get; set; }
+        public bool InStock { get; set; } = true;
     }
 }

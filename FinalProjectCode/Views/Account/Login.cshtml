@@ -1,0 +1,68 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+<link rel="stylesheet" href="~/assets/css/sign.css">
+
+<section class="one">
+    <img src="~/assets/img/3057c28b1250e9c.jpg" alt="">
+
+    <p>SIGN IN</p>
+</section>
+
+<section class="two">
+    <div class="container">
+        <div class="row">
+            <div class="about col-6">
+                <form asp-controller="Account" asp-action="Login" method="post">
+                    <input asp-for="EmailOrUsername" id="emaill" required="required" placeholder="Email*" />
+                    <span class="text-danger" asp-validation-for="EmailOrUsername"></span>
+
+                    <input asp-for="Password" class="passwordd" required="required" placeholder="Password*" />
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                    <div class="line"></div>
+                    <i class="fa-solid fa-eye-slash close" style="color: #787575;"></i>
+                    <i class="fa-solid fa-eye open d-none" style="color: #767171;"></i>
+
+                    <div class="forg">
+
+                        <div class="checkbox-apple">
+                            <input class="yep" id="check-apple" type="checkbox">
+                            <label class="app" for="check-apple"></label>
+                        </div>
+
+                        <p class="rem">Remember me</p>
+
+                        <a href="forgot.html">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="sign">SIGN IN</button>
+                </form>
+
+
+                <div class="hori d-flex">
+                    <hr />
+                    <p>Or</p>
+                    <hr />
+                </div>
+                <button class="facebook"><i class="fa-brands fa-facebook"></i>Login with Facebook</button>
+                <button class="twitter"><i class="fa-brands fa-google"></i>Login with Google</button>
+            </div>
+
+            <div class="new col-6">
+                <p class="custom">New customer?</p>
+                <p class="inthis">
+                    Sign up for early Sale access plus tailored new arrivals, trends and promotions.
+                    To opt out, click unsubscribe in our emails.
+                </p>
+
+                <div class="regis">
+                    <a asp-controller="Account" asp-action="Register">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/assets/js/sign.js"></script>

@@ -215,6 +215,7 @@
                 outline: none;
                 background: transparent;
                 border: none;
+                width: 90px;
             }
 
             &:hover {
@@ -230,7 +231,7 @@
 
         .firstsel {
             display: flex;
-            margin-left: 350px;
+            margin-left: 310px;
 
             li {
                 display: inline;
@@ -284,6 +285,7 @@
 
             .other {
                 margin-left: 50px;
+                width: 80px;
             }
         }
 
@@ -294,6 +296,7 @@
 
             .user {
                 margin-right: 10px;
+                width: 50px;
 
                 i {
                     color: #0c1d32;
@@ -994,87 +997,20 @@
                 }
             }
 
-            .title {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 53px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
+            .titl {
+                text-align: center;
 
-                &:hover {
-                    color: #bd9855;
-                }
-            }
+                .title {
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 400;
+                    height: 30px;
+                    text-decoration: none;
+                    color: #000;
 
-            .title1 {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 78px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: #bd9855;
-                }
-            }
-
-            .title2 {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 59px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: #bd9855;
-                }
-            }
-
-            .title3 {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 46px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: #bd9855;
-                }
-            }
-
-            .title4 {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 69px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: #bd9855;
-                }
-            }
-
-            .title5 {
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: 400;
-                padding-left: 37px;
-                height: 0;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: #bd9855;
+                    &:hover {
+                        color: #bd9855;
+                    }
                 }
             }
 

@@ -15,7 +15,7 @@
   font-weight: 500;
   color: #9b1010;
   line-height: 1.2;
-  top: 210px;
+  top: 380px;
   left: 350px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -129,7 +129,7 @@
 .two .about .checkbox-apple label:hover:after {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-.two .about .signbt {
+.two .about .sign {
   border: none;
   cursor: pointer;
   width: 384px;
@@ -137,15 +137,13 @@
   background-color: #000;
   margin-top: 17px;
   margin-left: 30px;
-  padding-top: 10px;
-  padding-left: 160px;
-}
-.two .about .signbt .sign {
+  padding-top: 5px;
+  padding-left: 5px;
   color: #ffffff;
   font-family: Inter, sans-serif;
   text-decoration: none;
 }
-.two .about .signbt:hover {
+.two .about .sign:hover {
   background-color: #bd9855;
 }
 .two .about .hori {
