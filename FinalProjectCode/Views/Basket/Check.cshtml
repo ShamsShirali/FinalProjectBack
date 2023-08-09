@@ -1,0 +1,156 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/assets/css/main.css">
+     <link rel="stylesheet" href="~/assets/css/check.css">
+    <title>Check</title>
+</head>
+<body>
+    <section class="one">
+        <div class="container">
+            <div class="row">
+                <div class="our-information col-6">
+                    <div class="contact-log">
+                        <p class="contact">Contact</p>
+
+                        <p class="log">Already have an account? <a href="sign.html">Log in</a> </p>
+                    </div>
+
+                    <form action="#">
+                        <input type="email" id="email" required="required" placeholder="Email or mobile phone number" />
+                    </form>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Email me with news and offers
+                        </label>
+                    </div>
+
+                    <p class="shipping">Shipping address</p>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle country" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <p class="region">Country/Region</p>
+                            United States
+                        </button>
+                        <ul class="dropdown-menu select">
+                            <li><a class="dropdown-item" href="">United States</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="firstname">
+                        <input type="name" id="name" required="required" placeholder="First name (optional)" />
+                        <input type="name" id="last" required="required" placeholder="Last name" />
+                    </div>
+
+                    <div class="search">
+                        <form action="#">
+                            <input id="search" class="me-2" type="search" placeholder="Address" aria-label="Search">
+                        </form>
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <input type="name" id="apartment" required="required"
+                           placeholder="Apartment, suite, etc. (optional)" />
+
+                    <form action="#" class="all">
+                        <input type="name" id="city" required="required"
+                               placeholder="Apartment, suite, etc. (optional)" />
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle states" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <p class="state">State</p>
+                                Alabama
+                            </button>
+                            <ul class="dropdown-menu options">
+                                <li><a class="dropdown-item" href="#">Alabama</a></li>
+                                <li><a class="dropdown-item" href="#">Alaska</a></li>
+                                <li><a class="dropdown-item" href="#">Alaska</a></li>
+                            </ul>
+                        </div>
+                        <input type="name" id="zip" required="required"
+                               placeholder="Apartment, suite, etc. (optional)" />
+                    </form>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Save this information for next timer
+                        </label>
+                    </div>
+
+                    <div class="next">
+                        <a class="return" href="index.html">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <p>Return to cart</p>
+                        </a>
+
+                        <div class="shipping">
+                            <a href="sign.html" class="continue">Continue to shipping</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-products col-6">
+                    <div class="prd">
+                        <div class="prdone">
+                            <div class="photo">
+                                <img src="assets/img/Image-21_360x.webp" alt="">
+                                <div class="count">0</div>
+                            </div>
+
+                            <p class="nm">White Wine</p>
+
+
+                            <p class="per">$120.00</p>
+                        </div>
+
+                        <div class="prdone">
+                            <div class="photo">
+                                <img src="assets/img/Image-6_360x.webp" alt="">
+                                <div class="count">0</div>
+                            </div>
+
+                            <p class="nm">Chardonnay</p>
+
+                            <p class="per">$150.00</p>
+                        </div>
+                    </div>
+
+                    <div class="subtotal-price">
+                        <p class="subtotal">Subtotal</p>
+                        <p class="price">$270.00</p>
+                    </div>
+
+                    <div class="shipping-calcud">
+                        <p class="subtotal">Shipping</p>
+                        <p class="price">Calculated at next step</p>
+                    </div>
+
+                    <div class="total-price">
+                        <p class="subtotal">Total</p>
+
+                        <div class="country">
+                            <p class="usd">USD</p>
+                            <p class="price">$270.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+</html>

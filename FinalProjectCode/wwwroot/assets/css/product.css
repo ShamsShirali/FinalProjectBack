@@ -124,6 +124,24 @@
   color: white;
   background-color: #bd9855;
 }
+.two .about .general .active {
+  color: red;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.two .about .general .active:hover {
+  color: white;
+  background-color: #bd9855;
+}
 .two .about .firfloor {
   display: flex;
   margin-top: 20px;
@@ -456,6 +474,51 @@
   background-color: #bd9855;
   color: white;
   border: none;
+}
+.three .subsection .sectwo .comment {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  width: 1200px;
+  margin-top: 20px;
+}
+.three .subsection .sectwo .comment .approve {
+  display: flex;
+}
+.three .subsection .sectwo .comment .approve .starr {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.three .subsection .sectwo .comment .approve .starr .st {
+  color: rgb(239, 239, 53);
+  cursor: pointer;
+  font-size: 12px;
+}
+.three .subsection .sectwo .comment .approve .dat {
+  color: #aeaeae;
+  margin: 15px 0 0 10px;
+  font-size: 13px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.three .subsection .sectwo .comment .title {
+  line-height: 21px;
+  width: 100%;
+  margin: 7px 0 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Libre Baskerville, serif;
+  color: #000;
+}
+.three .subsection .sectwo .comment .comm {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 10px;
 }
 .three .subsection .sectwo .getin {
   margin-top: 50px;

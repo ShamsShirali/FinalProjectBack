@@ -350,6 +350,24 @@
   color: white;
   background-color: #bd9855;
 }
+.two .acdgen .prodsel .all .card .active {
+  color: red;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.two .acdgen .prodsel .all .card .active:hover {
+  color: white;
+  background-color: #bd9855;
+}
 .two .acdgen .prodsel .all .card .arrow {
   color: #000;
   background-color: white;

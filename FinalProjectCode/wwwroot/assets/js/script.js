@@ -1,5 +1,4 @@
-"use strict";
-
+$(document).ready(function () {
 $('.header .secondh .selec li a').each(function () {
   $('.header .secondh .selec li').click(function () {
     if ($('.header .secondh .selec li a').attr("data-id") == 1) {
@@ -62,7 +61,6 @@ $(function () {
 })
 
 //geri sayim
-$(document).ready(function () {
   var countDownDate = new Date("Oct 10, 2023 00:23:59").getTime();
   var x = setInterval(function () {
     var now = new Date().getTime();
@@ -258,7 +256,6 @@ $(document).ready(function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-})
 
 let datas = 1;
 document.querySelector('#countings').innerText = datas;
@@ -296,18 +293,6 @@ function decrement() {
 // })
 // });
 
-let basket = document.querySelector('.basket');
-let bskm = document.querySelector('.bskm');
-
-basket.addEventListener('click', () => {
-  if (bskm.classList.contains('active-basket')) {
-    bskm.classList.remove('active-basket');
-  }
-  else {
-    bskm.classList.add('active-basket');
-  }
-})
-
 //#region checkBoxChanged
 function checkboxChanged() {
   let checkbox = document.querySelector('.form-check');
@@ -335,4 +320,5 @@ $(function () {
   $("#general-start .start .over").click(function () {
     $("#general-start").addClass("d-none");
   })
+})
 })

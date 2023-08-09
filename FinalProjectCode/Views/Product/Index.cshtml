@@ -3,6 +3,7 @@
     ViewData["Title"] = "Index";
     int count = 1;
 }
+
 <link rel="stylesheet" href="~/assets/css/product.css">
 
 <section class="one">
@@ -43,7 +44,7 @@
                         <p class="select">@Model.Product.Title</p>
                     </div>
 
-                    <i class="fa-regular fa-heart heart"></i>
+                    <i data-id="@Model.Product.Id" class="fa-regular fa-heart add-to-wishlist2 heart"></i>
                 </div>
 
                 <div class="firfloor">
@@ -58,15 +59,20 @@
                                 <i class="fa-solid fa-star st"></i>
                             }
                         }
-
                     </div>
 
                     <p class="reviews">No reviews</p>
                 </div>
-
+        
                 <div class="price">
+                    @if (Model.Product.DiscountedPrice > 0)
+            {
                     <p class="discount">$@($"{Model.Product.DiscountedPrice:0.00}")</p>
                     <p class="count">$@Model.Product.Price.ToString("0.00")</p>
+            }
+            else{
+                        <p class="discount">$@Model.Product.Price.ToString("0.00")</p>
+            }
                 </div>
 
                 <p class="text">
@@ -105,12 +111,12 @@
 
                 <div class="add-to-card adbtn d-flex">
                     <div class="count">
-                        <button onclick="increment()">-</button>
-                        <h2 id="counting"></h2>
-                        <button onclick="decrement()">+</button>
+                        <button class="min">-</button>
+                        <h2 id="countingg">1</h2>
+                        <button class="plus">+</button>
                     </div>
 
-                    <button id="add">Add to card</button>
+                    <button class="add-to-cart-button2" data-id="@Model.Product.Id" id="add">Add to card</button>
                 </div>
 
                 <button type="submit" class="buy">BUY IT NOW</button>
@@ -167,8 +173,25 @@
                 <button>WRITE A REWIEV</button>
             </div>
 
+            <div class="comment">
+                    <div class="approve">
+                        <div class="starr">
+                            <i class="fa-solid fa-star st"></i>
+                            <i class="fa-solid fa-star st"></i>
+                            <i class="fa-solid fa-star st"></i>
+                            <i class="fa-solid fa-star st"></i>
+                            <i class="fa-solid fa-star st"></i>
+                        </div>
+
+                        <p class="dat">Shams on Aug 08, 2023</p>
+                    </div>
+
+                    <p class="title">Taste</p>
+                    <p class="comm">The drink is quite tasty.</p>
+                </div>
+
             <div class="getin d-none">
-                <form action="#">
+                <form asp-controller="Product" asp-action="AddReview" method="post">
                     <div>
                         <label class="ps-5 fr" for="fir">Name</label>
 
@@ -176,14 +199,26 @@
                     </div>
 
                     <div>
-                        <input type="text" id="fir" required="required" placeholder="Enter Your Name" />
+                        @if(ViewBag.Name != null){
+                            <input type="text" id="fir" disabled value="@ViewBag.Name" required="required" placeholder="Enter Your Name" />
+                        }
+                        else
+                        {
+                            <input type="text" id="fir" value="@ViewBag.Name" required="required" placeholder="Enter Your Name" />
+                        }
 
-                        <input type="text" id="last" required="required" placeholder="shamsshsh@code.edu.az" />
+                        @if(ViewBag.Email != null){
+                            <input type="text" id="last" disabled value="@ViewBag.Email" required="required" placeholder="shamsshsh@code.edu.az" />
+                        }
+                        else
+                        {
+                            <input type="text" id="last" value="@ViewBag.Email" required="required" placeholder="shamsshsh@code.edu.az" />
+                        }
                     </div>
 
                     <div class="firfloor">
                         <p class="reviews">Rating</p>
-
+                        <input type="number" class="d-none raiting-input" asp-for="Review.Raiting" />
                         <div id="0" class="stars1">
                             <i id="1" class="fa-regular fa-star st st1"></i>
                             <i id="2" class="fa-regular fa-star st st2"></i>
@@ -195,16 +230,16 @@
 
                     <div class="d-flex subjc">
                         <label class="ps-5 ds" for="dis">Review Title</label>
-                        <input type="text" id="dis" required="required" placeholder="Give your rewiev a title" />
+                        <input type="text" asp-for="Review.Tittle" id="dis" required="required" placeholder="Give your rewiev a title" />
                     </div>
 
                     <div class="d-flex mss">
                         <label class="ps-5 mess" for="mes">Body of Review (1500)</label>
-                        <textarea name="" placeholder="Write your comments here" id="mes" cols="30"
+                        <textarea asp-for="Review.Describtion" placeholder="Write your comments here" id="mes" cols="30"
                                   rows="10"></textarea>
                     </div>
 
-                    <button class="snd">Submit Review</button>
+                    <button type="submit" class="snd">Submit Review</button>
                 </form>
             </div>
         </div>
@@ -249,7 +284,7 @@
                     <div class="photo">
                         <a asp-controller="Product" asp-action="Index" asp-route-id="@item.Id"><img src="~/assets/img/@item.MainImage" class="card-img-top" alt="..."></a>
 
-                        <i class="fa-regular fa-heart heart d-none"></i>
+                        <i data-id="@item.Id" class="fa-regular fa-heart heart add-to-wishlist2 d-none"></i>
                         <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
                         <i class="fa-solid fa-magnifying-glass glass d-none"></i>
 
@@ -272,7 +307,7 @@
                             </div>
                         </div>
 
-                        <div class="add">
+                        <div data-id="@item.Id" class="add add-to-wishlist1">
                             <p>ADD TO CART</p>
                         </div>
                     </div>
@@ -299,10 +334,6 @@
                     </div>
                 </div>
             }
-
-           
-
-
         </div>
 
         <div class="recent">
@@ -316,7 +347,7 @@
                     <div class="photo">
                         <a asp-controller="Product" asp-action="Index" asp-route-id="@item.Id"><img src="~/assets/img/@item.MainImage" class="card-img-tope" alt="..."></a>
 
-                        <i class="fa-regular fa-heart heart d-none"></i>
+                        <i data-id="@item.Id" class="fa-regular fa-heart heart add-to-wishlist2 d-none"></i>
                         <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
                         <i class="fa-solid fa-magnifying-glass glass d-none"></i>
 
@@ -339,7 +370,7 @@
                             </div>
                         </div>
 
-                        <div class="add">
+                        <div data-id="@item.Id" class="add add-to-wishlist1">
                             <p>ADD TO CART</p>
                         </div>
                     </div>

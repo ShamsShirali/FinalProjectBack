@@ -121,15 +121,16 @@
                 border-radius: 2px;
             }
 
-            a {
+            .remove {
                 color: #666;
                 font-size: 14px;
                 margin-top: 15px;
                 margin-left: 25px;
+                background-color: white;
+                border: none;
 
                 &:hover {
                     color: red;
-                    text-decoration: none;
                 }
             }
         }

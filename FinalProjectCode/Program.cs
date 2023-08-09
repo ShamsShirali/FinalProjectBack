@@ -38,6 +38,7 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ILayoutService, LayoutService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<EmailSettings>();

@@ -52,6 +52,260 @@
   font-weight: 400;
   line-height: 1.5;
 }
+.two .like {
+  display: flex;
+  flex-wrap: wrap;
+}
+.two .like .card {
+  border: none;
+  width: 240px !important;
+  margin-right: 30px;
+}
+.two .like .card .photo {
+  position: relative;
+  height: 288px;
+  width: 240px;
+  overflow: hidden;
+}
+.two .like .card .photo img {
+  position: absolute;
+  background: transparent;
+  height: 288px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.two .like .card .photo .add p {
+  opacity: 0;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: -60px;
+  margin: 0;
+  padding-left: 80px;
+  padding-top: 19px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.two .like .card .photo .add:hover p {
+  background-color: #bd9855;
+}
+.two .like .card .percent {
+  background: #fff;
+  font-size: 13px;
+  color: #000;
+  position: absolute;
+  font-weight: 500;
+  width: 65px;
+  height: 25px;
+  z-index: 1;
+  margin-left: 20px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+.two .like .card .heart {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.two .like .card .heart:hover {
+  color: white;
+  background-color: #bd9855;
+}
+.two .like .card .active {
+  color: red;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.two .like .card .active:hover {
+  color: white;
+  background-color: #bd9855;
+}
+.two .like .card .arrow {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 65px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.two .like .card .arrow:hover {
+  color: white;
+  background-color: #bd9855;
+}
+.two .like .card .glass {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 115px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.two .like .card .glass:hover {
+  color: white;
+  background-color: #bd9855;
+}
+.two .like .card .timer {
+  position: absolute;
+  display: flex;
+  margin-left: 33px;
+}
+.two .like .card .timer .times {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  margin-top: 240px;
+}
+.two .like .card .timer .times span {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 7px;
+}
+.two .like .card .timer .times p {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6d7784;
+  margin: 0 !important;
+  padding-left: 5px;
+}
+.two .like .card .timer .timesec {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  margin-top: 240px;
+  margin-left: 5px;
+}
+.two .like .card .timer .timesec span {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+.two .like .card .timer .timesec p {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6d7784;
+  padding-left: 4px;
+  padding-bottom: 30px;
+}
+.two .like .card:hover .heart {
+  display: inline !important;
+}
+.two .like .card:hover .arrow {
+  display: inline !important;
+}
+.two .like .card:hover .glass {
+  display: inline !important;
+}
+.two .like .card:hover .timer {
+  display: none !important;
+}
+.two .like .card:hover .add p {
+  opacity: 1;
+  bottom: 0;
+}
+.two .like .card .firfloor {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.two .like .card .firfloor .st {
+  color: #c6c6c6;
+  display: inline;
+  cursor: pointer;
+  font-size: 8px;
+}
+.two .like .card .firfloor .reviews {
+  color: #666;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+.two .like .card .titl {
+  text-align: center;
+}
+.two .like .card .titl .title {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  height: 30px;
+  text-decoration: none;
+  color: #000;
+}
+.two .like .card .titl .title:hover {
+  color: #bd9855;
+}
+.two .like .card .price {
+  color: #bd9855;
+  padding-left: 80px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.two .like .card .diswithpri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.two .like .card .diswithpri .discount {
+  height: 0;
+  font-size: 15px;
+  color: #796b6b;
+  text-decoration: line-through;
+  padding-bottom: 20px;
+}
+.two .like .card .diswithpri .pricewith {
+  color: #bd9855;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+.two .like .card .remove {
+  color: #666;
+  background-color: white;
+  font-size: 14px;
+  margin-left: 100px;
+  border: none;
+}
+.two .like .card .remove:hover {
+  color: red;
+}
 
 footer {
   margin-top: 60px !important;

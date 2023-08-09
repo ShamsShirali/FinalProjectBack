@@ -36,17 +36,6 @@
         }
     })
 
-    $(document).on('click', '.add', function (e) {
-        e.preventDefault();
-
-        let url = $(this).attr('href');
-
-        fetch(url)
-            .then(res => res.text())
-            .then(data => {
-                $('.main-navigation').html(data)
-            })
-    })
 
  
     $(document).on("change", "#sort-product", function (ev) {
@@ -112,4 +101,319 @@
 
 
     })
+
+
+    $(document).on("click", ".add-to-cart-button", function (ev) {
+
+        ev.preventDefault();
+
+
+
+
+        let dataId = $(this).attr("data-id");
+
+        console.log(dataId)
+        console.log($(".user"))
+        let data = { id: dataId }
+
+        $.ajax({
+            url: `/Home/AddBasket`,
+            type: "Post",
+            data: data,
+            success: function (res) {
+                if (res > 0) {
+                    $(".cart-count").text(res)
+                }
+                else {
+                    /*$(".user").click();*/
+                    alert("Please Login");
+                }
+
+            }
+        })
+    })
+
+
+
+    $(document).on("click", ".add-to-cart-button1", function (ev) {
+
+        ev.preventDefault();
+
+
+
+
+        let dataId = $(this).attr("data-id");
+
+        console.log(dataId)
+        console.log($(".user"))
+        let data = { id: dataId }
+
+        $.ajax({
+            url: `/Shop/AddBasket`,
+            type: "Post",
+            data: data,
+            success: function (res) {
+                if (res > 0) {
+                    $(".cart-count").text(res)
+                }
+                else {
+                    /*$(".user").click();*/
+                    alert("Please Login");
+                }
+
+            }
+        })
+    })
+
+
+
+    $(document).on("click", ".add-to-cart-button2", function (ev) {
+
+        ev.preventDefault();
+
+
+
+
+        let dataId = $(this).attr("data-id");
+
+        console.log(dataId)
+
+        let count = $(this).prev().children().eq(1).text()
+        let data = { id: dataId, count: count }
+
+        $.ajax({
+            url: `/Product/AddBasket`,
+            type: "Post",
+            data: data,
+            success: function (res) {
+                if (res > 0) {
+                    $(".cart-count").text(res)
+                }
+                else {
+                    /*$(".user").click();*/
+                    alert("Please Login");
+                }
+            }
+        })
+    })
+
+
+
+
+    $(document).on("click", ".add-to-wishlist", function (ev) {
+
+        ev.preventDefault();
+
+
+        let dataId = $(this).attr("data-id");
+        let data = { id: dataId }
+
+        $.ajax({
+            url: "/Home/AddWish",
+            type: "Post",
+            data: data,
+            success: function (res) {
+                if (res == "Login") {
+                    alert("Please Login");
+                }
+                else {
+                    $(".wishlist-count").text(res)
+                    $(this).toggleClass("active")
+                    $(this).toggleClass("fa-solid")
+                    $(this).toggleClass("fa-regular")
+                }
+            }
+        })
+    })
+
+
+
+
+    $(document).on("click", ".add-to-wishlist1", function (ev) {
+
+        ev.preventDefault();
+
+
+        let dataId = $(this).attr("data-id");
+        let data = { id: dataId }
+
+        $.ajax({
+            url: "/Shop/AddWish",
+            type: "Post",
+            data: data,
+            success: function (res) {
+                if (res == "Login") {
+                    alert("Please Login");
+                }
+                else {
+                    $(".wishlist-count").text(res)
+                    $(this).toggleClass("active")
+                    $(this).toggleClass("fa-solid")
+                    $(this).toggleClass("fa-regular")
+                }
+            }
+        })
+    })
+
+
+
+
+    $(document).on("click", ".add-to-wishlist2", function (ev) {
+
+        ev.preventDefault();
+
+
+        let dataId = $(this).attr("data-id");
+        let data = { id: dataId }
+
+        $.ajax({
+            url: "/Product/AddWish",
+            type: "Post",
+            data: data,
+            success: function (res) {
+                if (res == "Login") {
+                    alert("Please Login");
+                }
+                else {
+                    $(".wishlist-count").text(res)
+                    $(this).toggleClass("active")
+                    $(this).toggleClass("fa-solid")
+                    $(this).toggleClass("fa-regular")
+                }
+            }
+        })
+    })
+
+    $(document).on("click", ".stars1 .st", function (ev) {
+
+        ev.preventDefault();
+
+        let dataId = $(this).attr("id")
+        $(".firfloor .raiting-input").val(dataId)
+        console.log($(".firfloor .raiting-input").val())
+
+
+       
+
+
+    })
+
+    $(document).on("click", ".remove-from-wishlist", function (ev) {
+
+        ev.preventDefault();
+
+
+        let dataId = $(this).attr("data-id");
+        console.log("adsfdsfsfsd")
+        let data = { id: dataId }
+
+        $.ajax({
+            url: "Wishlist/RemoveWish",
+            type: "Post",
+            data: data,
+            success: function (res) {
+                $(".wishlist-count").text(res)
+            }
+        })
+
+       $(this).parent().parent().remove();
+    })
+
+    $(document).on("click", ".basket", function (ev) {
+        ev.preventDefault();
+        $(".bskm").toggleClass("active-basket")
+    })
+
+
+
+
+    $(document).on("click", ".plus-btn", function (ev) {
+
+        ev.preventDefault();
+
+
+
+        let dataId = $(this).attr("data-id");
+
+        $.ajax({
+            url: `basket/IncreaseProductCount?id=${dataId}`,
+            type: "Post",
+            success: function (res) {
+                $(".cart-count").text(res)
+            }
+        })
+
+        var num = $(this).prev().text()
+        var totalCommon = $(".grand-total span").html()
+        
+        var productTotal = $(this).parent().parent().next().children().eq(0).children().eq(0).text()
+        
+        var productPrice = $(this).parent().parent().prev().children().eq(1).children().eq(1).children().eq(0).text()
+        
+        var res = parseFloat(totalCommon) + parseFloat(productPrice)
+        ++num;
+        $(this).prev().text(num)
+        productTotal = parseFloat(productPrice) * num
+        $(this).parent().parent().next().children().eq(0).children().eq(0).html(productTotal)
+        $(".grand-total span").html(res)
+    })
+
+    $(document).on("click", ".minus", function (ev) {
+
+        ev.preventDefault();
+
+
+
+        let dataId = $(this).attr("data-id");
+        let num = $(this).next().text()
+        if (num > 1) { 
+
+        $.ajax({
+            url: `basket/DecreaseProductCount?id=${dataId}`,
+            type: "Post",
+            success: function (res) {
+                $(".cart-count").text(res)
+            }
+        })
+
+      
+            var totalCommon = $(".grand-total span").text()
+            var productTotal = $(this).parent().parent().next().children().eq(0).children().eq(0).text()
+            var productPrice = $(this).parent().parent().prev().children().eq(1).children().eq(1).children().eq(0).text()
+            var res = parseFloat(totalCommon) - parseFloat(productPrice)
+            --num;
+            $(this).next().text(num)
+            productTotal = parseFloat(productTotal) - parseFloat(productPrice)
+            $(this).parent().parent().next().children().eq(0).children().eq(0).html(productTotal)
+            $(".grand-total span").html(res)
+        }
+    })
+
+
+    $(document).on("click", ".delete-button", function (ev) {
+
+        ev.preventDefault();
+
+
+
+        let dataId = $(this).attr("data-id");
+
+        $.ajax({
+            url: `basket/deleteproductfrombasket?id=${dataId}`,
+            type: "Post",
+            success: function (res) {
+                $(".cart-count").text(res)
+            }
+        })
+
+        var totalCommon = $(".grand-total span").html()
+        var productTotal = $(this).parent().next().children().eq(0).children().eq(0).html()
+        var res = parseFloat(totalCommon) - parseFloat(productTotal)
+
+        $(".grand-total span").html(res)
+
+        $(this).parent().parent().remove()
+    })
+
+
 })

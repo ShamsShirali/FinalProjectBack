@@ -13,7 +13,7 @@
                  class="card-img-top" alt="...">
             </a>
 
-            <i class="fa-regular fa-heart heart d-none"></i>
+            <i data-id="@product.Id" class="fa-regular fa-heart heart add-to-wishlist d-none"></i>
             <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
             <i class="fa-solid fa-magnifying-glass glass d-none"></i>
 
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="add" asp-action="addbasket" asp-controller="basket" asp-route-id="@product.Id">
+            <div class="add add-to-cart-button" data-id="@product.Id" asp-action="addbasket" asp-controller="basket" asp-route-id="@product.Id">
                 <p>ADD TO CART</p>
             </div>
         </div>

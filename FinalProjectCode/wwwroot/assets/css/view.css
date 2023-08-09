@@ -103,15 +103,16 @@
   color: white;
   border-radius: 2px;
 }
-.two .prod .counts a {
+.two .prod .counts .remove {
   color: #666;
   font-size: 14px;
   margin-top: 15px;
   margin-left: 25px;
+  background-color: white;
+  border: none;
 }
-.two .prod .counts a:hover {
+.two .prod .counts .remove:hover {
   color: red;
-  text-decoration: none;
 }
 .two .prod .total {
   padding-left: 10px;

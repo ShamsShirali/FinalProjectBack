@@ -12,7 +12,7 @@
 
             <p class="percent">- 20%</p>
 
-            <i class="fa-regular fa-heart heart d-none"></i>
+            <i data-id="@item.Id" class="fa-regular fa-heart heart add-to-wishlist1 d-none"></i>
             <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
             <i class="fa-solid fa-magnifying-glass glass d-none"></i>
 
@@ -35,7 +35,7 @@
                 </div>
             </div>
 
-            <div class="add" asp-action="addbasket" asp-controller="basket" asp-route-id="@item.Id">
+            <div class="add add-to-cart-button1" data-id="@item.Id" asp-action="addbasket" asp-controller="basket" asp-route-id="@item.Id">
                 <p>ADD TO CART</p>
             </div>
         </div>

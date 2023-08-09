@@ -18,31 +18,43 @@ namespace FinalProjectCode.Services
             _contextAccessor = contextAccessor;
         }
 
-        public async Task<List<BasketVM>> GetBasket()
+        public async Task<List<BasketVM>> GetBasket(string UserName)
         {
-            string? cookie = _contextAccessor.HttpContext.Request.Cookies["basket"];
-
-            List<BasketVM> basketVMs = null;
-
-            if (!string.IsNullOrWhiteSpace(cookie))
+            List<BasketVM> basketVMs = new();
+            
+            if(UserName!= null)
             {
-                basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(cookie);
+                AppUser user = await _context.Users.Where(m => m.UserName == UserName).FirstOrDefaultAsync();
 
-                foreach (BasketVM basketVM in basketVMs)
+                List<Basket> baskets = await _context.Baskets.Where(m => m.UserId == user.Id).ToListAsync();
+
+                IEnumerable<Product> products = await _context.Products.ToListAsync();
+
+                Product product = new();
+
+
+
+
+                foreach (var item in baskets)
                 {
-                    Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.Id);
-
-                    basketVM.Image = product.MainImage;
-                    basketVM.Price = (decimal)(product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price);
-                    basketVM.Title = product.Title;
+                    product = await _context.Products.FirstOrDefaultAsync(p => p.Id == item.ProductId);
+                    basketVMs.Add(new BasketVM
+                    {
+                        Id = product.Id,
+                        Count = item.Count,
+                        Image = product.HoverImage,
+                        Title = product.Title,
+                        Price = product.Price,
+                    });
                 }
+                return basketVMs;
             }
             else
             {
-                basketVMs = new List<BasketVM>();
+                return basketVMs;
             }
 
-            return basketVMs;
+            
         }
 
         public async Task<IEnumerable<Category>> GetCategories()

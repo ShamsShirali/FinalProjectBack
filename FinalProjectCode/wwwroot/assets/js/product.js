@@ -1,20 +1,19 @@
-"use strict";
+$(document).ready(function () {
 
-let datas = 1;
-document.querySelector('#counting').innerText = datas;
+    document.querySelector(".plus").addEventListener("click", function () {
+        let count = document.querySelector("#countingg").innerHTML
+        ++count
+        document.querySelector("#countingg").innerHTML = count
+    })
 
-function increment() {
-  if (datas > 1) {
-    datas = datas - 1;
-    document.querySelector('#counting').innerText = datas;
-  }
-}
 
-function decrement() {
-  datas = datas + 1;
-  document.querySelector('#counting').innerText = datas;
-}
-
+    document.querySelector(".min").addEventListener("click", function () {
+        let count = document.querySelector("#countingg").innerHTML
+        if (count > 1) {
+            --count
+            document.querySelector("#countingg").innerHTML = count
+        }
+    })
 
 $('.two .picture .otherpic img').each(function(){
   let imgPath = $(this).attr('src');
@@ -53,7 +52,6 @@ $('.two .picture .otherpic img').each(function(){
       $('.here img').attr('src',imgPath);
     }
   })
-})
 
 $('.three .select ul li').each(function () {
     $(this).click(function () {
@@ -147,7 +145,6 @@ apart.forEach(index => {
     })
 });
 
-$(document).ready(function () {
 let starList = document.querySelectorAll(".three .generalcart .card .firfloor .stars1 .st");
 
   starList.forEach(item => {
@@ -167,7 +164,8 @@ let starList = document.querySelectorAll(".three .generalcart .card .firfloor .s
             starList[i].classList.add("fa-regular")
           }
         }
-      }
+        }
+
     })
   });
 
@@ -312,4 +310,5 @@ let starList = document.querySelectorAll(".three .generalcart .card .firfloor .s
 
 $('.three .subsection .sectwo button').click(function () {
   $('.three .subsection .sectwo .getin').toggleClass('d-none');
+})
 })

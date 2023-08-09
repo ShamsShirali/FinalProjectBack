@@ -31,6 +31,7 @@ namespace FinalProjectCode.Models
         public Category? Category { get; set; }
         public IEnumerable<ProductImage> ProductImages { get; set; }
         public IEnumerable<ProductTag>? ProductTags { get; set; }
+        public ICollection<Review> Reviews { get; set; }
         public int Raiting { get; set; }
         public bool InStock { get; set; } = true;
     }

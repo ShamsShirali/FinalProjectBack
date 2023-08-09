@@ -37,6 +37,8 @@ namespace FinalProjectCode.Controllers
         [HttpGet]
         public IActionResult Register()
         {
+            ViewBag.BasketCount = 0;
+            ViewBag.WishListCount = 0;
             return View();
         }
 
@@ -111,12 +113,16 @@ namespace FinalProjectCode.Controllers
 
         public async Task<IActionResult> VerifyEmail()
         {
+            ViewBag.BasketCount = 0;
+            ViewBag.WishListCount = 0;
             return View();
         }
 
         [HttpGet]
         public IActionResult Login()
         {
+            ViewBag.BasketCount = 0;
+            ViewBag.WishListCount = 0;
             return View();
         }
 
@@ -124,6 +130,7 @@ namespace FinalProjectCode.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginVM model)
         {
+
             if (!ModelState.IsValid)
             {
                 return RedirectToAction(nameof(Index));
@@ -167,7 +174,8 @@ namespace FinalProjectCode.Controllers
         [HttpGet]
         public async Task<IActionResult> ForgotPassword()
         {
-            
+            ViewBag.BasketCount = 0;
+            ViewBag.WishListCount = 0;
 
             return View();
         }
@@ -212,8 +220,12 @@ namespace FinalProjectCode.Controllers
         }
 
         [HttpGet]
-        public IActionResult ResetPassword(string userId, string token) => View(new ResetPasswordVM { Token = token, UserId = userId, });
-
+        public IActionResult ResetPassword(string userId, string token)
+        {
+            ViewBag.BasketCount = 0;
+            ViewBag.WishListCount = 0;
+            return View(new ResetPasswordVM { Token = token, UserId = userId, });
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ResetPassword(ResetPasswordVM resetPassword)

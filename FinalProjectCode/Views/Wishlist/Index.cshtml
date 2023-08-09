@@ -1,0 +1,110 @@
+﻿@model List<WishlistVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="~/assets/css/wishlist.css">
+
+   <section class="one">
+      <div class="container">
+        <p class="main">WISHLIST</p>
+
+        <div class="switch">
+          <p class="first">Home</p>
+          <i class="fa-solid fa-chevron-right"></i>
+          <p class="select">Wishlist</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="two">
+        <div class="container">
+        @if(Model == null)
+        {
+            <p>There are no products in wishlist</p>
+        }
+        else
+        {
+            <div class="like">
+                @foreach (var item in Model)
+                {
+                    <div class="card" style="width: 18rem;">
+                        <div class="photo">
+                            <a asp-controller="Product" asp-action="Index" asp-route-id="@item.Id">
+                                <img src="~/assets/img/@item.MainImage" class="card-img-top"
+                             alt="...">
+                            </a>
+
+                            <p class="percent">- 20%</p>
+
+                            <i data-id="@item.Id" class="fa-solid fa-heart heart d-none" style="color:red;"></i>
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                            <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                            <div class="timer">
+                                <div class="times">
+                                    <span class="days"></span>
+                                    <p>Days</p>
+                                </div>
+                                <div class="timesec">
+                                    <span class="hours"> </span>
+                                    <p>Hours</p>
+                                </div>
+                                <div class="timesec">
+                                    <span class="minutes"></span>
+                                    <p>Mins</p>
+                                </div>
+                                <div class="timesec">
+                                    <span class="seconds"></span>
+                                    <p>Secs</p>
+                                </div>
+                            </div>
+
+                            <div class="add add-to-cart-button2" data-id="@item.Id">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="firfloor">
+                                <div class="stars6">
+                                    @for (int i = 1; i <= 5; i++)
+                                    {
+                                        @if (i <= item.Raiting)
+                                        {
+                                            <i class="fa-regular fa-star st" style="color:orange;"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="fa-regular fa-star st"></i>
+                                        }
+                                    }
+
+                                </div>
+
+                                <p class="reviews">No reviews</p>
+                            </div>
+
+                            <div class="titl"><a asp-controller="Product" asp-action="Index" asp-route-id="@item.Id" class="title">WHITE WINE</a></div>
+
+                            @if (item.DiscountPrice > 0)
+                            {
+                                <div class="diswithpri">
+                                    <P class="discount">$@($"{item.DiscountPrice:0.00}")</P>
+                                    <p class="pricewith">$@item.Price.ToString("0.00")</p>
+                                </div>
+                            }
+                            else
+                            {
+                                <p class="price">$@item.Price.ToString("0.00")</p>
+                            }
+
+                            <button class="remove remove-from-wishlist" data-id="@item.Id">REMOVE</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+
+        
+        </div>
+    </section>
