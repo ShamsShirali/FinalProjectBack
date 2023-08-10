@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1mShK0YqdxHFxZ0Klcjb0fn/9R7qSWldxjWPKOi3sOw=",
+  "Hash": "0zQfqk7gHwV3IbOl7OX3dqNpTXNlUG3Q4GUEdTIY5fY=",
   "Source": "FinalProjectCode",
   "BasePath": "_content/FinalProjectCode",
   "Mode": "Default",
@@ -3874,6 +3874,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\manage\\img\\Thumbs.db"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\img\\WhatsApp Image 2023-08-10 at 21.26.50.jpeg",
+      "SourceId": "FinalProjectCode",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\",
+      "BasePath": "_content/FinalProjectCode",
+      "RelativePath": "manage/img/WhatsApp Image 2023-08-10 at 21.26.50.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\manage\\img\\WhatsApp Image 2023-08-10 at 21.26.50.jpeg"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\manage\\js\\bootstrap.min.js",
