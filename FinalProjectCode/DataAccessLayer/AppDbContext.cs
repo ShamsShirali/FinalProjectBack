@@ -21,7 +21,7 @@ namespace FinalProjectCode.DataAccessLayer
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
         public DbSet<Review> Reviews { get; set; }
-        
+        public DbSet<Blog> Blogs { get; set; }
         public DbSet<BlogCategory> BlogCategies { get; set; }
     }
 }

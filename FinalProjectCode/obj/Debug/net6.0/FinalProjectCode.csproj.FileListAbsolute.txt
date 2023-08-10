@@ -1,11 +1,3 @@
-C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.csproj.AssemblyReference.cache
-C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.AssemblyInfoInputs.cache
-C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.AssemblyInfo.cs
-C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.RazorAssemblyInfo.cache
-C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.RazorAssemblyInfo.cs
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\bin\Debug\net6.0\appsettings.json
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\bin\Debug\net6.0\FinalProjectCode.staticwebassets.runtime.json
@@ -241,6 +233,14 @@ C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\bin\Debug\net6.0\runt
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.RazorAssemblyInfo.cache
+C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\FinalProjectCode.RazorAssemblyInfo.cs
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\staticwebassets\msbuild.FinalProjectCode.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\staticwebassets\msbuild.build.FinalProjectCode.props
 C:\Users\ADMIN\Documents\FinalProjectCode\FinalProjectCode\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FinalProjectCode.props

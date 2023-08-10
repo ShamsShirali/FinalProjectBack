@@ -22,6 +22,53 @@ namespace FinalProjectCode.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("FinalProjectCode.Migrations.ProductTag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreateBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TagId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdateBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("TagId");
+
+                    b.ToTable("ProductTags", (string)null);
+                });
+
             modelBuilder.Entity("FinalProjectCode.Models.AppUser", b =>
                 {
                     b.Property<string>("Id")
@@ -139,7 +186,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors");
+                    b.ToTable("Authors", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Basket", b =>
@@ -189,7 +236,63 @@ namespace FinalProjectCode.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Baskets");
+                    b.ToTable("Baskets", (string)null);
+                });
+
+            modelBuilder.Entity("FinalProjectCode.Models.Blog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreateBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("HoverImage")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Tag")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Title")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdateBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Blogs", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.BlogCategory", b =>
@@ -238,7 +341,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasIndex("ParentId");
 
-                    b.ToTable("BlogCategies");
+                    b.ToTable("BlogCategies", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Brand", b =>
@@ -279,7 +382,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Brands");
+                    b.ToTable("Brands", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Category", b =>
@@ -333,7 +436,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasIndex("ParentId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Product", b =>
@@ -343,6 +446,9 @@ namespace FinalProjectCode.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int?>("BlogCategoryId")
+                        .HasColumnType("int");
 
                     b.Property<int?>("BrandId")
                         .HasColumnType("int");
@@ -417,11 +523,13 @@ namespace FinalProjectCode.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BlogCategoryId");
+
                     b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.ProductImage", b =>
@@ -466,54 +574,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages");
-                });
-
-            modelBuilder.Entity("FinalProjectCode.Models.ProductTag", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreateAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("CreateBy")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DeletedBy")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TagId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdateAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UpdateBy")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("TagId");
-
-                    b.ToTable("ProductTags");
+                    b.ToTable("ProductImages", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Review", b =>
@@ -575,7 +636,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Reviews");
+                    b.ToTable("Reviews", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Setting", b =>
@@ -596,7 +657,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Settings");
+                    b.ToTable("Settings", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Slider", b =>
@@ -653,7 +714,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders");
+                    b.ToTable("Sliders", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Tag", b =>
@@ -694,7 +755,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags");
+                    b.ToTable("Tags", (string)null);
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Wishlist", b =>
@@ -741,7 +802,7 @@ namespace FinalProjectCode.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Wishlists");
+                    b.ToTable("Wishlists", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -877,6 +938,21 @@ namespace FinalProjectCode.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("FinalProjectCode.Migrations.ProductTag", b =>
+                {
+                    b.HasOne("FinalProjectCode.Models.Product", "Product")
+                        .WithMany("ProductTags")
+                        .HasForeignKey("ProductId");
+
+                    b.HasOne("FinalProjectCode.Models.Tag", "Tag")
+                        .WithMany()
+                        .HasForeignKey("TagId");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Tag");
+                });
+
             modelBuilder.Entity("FinalProjectCode.Models.Basket", b =>
                 {
                     b.HasOne("FinalProjectCode.Models.Product", "Product")
@@ -918,6 +994,10 @@ namespace FinalProjectCode.Migrations
 
             modelBuilder.Entity("FinalProjectCode.Models.Product", b =>
                 {
+                    b.HasOne("FinalProjectCode.Models.BlogCategory", null)
+                        .WithMany("Products")
+                        .HasForeignKey("BlogCategoryId");
+
                     b.HasOne("FinalProjectCode.Models.Brand", "Brand")
                         .WithMany("Products")
                         .HasForeignKey("BrandId");
@@ -938,21 +1018,6 @@ namespace FinalProjectCode.Migrations
                         .HasForeignKey("ProductId");
 
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("FinalProjectCode.Models.ProductTag", b =>
-                {
-                    b.HasOne("FinalProjectCode.Models.Product", "Product")
-                        .WithMany("ProductTags")
-                        .HasForeignKey("ProductId");
-
-                    b.HasOne("FinalProjectCode.Models.Tag", "Tag")
-                        .WithMany()
-                        .HasForeignKey("TagId");
-
-                    b.Navigation("Product");
-
-                    b.Navigation("Tag");
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Review", b =>
@@ -1052,6 +1117,8 @@ namespace FinalProjectCode.Migrations
             modelBuilder.Entity("FinalProjectCode.Models.BlogCategory", b =>
                 {
                     b.Navigation("Children");
+
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("FinalProjectCode.Models.Brand", b =>

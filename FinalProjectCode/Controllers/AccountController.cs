@@ -46,6 +46,9 @@ namespace FinalProjectCode.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterVM model)
         {
+            ViewBag.BasketCount = 0;
+            ViewBag.WishListCount = 0;
+
             if (!ModelState.IsValid)
             {
                 return View(model);

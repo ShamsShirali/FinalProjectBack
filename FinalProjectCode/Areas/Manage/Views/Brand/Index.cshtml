@@ -610,7 +610,7 @@
     <div class="col-lg-12">
         <table class="table">
             <thead>
-                <tr>
+                <tr style="color:white;">
                     <th scope="col">№</th>
                     <th scope="col">Name</th>
                     <th scope="col">Product Count</th>
@@ -621,7 +621,7 @@
                 @foreach (Brand brand in Model)
                 {
                     no++;
-                    <tr>
+                    <tr style="color:white;">
                         <th scope="row">@no</th>
                         <td>@brand.Name</td>
                         <td>@brand.Products.Count()</td>

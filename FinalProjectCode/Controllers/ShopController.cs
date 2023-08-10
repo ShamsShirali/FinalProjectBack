@@ -126,8 +126,6 @@ namespace FinalProjectCode.Controllers
         }
 
 
-
-
         [HttpPost]
         public async Task<IActionResult> AddBasket(int? id)
         {
@@ -184,8 +182,6 @@ namespace FinalProjectCode.Controllers
                 return Ok(0);
             }
         }
-
-
 
         [HttpPost]
         public async Task<IActionResult> AddWish(int? id)

@@ -66,8 +66,6 @@ namespace FinalProjectCode.Controllers
                 return PartialView("_SearchPartial", products);
         }
 
-
-
         [HttpPost]
         public async Task<IActionResult> AddBasket(int? id, int count)
         {

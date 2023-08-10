@@ -217,10 +217,8 @@
                     alert("Please Login");
                 }
                 else {
+                    $(this).css("color", "red")
                     $(".wishlist-count").text(res)
-                    $(this).toggleClass("active")
-                    $(this).toggleClass("fa-solid")
-                    $(this).toggleClass("fa-regular")
                 }
             }
         })
@@ -246,10 +244,8 @@
                     alert("Please Login");
                 }
                 else {
+                    $(this).css("color", "red")
                     $(".wishlist-count").text(res)
-                    $(this).toggleClass("active")
-                    $(this).toggleClass("fa-solid")
-                    $(this).toggleClass("fa-regular")
                 }
             }
         })
@@ -275,10 +271,8 @@
                     alert("Please Login");
                 }
                 else {
+                    $(this).css("color", "red")
                     $(".wishlist-count").text(res)
-                    $(this).toggleClass("active")
-                    $(this).toggleClass("fa-solid")
-                    $(this).toggleClass("fa-regular")
                 }
             }
         })
