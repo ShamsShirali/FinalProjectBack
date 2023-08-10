@@ -1747,13 +1747,14 @@ footer .thirdpart img {
   padding-top: 7px;
   font-weight: 500;
 }
-.bskm .prd .prdone .name a {
+.bskm .prd .prdone .name .remove {
   color: #666;
   font-size: 14px;
+  background-color: white;
+  border: none;
 }
-.bskm .prd .prdone .name a:hover {
+.bskm .prd .prdone .name .remove:hover {
   color: red;
-  text-decoration: none;
 }
 .bskm .check {
   margin: 0 20px;

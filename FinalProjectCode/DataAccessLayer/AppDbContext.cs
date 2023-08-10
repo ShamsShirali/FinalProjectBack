@@ -1,5 +1,4 @@
-﻿using FinalProjectCode.Migrations;
-using FinalProjectCode.Models;
+﻿using FinalProjectCode.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -22,5 +21,7 @@ namespace FinalProjectCode.DataAccessLayer
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        
+        public DbSet<BlogCategory> BlogCategies { get; set; }
     }
 }

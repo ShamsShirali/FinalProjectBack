@@ -154,7 +154,7 @@
                     <li class="Shop other"><a asp-controller="Shop" asp-action="Index" data-id="2">SHOP</a></li>
                 </ul>
 
-                <a href="index.html"><img src="~/assets/img/logo-black.png" alt=""></a>
+                <a href="index.html"><img src="~/assets/img/@settings.FirstOrDefault(m=>m.Key == "Logo").Value" alt=""></a>
 
                 <ul class="secondsel selec">
                     <li class="Blog"><a asp-controller="Blog" asp-action="Index" data-id="3">BLOG</a></li>
@@ -224,23 +224,23 @@
 
         <div class="secondpart">
             <div class="onep">
-                <p class="location">VIA SAN MICHELETTO, 337022 FUMANE VERONA, ITALY</p>
+                <p class="location">@settings.FirstOrDefault(m=>m.Key == "Address").Value</p>
 
                 <p class="phone">PHONE</p>
-                <p class="number">+19 045 3234498 +419 323 48868</p>
+                <p class="number">@settings.FirstOrDefault(m=>m.Key == "Phone").Value</p>
 
                 <p class="email">EMAIL</p>
-                <p class="our">RUM.MEN@EXAMPLE.COM</p>
+                <p class="our">@settings.FirstOrDefault(m=>m.Key=="Email").Value</p>
             </div>
-
+             
             <img src="~/assets/img/istockphoto-913972948-612x612.jpg" alt="">
 
             <div class="two">
                 <p class="welcome">WE WELCOME EVERYONE 24/7</p>
 
                 <p class="open">OPEN HOURS</p>
-                <p class="week">MONDAY – SATURDAY: 8:00 AM – 4:00PM</p>
-                <p class="close">SUNDAY: CLOSE</p>
+                <p class="week">@settings.FirstOrDefault(m=>m.Key=="WorkDate").Value</p>
+                <p class="close">@settings.FirstOrDefault(m=>m.Key=="Close").Value: CLOSE</p>
 
                 <ul class="icon m-0">
                     <li>
@@ -333,15 +333,15 @@
 
                             <div class="counts">
                                 <div class="count">
-                                    <button onclick="increment()">-</button>
+                                    <button data-id="@basketVM.Id" class="minus-modal-btn">-</button>
                                     <h2>@(basketVM.Count)</h2>
-                                    <button onclick="decrement()">+</button>
+                                    <button data-id="@basketVM.Id" class="plus-modal-btn">+</button>
                                 </div>
 
-                                <p class="per">$@basketVM.Price</p>
+                                <p class="per">$<span>@basketVM.Price.ToString("0.00")</span></p>
                             </div>
 
-                            <a href="#">REMOVE</a>
+                            <button class="remove delete-modal-button">REMOVE</button>
                         </div>
                     </div>
                 }
@@ -356,7 +356,7 @@
 
             <div class="total">
                 <p class="subt">SUBTOTAL :</p>
-                <p class="totalpr">$@basketVMs.Sum(m=>m.Count*m.Price)</p>
+                <p class="totalpr grand-modal-total">$<span>@basketVMs.Sum(m=>m.Count*m.Price).ToString("0.##")</span></p>
             </div>
 
             <div class="radio">

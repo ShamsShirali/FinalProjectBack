@@ -20,33 +20,32 @@
             <p class="col-3">TOTAL</p>
         </div>
 
-       @foreach(var item in  Model){
+       @foreach(BasketVM basketVM in  Model){
          <div class="row prod">
             <div class="pict col-5">
-                <img src="~/assets/img/@item.Image" alt="">
+                <img src="~/assets/img/@basketVM.Image" alt="">
 
                 <div class="name">
                         
                     <p class="nm">CHARDONNAY</p>
-                    <p class="per">$<span>@item.Price.ToString("0.##")</span></p>
+                        <p class="per">$<span>@(basketVM.Count)×</span>@basketVM.Price.ToString("0.##")</p>
                 </div>
             </div>
 
             <div class="counts col-4">
                 <div class="count">
-                    <button data-id="@item.Id" class="minus">-</button>
-                    <h2 >@item.Count</h2>
-                    <button data-id="@item.Id" class="plus-btn">+</button>
+                    <button data-id="@basketVM.Id" class="minus">-</button>
+                        <h2>@basketVM.Count</h2>
+                        <button data-id="@basketVM.Id" class="plus-btn">+</button>
                 </div>
 
-                    <button data-id="@item.Id" class="remove delete-button">REMOVE</button>
+                    <button data-id="@basketVM.Id" class="remove delete-button">REMOVE</button>
             </div>
 
             <div class="total col-3">
-                <p>$<span>@item.Total.ToString("0.##")</span></p>
+                    <p>$<span>@basketVM.Total.ToString("0.##")</span></p>
             </div>
         </div>
-        grandTotal += item.Total;
         }
 
     </div>
@@ -56,7 +55,7 @@
     <div class="container">
         <div class="stotal row">
             <p class="subt col-9">SUBTOTAL :</p>
-            <p class="totalpr grand-total col-3">$<span>@grandTotal.ToString("0.##")</span></p>
+            <p class="totalpr grand-total col-3">$<span>@Model.Sum(m=>m.Count*m.Price).ToString("0.00")</span></p>
         </div>
 
         <div class="radio">

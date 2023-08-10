@@ -167,28 +167,19 @@
             <div class="now">
                 <div class="sentence">
                     <p class="customer">Customer Reviews</p>
-                    <p class="yet">No reviews yet</p>
+                    @if(Model.Reviews.Count()>0){
+                        <p class="yet">@Model.Reviews.Count() reviews</p>
+                    }
+                    else
+                    {
+                        <p class="yet">No reviews yet</p>
+                    }
                 </div>
 
                 <button>WRITE A REWIEV</button>
             </div>
 
-            <div class="comment">
-                    <div class="approve">
-                        <div class="starr">
-                            <i class="fa-solid fa-star st"></i>
-                            <i class="fa-solid fa-star st"></i>
-                            <i class="fa-solid fa-star st"></i>
-                            <i class="fa-solid fa-star st"></i>
-                            <i class="fa-solid fa-star st"></i>
-                        </div>
-
-                        <p class="dat">Shams on Aug 08, 2023</p>
-                    </div>
-
-                    <p class="title">Taste</p>
-                    <p class="comm">The drink is quite tasty.</p>
-                </div>
+           
 
             <div class="getin d-none">
                 <form asp-controller="Product" asp-action="AddReview" method="post">
@@ -242,6 +233,32 @@
                     <button type="submit" class="snd">Submit Review</button>
                 </form>
             </div>
+            @foreach (var item in Model.Reviews)
+            {
+                <div class="comment">
+                    <div class="approve">
+                        <div class="starr">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                @if (i <= item.Raiting)
+                                {
+                                    <i class="fa-solid fa-star st" style="color:orange;"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-star st"></i>
+                                }
+                            }
+
+                        </div>
+
+                        <p class="dat">@item.Username @item.CreateAt.ToString("dd MMMM yyyy")</p>
+                    </div>
+
+                    <p class="title">@item.Tittle</p>
+                    <p class="comm">@item.Describtion</p>
+                </div>
+            }
         </div>
 
         <div class="change secthr d-none" data-id="3">

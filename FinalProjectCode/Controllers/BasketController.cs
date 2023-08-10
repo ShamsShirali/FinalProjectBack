@@ -4,6 +4,7 @@ using FinalProjectCode.ViewModels.BasketVMs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace FinalProjectCode.Controllers
 {
@@ -58,9 +59,36 @@ namespace FinalProjectCode.Controllers
         }
 
 
-        public IActionResult Check()
+        public async Task<IActionResult> Check()
         {
-            return View();
+            List<BasketVM> basketVMs = new();
+            if (User.Identity.IsAuthenticated)
+            {
+                AppUser user = await _context.Users.Where(m => m.UserName == User.Identity.Name).FirstOrDefaultAsync();
+
+                List<Basket> dbBaskets = await _context.Baskets.Where(m => m.UserId == user.Id).ToListAsync();
+
+                foreach (var item in dbBaskets)
+                {
+                    Product product = await _context.Products.FirstOrDefaultAsync(m => m.Id == item.ProductId);
+
+                    basketVMs.Add(new BasketVM
+                    {
+                        Id = product.Id,
+                        Count = item.Count,
+                        Image = product.MainImage,
+                        Title = product.Title,
+                        Price = product.Price,
+                        Total = product.Price * item.Count
+                    });
+                }
+
+                return View(basketVMs);
+            }
+            else
+            {
+                return View(basketVMs);
+            }
         }
 
         public async Task<IActionResult> IncreaseProductCount(int? id)

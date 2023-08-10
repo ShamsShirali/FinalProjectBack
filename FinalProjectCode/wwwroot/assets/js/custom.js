@@ -416,4 +416,86 @@
     })
 
 
+    $(document).on("click", ".plus-modal-btn", function (ev) {
+
+        ev.preventDefault();
+
+
+
+        let dataId = $(this).attr("data-id");
+
+        $.ajax({
+            url: `basket/IncreaseProductCount?id=${dataId}`,
+            type: "Post",
+            success: function (res) {
+                $(".cart-count").text(res)
+            }
+        })
+
+        var num = $(this).prev().text()
+        var totalCommon = $(".grand-modal-total span").html()
+
+        var productPrice = $(this).parent().next().children().eq(0).text()
+
+        var res = parseFloat(totalCommon) + parseFloat(productPrice)
+        ++num;
+        $(this).prev().text(num)
+ 
+        $(".grand-modal-total span").html(res)
+    })
+
+
+    $(document).on("click", ".minus-modal-btn", function (ev) {
+
+        ev.preventDefault();
+
+
+
+        let dataId = $(this).attr("data-id");
+        let num = $(this).next().text()
+        if (num > 1) {
+
+            $.ajax({
+                url: `basket/DecreaseProductCount?id=${dataId}`,
+                type: "Post",
+                success: function (res) {
+                    $(".cart-count").text(res)
+                }
+            })
+
+
+            var totalCommon = $(".grand-modal-total span").text()
+            var productPrice = $(this).parent().next().children().eq(0).text()
+            var res = parseFloat(totalCommon) - parseFloat(productPrice)
+            --num;
+            $(this).next().text(num)
+            $(".grand-modal-total span").html(res)
+        }
+    })
+
+    $(document).on("click", ".delete-modal-button", function (ev) {
+
+        ev.preventDefault();
+
+
+
+        let dataId = $(this).attr("data-id");
+
+        $.ajax({
+            url: `basket/deleteproductfrombasket?id=${dataId}`,
+            type: "Post",
+            success: function (res) {
+                $(".cart-count").text(res)
+            }
+        })
+        let num = $(this).prev().children().eq(1).html()
+        var totalCommon = $(".grand-modal-total span").html()
+        var productPrice = $(this).prev().children().eq(1).children().eq(0).text()
+        var productTotal = productPrice * productPrice
+        var res = parseFloat(totalCommon) - parseFloat(productTotal)
+
+        $(".grand-modal-total span").html(res)
+
+        $(this).parent().parent().remove()
+    })
 })
