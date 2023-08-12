@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function () {
 $('.header .secondh .selec li a').each(function () {
   $('.header .secondh .selec li').click(function () {
@@ -308,17 +310,17 @@ function checkboxChanged() {
 }
 checkboxChanged();
 //#endregion
+})
 
 // start modal
-  let start = document.getElementById("general-start");
+let start = document.getElementById("general-start");
 
 setTimeout(function () {
-  start.classList.remove("d-none");
+    start.classList.remove("d-none");
 }, 2000);
 
 $(function () {
-  $("#general-start .start .over").click(function () {
-    $("#general-start").addClass("d-none");
-  })
-})
+    $("#general-start .start .over").click(function () {
+        $("#general-start").addClass("d-none");
+    })
 })

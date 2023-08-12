@@ -154,7 +154,7 @@
                     <li class="Shop other"><a asp-controller="Shop" asp-action="Index" data-id="2">SHOP</a></li>
                 </ul>
 
-                <a href="index.html"><img src="~/assets/img/@settings.FirstOrDefault(m=>m.Key == "Logo").Value" alt=""></a>
+                <a asp-controller="Home" asp-action="Index"><img src="~/assets/img/@settings.FirstOrDefault(m=>m.Key == "Logo").Value" alt=""></a>
 
                 <ul class="secondsel selec">
                     <li class="Blog"><a asp-controller="Blog" asp-action="Index" data-id="3">BLOG</a></li>
@@ -405,9 +405,9 @@
     </script>
 
     <!-- our js link -->
+    <script src="~/assets/js/product.js"></script>
     <script src="~/assets/js/script.js"></script>
     <script src="~/assets/js/custom.js"></script>
-    <script src="~/assets/js/product.js"></script>
 </body>
 
 </html>

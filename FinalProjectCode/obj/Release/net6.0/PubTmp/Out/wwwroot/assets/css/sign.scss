@@ -1,0 +1,276 @@
+.container {
+    max-width: 1000px !important;
+}
+
+.one {
+
+    img {
+        width: 1519px;
+        height: 600px;
+        position: relative;
+    }
+
+    p {
+        position: absolute;
+        font-size: 45px;
+        letter-spacing: 2px;
+        font-family: Libre Baskerville, serif;
+        font-weight: 500;
+        color: #9b1010;
+        line-height: 1.2;
+        top: 380px;
+        left: 350px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+.two {
+
+    .about {
+        width: 400px;
+        position: relative;
+
+        input {
+            width: 384px;
+            background-color: rgba(255, 255, 255, 0.7019607843137254);
+            line-height: 50px;
+            height: 50px;
+            padding: 0 20px;
+            border: 1px solid #e5e5e5;
+            line-height: 50px;
+            margin-left: 30px;
+            margin-top: 10px;
+            color: #666;
+            font-family: Inter, sans-serif;
+            font-size: 14px;
+        }
+
+        .line {
+            position: absolute;
+            height: 30px;
+            width: 2px;
+            top: 80px;
+            left: 385px;
+            border-radius: 2px;
+            background-color: #b3b3b3;
+        }
+
+        .close {
+            position: absolute;
+            cursor: pointer;
+            top: 86px;
+            left: 392px;
+        }
+
+        .open {
+            position: absolute;
+            cursor: pointer;
+
+            top: 86px;
+            left: 392px;
+        }
+
+        .forg {
+            display: flex;
+            width: 384px;
+            margin-left: 18px;
+
+            .checkbox-apple {
+                position: relative;
+                width: 50px;
+                height: 25px;
+                margin: 20px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                .yep {
+                    position: absolute;
+                    top: 0;
+                    right: 15px;
+                    width: 1px;
+                    height: 1px;
+                }
+
+                .app {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 25px;
+                    border-radius: 50px;
+                    background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .rem {
+                width: 120px;
+                height: 0;
+                padding-top: 18px;
+            }
+
+            a {
+                padding-left: 48px;
+                padding-top: 18px;
+                color: #000;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+        }
+
+        .checkbox-apple label:after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .checkbox-apple input[type="checkbox"]:checked+label {
+            background: linear-gradient(to bottom, #4cd964, #5de24e);
+        }
+
+        .checkbox-apple input[type="checkbox"]:checked+label:after {
+            transform: translateX(25px);
+        }
+
+        .checkbox-apple label:hover {
+            background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+        }
+
+        .checkbox-apple label:hover:after {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .sign {
+            border: none;
+            cursor: pointer;
+            width: 384px;
+            height: 45px;
+            background-color: #000;
+            margin-top: 17px;
+            margin-left: 30px;
+            padding-top: 5px;
+            padding-left: 5px;
+                color: #ffffff;
+                font-family: Inter, sans-serif;
+                text-decoration: none;
+
+            &:hover {
+                background-color: #bd9855;
+            }
+        }
+
+        .hori {
+            margin-left: 70px;
+            margin-top: 10px;
+
+            hr {
+                width: 180px;
+            }
+
+            p {
+                padding: 0 5px 0 5px;
+                color: #868686;
+            }
+        }
+
+        .facebook {
+            width: 384px;
+            height: 45px;
+            background-color: #3162a2;
+            letter-spacing: 1px;
+            line-height: 20px;
+            color: #ffffff;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            margin-left: 30px;
+
+            i {
+                color: white;
+                padding-right: 5px;
+            }
+        }
+
+        .twitter {
+            width: 384px;
+            height: 45px;
+            background-color: #00aaf4;
+            letter-spacing: 1px;
+            line-height: 20px;
+            color: #ffffff;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            margin-left: 30px;
+            margin-top: 10px;
+
+            i {
+                color: white;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .new {
+        margin-left: 100px;
+        margin-top: 3px;
+
+        .custom {
+            font-size: 35px;
+            font-family: Libre Baskerville, serif;
+            font-weight: 500;
+            color: #000;
+            line-height: 1.2;
+        }
+
+        .inthis {
+            font-size: 18px;
+            color: #666;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            padding-top: 10px;
+        }
+
+        .regis{
+            width: 127px;
+            height: 45px;
+            background-color: #000;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            padding-left: 28px;
+            padding-top: 8px;
+
+        a {
+            color: #ffffff;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+            &:hover {
+                opacity: 0.8;
+                background-color: #bd9855;
+            }
+    }
+    }
+}
+
+footer {
+    margin-top: 30px !important;
+}
