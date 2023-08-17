@@ -301,6 +301,9 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+.two .acdgen .prodsel .all .card .photo .add {
+  cursor: pointer;
+}
 .two .acdgen .prodsel .all .card .photo .add p {
   opacity: 0;
   background-color: rgb(29, 29, 29);

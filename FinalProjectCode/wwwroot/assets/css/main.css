@@ -681,6 +681,9 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+.three .generalcart .card .photo .add {
+  cursor: pointer;
+}
 .three .generalcart .card .photo .add p {
   opacity: 0;
   background-color: rgb(29, 29, 29);
@@ -1594,13 +1597,11 @@ footer .thirdpart img {
   width: 170px;
   height: 50px;
   background-color: #000;
-}
-#general-start .start .button .over a {
-  text-decoration: none;
   color: white;
   font-size: 17px;
   padding-left: 35px;
-  padding-top: 13px;
+  padding-top: 11px;
+  border: none;
 }
 #general-start .start .button .over:hover {
   background-color: #bd9855;

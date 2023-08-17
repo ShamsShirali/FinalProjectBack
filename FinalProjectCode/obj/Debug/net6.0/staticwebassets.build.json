@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0zQfqk7gHwV3IbOl7OX3dqNpTXNlUG3Q4GUEdTIY5fY=",
+  "Hash": "DJJzv7KVpnSCG7KqNwx6tPEP/XWT792J6XdGGEcTalA=",
   "Source": "FinalProjectCode",
   "BasePath": "_content/FinalProjectCode",
   "Mode": "Default",
@@ -1834,6 +1834,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\home.js",
+      "SourceId": "FinalProjectCode",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\",
+      "BasePath": "_content/FinalProjectCode",
+      "RelativePath": "assets/js/home.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\home.js"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Documents\\FinalProjectCode\\FinalProjectCode\\wwwroot\\assets\\js\\jquery-3.6.4.min.js",

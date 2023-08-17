@@ -280,29 +280,6 @@
         </div>
     </footer>
 
-    <!-- start modal -->
-    <div id="general-start" class="d-none">
-        <div class="start" id="start">
-            <p class="slogan">You can't buy happiness,but you can buy wine</p>
-            <div class="line"></div>
-            <p class="question">Are you over 18 years of age?</p>
-            <p class="notification">
-                The content of this website cannot be shown unless you verify your age.Please verify
-                that you are over 18 to see this page
-            </p>
-
-            <div class="button">
-                <div class="over">
-                    <a href="#">I'M OVER 18</a>
-                </div>
-
-                <div class="exit">
-                    <a href="exit.html">EXIT</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Search modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modl">
@@ -318,8 +295,10 @@
         </div>
     </div>
 
+  
+
     <!-- basket modal -->
-    <div class="bskm">
+    <div class="bskm sticky-top">
         @if (basketVMs.Count > 0)
         {
             <div class="prd">
@@ -406,6 +385,7 @@
 
     <!-- our js link -->
     <script src="~/assets/js/product.js"></script>
+    <script src="~/assets/js/home.js"></script>
     <script src="~/assets/js/script.js"></script>
     <script src="~/assets/js/custom.js"></script>
 </body>

@@ -4,6 +4,8 @@
     ViewData["Title"] = "Index";
 }
 
+<link rel="stylesheet" href="~/assets/css/main.css">
+
 <!--Slider-->
 @await Component.InvokeAsync("Slider")
 
@@ -160,3 +162,26 @@
         </div>
     </div>
 </section>
+
+<!-- start modal -->
+<div id="general-start" class="d-none">
+    <div class="start" id="start">
+        <p class="slogan">You can't buy happiness,but you can buy wine</p>
+        <div class="line"></div>
+        <p class="question">Are you over 18 years of age?</p>
+        <p class="notification">
+            The content of this website cannot be shown unless you verify your age.Please verify
+            that you are over 18 to see this page
+        </p>
+
+        <div class="button">
+            <button class="over">I'M OVER 18</button>
+
+            <div class="exit">
+                <a asp-controller="Exit" asp-action="Index">EXIT</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/assets/js/home.js"></script>

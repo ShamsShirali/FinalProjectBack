@@ -258,7 +258,6 @@
 
         ev.preventDefault();
 
-
         let dataId = $(this).attr("data-id");
         let data = { id: dataId }
 
@@ -286,16 +285,11 @@
         $(".firfloor .raiting-input").val(dataId)
         console.log($(".firfloor .raiting-input").val())
 
-
-       
-
-
     })
 
     $(document).on("click", ".remove-from-wishlist", function (ev) {
 
         ev.preventDefault();
-
 
         let dataId = $(this).attr("data-id");
         console.log("adsfdsfsfsd")
@@ -318,14 +312,9 @@
         $(".bskm").toggleClass("active-basket")
     })
 
-
-
-
     $(document).on("click", ".plus-btn", function (ev) {
 
         ev.preventDefault();
-
-
 
         let dataId = $(this).attr("data-id");
 
@@ -356,8 +345,6 @@
 
         ev.preventDefault();
 
-
-
         let dataId = $(this).attr("data-id");
         let num = $(this).next().text()
         if (num > 1) { 
@@ -369,7 +356,6 @@
                 $(".cart-count").text(res)
             }
         })
-
       
             var totalCommon = $(".grand-total span").text()
             var productTotal = $(this).parent().parent().next().children().eq(0).children().eq(0).text()
@@ -387,8 +373,6 @@
     $(document).on("click", ".delete-button", function (ev) {
 
         ev.preventDefault();
-
-
 
         let dataId = $(this).attr("data-id");
 
@@ -413,8 +397,6 @@
     $(document).on("click", ".plus-modal-btn", function (ev) {
 
         ev.preventDefault();
-
-
 
         let dataId = $(this).attr("data-id");
 
@@ -443,8 +425,6 @@
 
         ev.preventDefault();
 
-
-
         let dataId = $(this).attr("data-id");
         let num = $(this).next().text()
         if (num > 1) {
@@ -456,7 +436,6 @@
                     $(".cart-count").text(res)
                 }
             })
-
 
             var totalCommon = $(".grand-modal-total span").text()
             var productPrice = $(this).parent().next().children().eq(0).text()
@@ -470,8 +449,6 @@
     $(document).on("click", ".delete-modal-button", function (ev) {
 
         ev.preventDefault();
-
-
 
         let dataId = $(this).attr("data-id");
 
